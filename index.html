@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- My CSS -->
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		type="text/css" />
 	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&display=swap" rel="stylesheet">
@@ -16,6 +15,19 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
 		type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css">
+      <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
 
 	<title>BeenThere</title>
 </head>
@@ -42,8 +54,7 @@
     </ul>
   </div>
 </nav>
-
-
+<div id="map"></div>
 <!--the social media links -->
 <footer class="container-fluid d-flex justify-content-center">
 	
@@ -73,22 +84,23 @@
 			</ul>
 
 		</div>
-<div id="map"></div>
+
+
         </footer>
 		<!--scripts part of the page-->
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24s&callback=initMap"
-  type="text/javascript"></script>
+       
     <script>
-        function initMap(){
-            var map = new google.maps.Map(document.getElementById("map"),{
-                        zoom:3,
-                        center:{
-                            lat: 43.7102,
-                            lng: 43.7102
-                        }
-            });
-        }
+     var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8
+  });
+}
+        
     </script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap"
+    async defer></script>
 </body>
 
 </html>
