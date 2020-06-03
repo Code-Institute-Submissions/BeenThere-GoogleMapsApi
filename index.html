@@ -43,8 +43,10 @@
   </div>
 </nav>
 
+
+<!--the social media links -->
 <footer class="container-fluid d-flex justify-content-center">
-	<!--the social media links -->
+	
 	<div>
 		<div class="col-12 social-links">
 
@@ -71,12 +73,22 @@
 			</ul>
 
 		</div>
-
+<div id="map"></div>
         </footer>
 		<!--scripts part of the page-->
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap"></script>
-    <script src="assets/js/main.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24s&callback=initMap"
+  type="text/javascript"></script>
+    <script>
+        function initMap(){
+            var map = new google.maps.Map(document.getElementById("map"),{
+                        zoom:3,
+                        center:{
+                            lat: 43.7102,
+                            lng: 43.7102
+                        }
+            });
+        }
+    </script>
 </body>
 
 </html>
