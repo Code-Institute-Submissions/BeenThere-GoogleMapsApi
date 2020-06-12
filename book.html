@@ -12,14 +12,6 @@
 		type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css">
 
-        <style>
-      /* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-       }
-    </style>
-
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
@@ -31,18 +23,81 @@
 	<!--BeenThere Explanation-->
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
-			<h1 class="display-4">Berlin<img class="bean" src="assets/images/bean.png"></h1>
+			<h1 class="display-4">BeenThere<img class="bean" src="assets/images/bean.png"></h1>
 			<p class="lead">We have been there - have you?</i>
 
 </p>
+		</div>
+	</div>
 
-<!--Map-->
-<div id="map"></div>
+	<!--Choose call to action-->
+	<h1 class="choose">Request to Book</h1>
+    <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1"><b>Email Address</b></label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
 
-<button type="button" class="btn btn-secondary btn-lg book">Book your Trip</button>
+  <div class="form-group">
+    <label for="choose_city"><b>Which city?</b></label>
+    <select class="form-control" id="choose_city">
+      <option>Berlin</option>
+      <option>Ibiza</option>
+      <option>London</option>
+      <option>Nice</option>
+      <option>Paris</option>
+    </select>
+  </div>
+      <label for="choose_guests"><b>How many guests?</b></label>
+    <select class="form-control" id="choose_guests">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+       <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="choose_nights"><b>How many nights?</b></label>
+    <select class="form-control" id="choose_nights">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+       <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+           <option>11</option>
+      <option>12</option>
+      <option>13</option>
+      <option>14</option>
+      <option>Longer Term - Please specify in 'Ideal Holiday' section</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="choose_ideal_holiday"><b>Please outline your ideal holiday(restaurants, bars, clubs, beaches?)</b></label>
+    <textarea class="form-control" id="choose_ideal_holiday" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="choose_special"><b>Any special dietary or access requirements? (Vegan? Wheelchair access required?)</b></label>
+    <textarea class="form-control" id="choose_special" rows="3"></textarea>
+  </div>
+</form>
+
+<button type="button" class="btn btn-lg btn-primary">Submit Request for Ideal Holiday </button>
+<h6><i>Please allow 48 hours after submission to receive your 'Ideal Holiday Suggestion' from your local.<br><br>Thank you,<br><br><b>Your BeenThere Team</b></i></h6>
 
 
-		
+
+
 						<!--Social Media-->
 						<div>
 							<div class="col-12 social-links">
@@ -73,60 +128,9 @@
 
 
 							<!--Scripts-->
-							
-                             
-                             
-<script>
-// Initialize and add the map
-function initMap() {
-  // The location of berlin
-  var berlin = {lat: 52.5200, lng: 13.4050};
-  // The map, centered at berlin
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 15, center: berlin});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: berlin, map: map});
-}
- </script>
-
- <!--Restaurants-->
- <script>
- var map;
-var service;
-var infowindow;
-
-function initialize() {
-  var berlin = new google.maps.LatLng(52.5200,13.4050);
-
-  map = new google.maps.Map(document.getElementById('map'), {
-      center: berlin,
-      zoom: 15
-    });
-
-  var request = {
-    location: berlin,
-    radius: '500',
-    type: ['restaurant']
-  };
-
-  service = new google.maps.places.PlacesService(map);
-  service.nearbySearch(request, callback);
-}
-
-function callback(results, status) {
-  if (status == google.maps.places.PlacesServiceStatus.OK) {
-    for (var i = 0; i < results.length; i++) {
-      createMarker(results[i]);
-    }
-  }
-}
- </script>
- <script
+							<script
 								src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap"
 								async defer></script>
-                                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&libraries=places"></script>
-
-
 							<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 								integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
 								crossorigin="anonymous">
