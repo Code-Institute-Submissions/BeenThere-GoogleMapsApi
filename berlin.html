@@ -107,11 +107,21 @@ var infowindow1 = new google.maps.InfoWindow({
           infowindow1.open(map, marker1);
         });
 //image for marker 1
+
+        var image2 = {
+          src: 'assets/images/restaurant.png',
+          // This marker is 20 pixels wide by 32 pixels high.
+          size: new google.maps.Size(20, 32),
+          // The origin for this image is (0, 0).
+          origin: new google.maps.Point(0, 0),
+          // The anchor for this image is the base of the flagpole at (0, 32).
+          anchor: new google.maps.Point(0, 32)
+        };
  
     var marker2 = new google.maps.Marker({
       position: {lat: 52.5014, lng: 13.4159},
       map: map,
-      icon: image,
+      icon: image2,
       label:"Bar: Ora",
       title: "marker 2"
     });
