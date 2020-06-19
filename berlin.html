@@ -12,13 +12,15 @@
 		type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css">
 
-        <style>
-      /* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-       }
-    </style>
+	<style>
+		/* Set the size of the div element that contains the map */
+		#map {
+			height: 400px;
+			/* The height is 400 pixels */
+			width: 100%;
+			/* The width is the width of the web page */
+		}
+	</style>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,106 +29,140 @@
 
 <body>
 	<!--Navbar-->
-    
+
 
 	<!--BeenThere Explanation-->
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
 			<h1 class="display-4">Berlin<img class="bean" src="assets/images/bean.png"></h1>
-			<p class="lead">We have been there - have you?</i>
+				<p class="lead">We have been there - have you?</i>
 
-</p>
-<h3>This weeks top recommended bar, restaurant and hotel</h3>
-
-
-<!--Map-->
-<div id="map"></div>
-
-<button type="button" class="btn btn-secondary btn-lg book">Book your Trip</button>
+				</p>
+				<h3>This weeks top recommended bar, restaurant and hotel</h3>
 
 
-		
-						<!--Social Media-->
-						<div>
-							<div class="col-12 social-links">
+				<!--Map-->
+				<div id="map"></div>
 
-								<ul class="list-inline ">
-									<li class="list-inline-item">
-										<a target="_blank" href="https://facebook.com/">
-											<i class="fa fa-facebook" aria-hidden="true"></i>
-											<span class="sr-only">Facebook</span>
-										</a>
-									</li>
-									<li class="list-inline-item">
-										<a target="_blank" href="https://www.twitter.com/">
-											<i class="fa fa-twitter" aria-hidden="true"></i>
-											<span class="sr-only">Twitter</span>
-										</a>
-									</li>
-									<li class="list-inline-item">
-										<a target="_blank" href="https://www.instagram.com/">
-											<i class="fa fa-instagram" aria-hidden="true"></i>
-											<span class="sr-only">Instagram</span>
-										</a>
-									</li>
-
-								</ul>
-
-							</div>
+				<button type="button" class="btn btn-secondary btn-lg book">Book your Trip</button>
 
 
-							<!--Scripts-->
-							
-                  
-                             
-<script>
-// Initialize and add the map
+
+				<!--Social Media-->
+				<div>
+					<div class="col-12 social-links">
+
+						<ul class="list-inline ">
+							<li class="list-inline-item">
+								<a target="_blank" href="https://facebook.com/">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+									<span class="sr-only">Facebook</span>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.twitter.com/">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+									<span class="sr-only">Twitter</span>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.instagram.com/">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+									<span class="sr-only">Instagram</span>
+								</a>
+							</li>
+
+						</ul>
+
+					</div>
+
+
+					<!--Scripts-->
+
+
+
+					<script>
+						// Initialize and add the map
 function initMap() {
   // The location of berlin
   var berlin = {lat: 52.5200, lng: 13.4050};
-  var block_house = {lat: 52.5208, lng: 13.4055};
   // The map, centered at berlin
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 17, center: berlin, mapId: 'da36f271281c5584'});
+      document.getElementById('map'), {zoom: 13, center: berlin, mapId: 'da36f271281c5584'});
   // The marker, positioned at Uluru
-var marker = new google.maps.Marker({position: berlin, map: map}); 
-}
 
-
-    var myLatlng = new google.maps.LatLng(52.5208, 13.4055);
-    var marker2 = new google.maps.Marker({
-      position: myLatlng,
+      var marker1 = new google.maps.Marker({
+      position: {lat: 52.5026, lng: 13.3941},
       map: map,
+      label: "Restaurant: NaNum Berlin",
+      title: "marker 1"
+    });
+        var contentString1 = 'test';
+
+var infowindow1 = new google.maps.InfoWindow({
+          content: contentString1
+        });
+
+        marker1.addListener('click', function() {
+          infowindow1.open(map, marker1);
+        });
+//image for marker 1
+ 
+    var marker2 = new google.maps.Marker({
+      position: {lat: 52.5014, lng: 13.4159},
+      map: map,
+      icon: image,
+      label:"Bar: Ora",
       title: "marker 2"
     });
-    var myLatlng2 = new google.maps.LatLng(52.5207, 13.4044);
-    var marker3 = new google.maps.Marker({
-      position: myLatlng2,
+//info window for Bar
+        var contentString2 = 'test2';
+
+var infowindow2 = new google.maps.InfoWindow({
+          content: contentString2
+        });
+
+        marker2.addListener('click', function() {
+          infowindow2.open(map, marker2);
+        });
+      
+
+        var marker3 = new google.maps.Marker({
+      position: {lat: 52.5124, lng: 13.4099},
       map: map,
+      label:"Hotel: Art'otel Berlin Mitte",
       title: "marker 3"
     });
+    //info window for Bar
+        var contentString3 = 'test3';
+
+var infowindow3 = new google.maps.InfoWindow({
+          content: contentString3
+        });
+
+        marker3.addListener('click', function() {
+          infowindow3.open(map, marker3);
+        });
+}
+					</script>
 
 
- </script>
+					<script
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
+						async defer></script>
 
-
- 
- <script
-								src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
-								async defer></script>
-
-							<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-								integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-								crossorigin="anonymous">
-							</script>
-							<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-								integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-								crossorigin="anonymous">
-							</script>
-							<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-								integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-								crossorigin="anonymous">
-							</script>
+					<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+						integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+						crossorigin="anonymous">
+					</script>
+					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+						integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+						crossorigin="anonymous">
+					</script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+						integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+						crossorigin="anonymous">
+					</script>
 </body>
 
 </html>
