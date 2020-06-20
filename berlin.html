@@ -97,7 +97,7 @@ function initMap() {
       label: "Restaurant: NaNum Berlin",
       title: "marker 1"
     });
-        var contentString1 = 'test';
+        var contentString1 = '<h1>NaNum</h1> feels like an art installation where the atmosphere, along with everything else, is crafted by Jinok Kim. Like a surprising number of Korean restaura­teurs in Berlin, Jinok is a former classical singer; she moved here on a DAAD scholarship in 1978 and spent three decades performing and teach­ing before abruptly deciding to teach herself pottery via trial-and-error. When, last year, she and her husband (a fellow artist) landed a four-floor space in the former flower market across from the Jewish Museum, she didn’t turn it into a restaurant out of any love for cooking, but because she wanted to be “among people” after years onstage or sequestered in the studio. She calls NaNum a “meeting point for artists”, though her main clientele remains white-collar workers from nearby Friedrichstraße.';
 
 var infowindow1 = new google.maps.InfoWindow({
           content: contentString1
@@ -106,27 +106,16 @@ var infowindow1 = new google.maps.InfoWindow({
         marker1.addListener('click', function() {
           infowindow1.open(map, marker1);
         });
-//image for marker 1
 
-        var image2 = {
-          image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-          // This marker is 20 pixels wide by 32 pixels high.
-          size: new google.maps.Size(20, 32),
-          // The origin for this image is (0, 0).
-          origin: new google.maps.Point(0, 0),
-          // The anchor for this image is the base of the flagpole at (0, 32).
-          anchor: new google.maps.Point(0, 32)
-        };
- 
     var marker2 = new google.maps.Marker({
       position: {lat: 52.5014, lng: 13.4159},
       map: map,
-      icon: image2,
       label:"Bar: Ora",
       title: "marker 2"
     });
+ 
 //info window for Bar
-        var contentString2 = 'test2';
+        var contentString2 = '<h1>Ora</h1>Amongst the shelves, drawers and cabinets of the former Oranien-Apotheke, you will find our restaurant and bar.Here we pride ourselves on serving produce that are locally sourced, with sensitivity to the seasons and the land surrounding us. Your dinner will be accompanied by drinks following the same ethos, and wines of uncompromising quality.<img src="/assets/images/ora" alt="Ora Bar"> ';
 
 var infowindow2 = new google.maps.InfoWindow({
           content: contentString2
@@ -153,7 +142,9 @@ var infowindow3 = new google.maps.InfoWindow({
         marker3.addListener('click', function() {
           infowindow3.open(map, marker3);
         });
+        
 }
+
 					</script>
 
 
