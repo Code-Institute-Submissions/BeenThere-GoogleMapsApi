@@ -24,7 +24,7 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>London</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
 	<!--BeenThere Explanation-->
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
-			<h1 class="display-4">Berlin<img class="bean" src="assets/images/bean.png"></h1>
+			<h1 class="display-4">London<img class="bean" src="assets/images/bean.png"></h1>
 				<p class="lead">We have been there - have you?</i>
 
 				</p>
@@ -84,20 +84,19 @@
 					<script>
 						// Initialize and add the map
 function initMap() {
-  // The location of berlin
-  var berlin = {lat: 52.5200, lng: 13.4050};
-  // The map, centered at berlin
+  // The location of London
+  var london = {lat: 51.5074, lng: 0.1278};
+  // The map, centered at London
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13, center: berlin, mapId: 'da36f271281c5584'});
-  // The marker, positioned at Uluru
+      document.getElementById('map'), {zoom: 12, center: london, mapId: 'da36f271281c5584'});
 
       var marker1 = new google.maps.Marker({
-      position: {lat: 52.5026, lng: 13.3941},
+      position: {lat: 51.5362, lng: 0.1255},
       map: map,
-      label: "Restaurant: NaNum Berlin",
+      label: "Restaurant: Dishoom",
       title: "marker 1"
     });
-        var contentString1 = '<h1>NaNum</h1> feels like an art installation where the atmosphere, along with everything else, is crafted by Jinok Kim. Like a surprising number of Korean restaura­teurs in Berlin, Jinok is a former classical singer; she moved here on a DAAD scholarship in 1978 and spent three decades performing and teach­ing before abruptly deciding to teach herself pottery via trial-and-error. When, last year, she and her husband (a fellow artist) landed a four-floor space in the former flower market across from the Jewish Museum, she didn’t turn it into a restaurant out of any love for cooking, but because she wanted to be “among people” after years onstage or sequestered in the studio. She calls NaNum a “meeting point for artists”, though her main clientele remains white-collar workers from nearby Friedrichstraße.<img class="window_image" src="assets/images/nanum.jpg" alt="Nanum Restaurant"> ';
+        var contentString1 = '<h1>Dishoom</h1> Opened early last century by Zoroastrian immigrants from Iran, there were almost four hundred cafés at their peak in the 1960s. Now, fewer than thirty remain. These cafés broke down barriers by bringing people together over food and drink. They were the first places in Bombay where people of any culture, class or religion could take cool refuge from the street with a cup of chai, a simple snack or a hearty meal. People from all walks of life shared tables, rubbed shoulders and broke bread together.Shared spaces beget shared experiences, and Bombay was more open and welcoming for the existence of these cafés. Dishoom pays homage to the Irani cafés and the food of all Bombay..<img class="window_image" src="assets/images/dishoom.jpg" alt="Dishoom Restaurant"> ';
 
 var infowindow1 = new google.maps.InfoWindow({
           content: contentString1
@@ -108,14 +107,14 @@ var infowindow1 = new google.maps.InfoWindow({
         });
 
     var marker2 = new google.maps.Marker({
-      position: {lat: 52.5014, lng: 13.4159},
+      position: {lat: 51.5189, lng: 0.1028},
       map: map,
-      label:"Bar: Ora",
+      label:"Bar: Oriole",
       title: "marker 2"
     });
  
 //info window for Bar
-        var contentString2 = '<h1>Ora</h1>Amongst the shelves, drawers and cabinets of the former Oranien-Apotheke, you will find our restaurant and bar.Here we pride ourselves on serving produce that are locally sourced, with sensitivity to the seasons and the land surrounding us. Your dinner will be accompanied by drinks following the same ethos, and wines of uncompromising quality.<img class="window_image" src="assets/images/ora.jpg" alt="Ora Bar"> ';
+        var contentString2 = '<h1>Oriole</h1>Subterranean cocktail bar with explorer-style decor and live music, for cocktails and rare spirits.<img class="window_image" src="assets/images/oriole.jpg" alt="Oriole Bar"> ';
 
 var infowindow2 = new google.maps.InfoWindow({
           content: contentString2
@@ -127,13 +126,13 @@ var infowindow2 = new google.maps.InfoWindow({
       
 
         var marker3 = new google.maps.Marker({
-      position: {lat: 52.5124, lng: 13.4099},
+      position: {lat: 51.5067, lng: 0.1244},
       map: map,
-      label:"Hotel: Art'otel Berlin Mitte",
+      label:"Hotel: Corinthia Hotel",
       title: "marker 3"
     });
     //info window for Bar
-        var contentString3 = '<h1>Art otel</h1>The historic Ermelerhaus was named after Ferdinand-Wilhelm Ermeler, the co-founder of the tobacco industry in Berlin, who purchased the house in 1824. Since then, the importance of the house gradually grew, as a lot of cultural event were held there through the years; the Ermelerhaus became an important intellectual meeting place in Berlin.The building was originally built in the 17th century at Breite Straße and was extended to a Rococo palace, but it was torn down in the 1960s and rebuilt at Märkisches Ufer. The Emelerhaus reopened in 1969 as one of the few luxury restaurants in East Berlin and was well visited until the reunion of East and West Berlin, when it went out of business and had to close. <img class="window_image" src="assets/images/arthotel.jpg" alt="Art otel"> ';
+        var contentString3 = '<h1>Corinthia Hotel</h1>Step away from the bustle of the city and indulge in some sightseeing from the sky. Here you can admire Nelson’s Column and Trafalgar Square from the comfort of your own suite. While the city buzzes below, sink into blissful repose in an ESPA bubble bath – with the added option of watching TV while you soak. <img class="window_image" src="assets/images/corinthia.jpg" alt="Corinthia Hotel"> ';
 
 var infowindow3 = new google.maps.InfoWindow({
           content: contentString3
