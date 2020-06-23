@@ -46,6 +46,16 @@
 
 				<button type="button" class="btn btn-secondary btn-lg book">Book your Trip</button>
 
+<!--Sky Scanner widget for flights with associated-->
+<h3>Book your flight below and await your curated trip and accomodation</h3>
+<div
+  data-skyscanner-widget="FlightSearchWidget"
+  data-associate-id="BeanThere"
+  data-locale="en-GB"
+  data-market="ie"
+  data-currency="EUR"
+  data-destination-name="'Berlin'"
+></div>
 
 
 				<!--Social Media-->
@@ -144,10 +154,9 @@ var infowindow3 = new google.maps.InfoWindow({
         });
         
 }
+</script>
 
-					</script>
-
-
+                    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
 					<script
 						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
 						async defer></script>
