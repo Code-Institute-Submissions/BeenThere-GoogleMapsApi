@@ -3,10 +3,11 @@
 
 /*First Page*/
 .jumbotron {
-
+  
 }
 .bean{
     height:100px;
+
 }
 
 /*Choose call to action*/
@@ -17,6 +18,14 @@
 /*City pages*/
 .person_blurb{
     
+}
+.local_image{
+    height: 50%;
+    width:50%;
+}
+.pic_blurb{
+    margin: auto;
+    width: 100%;
 }
 
 

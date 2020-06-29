@@ -34,24 +34,34 @@
 	<!--BeenThere Explanation-->
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
-            <h1 class="display-4">Berlin<img class="bean" src="assets/images/bean.png"></h1>
-				<p class="lead"><i>We have been there - have you?</i>
+			<!--Changing between different city pages buttons-->
+			<h1 class="display-4">Berlin<img class="bean" src="assets/images/bean.png"></h1>
+				<p class="lead"><i>We have been there - have you?</i></p>
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<a type="button" href="berlin.html" class="btn btn-secondary">Berlin</a>
+					<a type="button" href="ibiza.html" class="btn btn-secondary">Ibiza</a>
+					<a type="button" href="london.html" class="btn btn-secondary">London</a>
+					<a type="button" href="nice.html" class="btn btn-secondary">Nice</a>
+					<a type="button" href="paris.html" class="btn btn-secondary">Paris</a>
 
-				</p>
-                <div class="">
-                <img class="img-fluid" src="assets/images/faces/person_berlin.jpg" alt="Your local in Berlin">
-                <blockquote class="blockquote">
-                <p class="mb-0"><b>Sandra</b> has been living in Berlin for 8 years. She loves giving visiting friends and aquaintances recommendations for what to do in Berlin. She is our local who will be co-curating your trip with you.</p>
-                </blockquote>
-                <img class="img-fluid" src="assets/images/city_pages/berlin_city.jpg" alt="Berlin">
+				</div>
+				<div class="pic_blurb">
+					<img class = "img-fluid local_image" src="assets/images/faces/person_berlin.jpg" alt="Your local in Berlin">
+					<blockquote class="blockquote">
+						<p class="mb-0"><b>Sandra</b> has been living in Berlin for 8 years. She loves giving visiting
+							friends and aquaintances recommendations for what to do in Berlin. She is our local who will
+							be co-curating your trip with you.</p>
+					</blockquote>
+				</div>
+				<img class="img-fluid" src="assets/images/city_pages/berlin_city.jpg" alt="Berlin">
 				<h3>This weeks top recommended bar, restaurant and hotel -</h3>
 
 
 				<!--Map-->
 				<div id="map"></div>
-                <a href="book.html">
-				<button type="button"  class="btn btn-secondary btn-lg book">Book your Trip</button>
-                </a>
+				<a href="book.html">
+					<button type="button"  class="btn btn-secondary btn-lg book">Book your Trip</button>
+				</a>
 
 
 
@@ -151,9 +161,9 @@ var infowindow3 = new google.maps.InfoWindow({
         });
         
 }
-</script>
+					</script>
 
-                    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+					<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
 					<script
 						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
 						async defer></script>

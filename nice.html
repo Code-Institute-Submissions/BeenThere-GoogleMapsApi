@@ -35,32 +35,32 @@
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
 			<h1 class="display-4">Berlin<img class="bean" src="assets/images/bean.png"></h1>
-				<p class="lead"><i>We have been there - have you?</i>
+				<p class="lead"><i>We have been there - have you?</i></p>
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<a type="button" href="berlin.html" class="btn btn-secondary">Berlin</a>
+					<a type="button" href="ibiza.html" class="btn btn-secondary">Ibiza</a>
+					<a type="button" href="london.html" class="btn btn-secondary">London</a>
+					<a type="button" href="nice.html" class="btn btn-secondary">Nice</a>
+					<a type="button" href="paris.html" class="btn btn-secondary">Paris</a>
 
-				</p>
-                <img class="img-fluid" src="assets/images/faces/person_nice.jpg" alt="Your local in Nice">
-                <blockquote class="blockquote">
-                <p class="mb-0"><b>Adeline</b> has been living in Nice for 5 years. She loves visiting the organic market, hanging out on her sun-filled balcony, and chilling on the beach or meeting friends in many of the incredible restaurants in Nice. She is our local who will be co-curating your trip with you.</p>
-                </blockquote>
-                <img class="img-fluid" src="assets/images/city_pages/nice_city.jpg" alt="Nice">
+				</div>
+				<img class="img-fluid local_image" src="assets/images/faces/person_nice.jpg" alt="Your local in Nice">
+				<blockquote class="blockquote">
+					<p class="mb-0"><b>Adeline</b> has been living in Nice for 5 years. She loves visiting the organic
+						market, hanging out on her sun-filled balcony, and chilling on the beach or meeting friends in
+						many of the incredible restaurants in Nice. She is our local who will be co-curating your trip
+						with you.</p>
+				</blockquote>
+				<img class="img-fluid" src="assets/images/city_pages/nice_city.jpg" alt="Nice">
 				<h3>This weeks top recommended bar, restaurant and hotel -</h3>
 
 
 				<!--Map-->
 				<div id="map"></div>
-                <a href="book.html">
-				<button type="button" class="btn btn-secondary btn-lg book">Book your Trip</button>
-                </a>
-<!--Sky Scanner widget for flights with associated-->
-<h3>Book your flight below and await your curated trip and accomodation</h3>
-<div
-  data-skyscanner-widget="FlightSearchWidget"
-  data-associate-id="BeanThere"
-  data-locale="en-GB"
-  data-market="ie"
-  data-currency="EUR"
-  data-destination-name="'Nice'"
-></div>
+				<a href="book.html">
+					<button type="button" class="btn btn-secondary btn-lg book">Book your Trip</button>
+				</a>
+
 
 				<!--Social Media-->
 				<div>
@@ -159,8 +159,6 @@ var infowindow3 = new google.maps.InfoWindow({
 }
 
 					</script>
-
-                    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
 					<script
 						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
 						async defer></script>

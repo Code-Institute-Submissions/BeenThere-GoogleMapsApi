@@ -34,11 +34,18 @@
 
 	<!--Thank you for booking and enjoy your holiday-->
 	<h1 class="choose">Thank you for booking!</h1>
-    <button type="button" class="btn btn-secondary btn-lg flight">Book your Flight</button>
 	<h6><i>Please allow 48 hours after submission to receive your <b>Ideal Holiday Suggestion</b> from your local.<br><br>Thank you,<br><br><b>Your BeenThere Team</b></i>
 	</h6>
 
-
+<h3>Book your flight below and await your curated trip and accomodation</h3>
+<div
+  data-skyscanner-widget="FlightSearchWidget"
+  data-associate-id="BeanThere"
+  data-locale="en-GB"
+  data-market="ie"
+  data-currency="EUR"
+  data-destination-name="''"
+></div>
 
 
 	<!--Social Media-->
@@ -71,6 +78,7 @@
 
 
 		<!--Scripts-->
+        <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
 		<script>
 			document.getElementById("myBtn").addEventListener("click", function(){
               document.getElementById("myBtn").innerHTML = "Thank You!";
