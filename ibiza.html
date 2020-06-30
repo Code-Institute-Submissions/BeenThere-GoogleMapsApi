@@ -24,7 +24,7 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ibiza</title>
+	<title>BeenThere-Ibiza</title>
 </head>
 
 <body>
@@ -33,69 +33,72 @@
 
 	<!--BeenThere Explanation-->
 	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4">Ibiza<img class="bean" src="assets/images/bean.png"></h1>
-				<p class="lead"><i>We have been there - have you?</i></p>
-				<div class="btn-group" role="group" aria-label="Basic example">
-					<a type="button" href="berlin.html" class="btn btn-secondary">Berlin</a>
-					<a type="button" href="ibiza.html" class="btn btn-secondary">Ibiza</a>
-					<a type="button" href="london.html" class="btn btn-secondary">London</a>
-					<a type="button" href="nice.html" class="btn btn-secondary">Nice</a>
-					<a type="button" href="paris.html" class="btn btn-secondary">Paris</a>
+		<div class="container centre padding">
+			<a href="index.html" id="link">
+				<h1 class="display-4">Ibiza<img class="bean" src="assets/images/bean.png"></h1>
+					<p class="lead"><i>We have been there - have you?</i></p>
+			</a>
+			<div class="btn-group padding" role="group" aria-label="Basic example">
+				<a type="button" href="berlin.html" class="btn btn-secondary">Berlin</a>
+				<a type="button" href="ibiza.html" class="btn btn-secondary">Ibiza</a>
+				<a type="button" href="london.html" class="btn btn-secondary">London</a>
+				<a type="button" href="nice.html" class="btn btn-secondary">Nice</a>
+				<a type="button" href="paris.html" class="btn btn-secondary">Paris</a>
+
+			</div>
+			<img class="img-fluid local_image padding" src="assets/images/faces/person_ibiza.jpg" alt="Your local in Ibiza">
+			<blockquote class="blockquote">
+				<p class="mb-0"><b>Irene</b> has been living in Ibiza for 6 years. She splits her time between the
+					busy club scene and also relaxing at the beach and in the trendy restraurants & bars. She is our
+					local who will be co-curating your trip with you.</p>
+			</blockquote>
+			<img class="img-fluid" src="assets/images/city_pages/ibiza_city.jpg" alt="Ibiza">
+			<h3 class="padding">This weeks top recommended bar, restaurant and hotel</h3>
+
+
+			<!--Map-->
+			<div id="map"></div>
+			<div class="padding">
+				<a href="book.html">
+					<button type="button" class="btn btn-secondary btn-lg book padding">Book your Trip</button>
+				</a>
+			</div>
+
+			<!--Social Media-->
+			<div>
+				<div class="col-12 centre padding">
+
+					<ul class="list-inline ">
+						<li class="list-inline-item">
+							<a target="_blank" href="https://facebook.com/">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<span class="sr-only">Facebook</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a target="_blank" href="https://www.twitter.com/">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+								<span class="sr-only">Twitter</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a target="_blank" href="https://www.instagram.com/">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+								<span class="sr-only">Instagram</span>
+							</a>
+						</li>
+
+					</ul>
 
 				</div>
-				<img class="img-fluid local_image" src="assets/images/faces/person_ibiza.jpg" alt="Your local in Ibiza">
-				<blockquote class="blockquote">
-					<p class="mb-0"><b>Irene</b> has been living in Ibiza for 6 years. She splits her time between the
-						busy club scene and also relaxing at the beach and in the trendy restraurants & bars. She is our
-						local who will be co-curating your trip with you.</p>
-				</blockquote>
-				<img class="img-fluid" src="assets/images/city_pages/ibiza_city.jpg" alt="Ibiza">
-				<h3>This weeks top recommended bar, restaurant and hotel -</h3>
 
 
-				<!--Map-->
-				<div id="map"></div>
-				<a href="book.html">
-					<button type="button" class="btn btn-secondary btn-lg book">Book your Trip</button>
-				</a>
-
-
-				<!--Social Media-->
-				<div>
-					<div class="col-12 social-links">
-
-						<ul class="list-inline ">
-							<li class="list-inline-item">
-								<a target="_blank" href="https://facebook.com/">
-									<i class="fa fa-facebook" aria-hidden="true"></i>
-									<span class="sr-only">Facebook</span>
-								</a>
-							</li>
-							<li class="list-inline-item">
-								<a target="_blank" href="https://www.twitter.com/">
-									<i class="fa fa-twitter" aria-hidden="true"></i>
-									<span class="sr-only">Twitter</span>
-								</a>
-							</li>
-							<li class="list-inline-item">
-								<a target="_blank" href="https://www.instagram.com/">
-									<i class="fa fa-instagram" aria-hidden="true"></i>
-									<span class="sr-only">Instagram</span>
-								</a>
-							</li>
-
-						</ul>
-
-					</div>
-
-
-					<!--Scripts-->
+				<!--Scripts-->
 
 
 
-					<script>
-						// Initialize and add the map
+				<script>
+					// Initialize and add the map
 function initMap() {
   // The location of berlin
   var ibiza = {lat: 39.0200, lng: 1.4821};
@@ -158,24 +161,24 @@ var infowindow3 = new google.maps.InfoWindow({
         
 }
 
-					</script>
+				</script>
 
-					<script
-						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
-						async defer></script>
+				<script
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
+					async defer></script>
 
-					<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-						integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-						crossorigin="anonymous">
-					</script>
-					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-						integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-						crossorigin="anonymous">
-					</script>
-					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-						integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-						crossorigin="anonymous">
-					</script>
+				<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+					integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+					crossorigin="anonymous">
+				</script>
+				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+					integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+					crossorigin="anonymous">
+				</script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+					integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+					crossorigin="anonymous">
+				</script>
 </body>
 
 </html>

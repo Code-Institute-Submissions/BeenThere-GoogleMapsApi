@@ -22,36 +22,39 @@
 
 	<!--BeenThere Explanation-->
 	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4">BeenThere<img class="bean" src="assets/images/bean.png"></h1>
-				<p class="lead"><i>We have been there - have you?</i>
-
-				</p>
-                <img class="img-fluid" src="assets/images/book/holiday.jpg" alt="Holiday">
-                
+		<div class="container centre padding">
+			<a href="index.html" id="link">
+				<h1 class="display-4">BeenThere<img class="bean" src="assets/images/bean.png"></h1>
+					<p class="lead"><i>We have been there - have you?</i></p>
+			</a>
 		</div>
 	</div>
+	<div>
+		<img class="img-fluid padding" src="assets/images/book/holiday.jpg" alt="Holiday">
+        </div>
 
-	<!--Choose call to action-->
-	<h1 class="choose">Request to Book</h1>
-	<form>
-		<div class="form-group">
-			<label for="exampleFormControlInput1"><b>Email Address</b></label>
-			<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+		<!--Choose call to action-->
+		<div class="centre padding">
+			<h1 class="choose">Request to Book</h1>
+			<form>
+				<div class="form-group centre padding margin">
+					<label for="exampleFormControlInput1"><b>Email Address</b></label>
+					<input type="email" class="form-control centre padding" id="exampleFormControlInput1" placeholder="name@example.com">
   </div>
 
-			<div class="form-group">
-				<label for="choose_city"><b>Which city?</b></label>
-				<select class="form-control" id="choose_city">
+					<div class="form-group centre padding margin">
+						<label for="choose_city" class=""><b>Which city?</b></label>
+						<select class="form-control centre" id="choose_city">
       <option>Berlin</option>
       <option>Ibiza</option>
       <option>London</option>
       <option>Nice</option>
       <option>Paris</option>
     </select>
-			</div>
-			<label for="choose_guests"><b>How many guests?</b></label>
-			<select class="form-control" id="choose_guests">
+					</div>
+					<div class="centre padding margin">
+						<label for="choose_guests"><b>How many guests?</b></label>
+						<select class="form-control"  id="choose_guests">
       <option>1</option>
       <option>2</option>
       <option>3</option>
@@ -63,10 +66,10 @@
       <option>9</option>
       <option>10</option>
     </select>
-		</div>
-		<div class="form-group">
-			<label for="choose_nights"><b>How many nights?</b></label>
-			<select class="form-control" id="choose_nights">
+					</div>
+					<div class="form-group centre padding margin">
+						<label for="choose_nights"><b>How many nights?</b></label>
+						<select class="form-control" id="choose_nights">
       <option>1</option>
       <option>2</option>
       <option>3</option>
@@ -83,71 +86,77 @@
       <option>14</option>
       <option>Longer Term - Please specify in 'Ideal Holiday' section</option>
     </select>
-		</div>
-		<div class="form-group">
-			<label for="choose_ideal_holiday"><b>Please outline your ideal holiday(restaurants, bars, clubs, beaches?)</b></label>
-			<textarea class="form-control" id="choose_ideal_holiday" rows="3"></textarea>
-		</div>
-		<div class="form-group">
-			<label for="choose_special"><b>Any special dietary or access requirements? (Vegan? Wheelchair access required?)</b></label>
-			<textarea class="form-control" id="choose_special" rows="3"></textarea>
-		</div>
-	</form>
 
-	<button type="button" id="myBtn" class="btn btn-lg btn-primary">Submit Request for Ideal Holiday </button>
-	<h6><i>Please allow 48 hours after submission to receive your <b>Ideal Holiday Suggestion</b> from your local.<br><br>Thank you,<br><br><b>Your BeenThere Team</b></i>
-	</h6>
+						<div class="form-group centre padding">
+							<label for="choose_ideal_holiday"><b>Please outline your ideal holiday(restaurants, bars, clubs, beaches?)</b></label>
+							<textarea class="form-control" id="choose_ideal_holiday" rows="3"></textarea>
+						</div>
+						<div class="form-group centre padding">
+							<label for="choose_special"><b>Any special dietary or access requirements? (Vegan? Wheelchair access required?)</b></label>
+							<textarea class="form-control" id="choose_special" rows="3"></textarea>
+						</div>
 
-
-
-
-	<!--Social Media-->
-	<div>
-		<div class="col-12 social-links">
-
-			<ul class="list-inline ">
-				<li class="list-inline-item">
-					<a target="_blank" href="https://facebook.com/">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
-						<span class="sr-only">Facebook</span>
-					</a>
-				</li>
-				<li class="list-inline-item">
-					<a target="_blank" href="https://www.twitter.com/">
-						<i class="fa fa-twitter" aria-hidden="true"></i>
-						<span class="sr-only">Twitter</span>
-					</a>
-				</li>
-				<li class="list-inline-item">
-					<a target="_blank" href="https://www.instagram.com/">
-						<i class="fa fa-instagram" aria-hidden="true"></i>
-						<span class="sr-only">Instagram</span>
-					</a>
-				</li>
-
-			</ul>
-
-		</div>
+					</div>
+					<div class="centre padding">
+						<button type="button" id="myBtn" class="btn btn-lg btn-primary">Submit Request for Ideal Holiday </button>
+					</div>
+					<h6 class="centre padding margin">
+						<i>Please allow 48 hours after submission to receive your <b>Ideal Holiday Suggestion</b> from your local.<br><br>Thank you,<br><br><b>Your BeenThere Team</b></i>
+					</h6>
 
 
-		<!--Scripts-->
-		<script>
-			document.getElementById("myBtn").addEventListener("click", function(){
+
+
+					<!--Social Media-->
+					<div>
+						<div class="col-12 padding centre">
+
+							<ul class="list-inline ">
+								<li class="list-inline-item">
+									<a target="_blank" href="https://facebook.com/">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+										<span class="sr-only">Facebook</span>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a target="_blank" href="https://www.twitter.com/">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+										<span class="sr-only">Twitter</span>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a target="_blank" href="https://www.instagram.com/">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+										<span class="sr-only">Instagram</span>
+									</a>
+								</li>
+
+							</ul>
+
+						</div>
+
+
+						<!--Scripts-->
+						<script>
+							document.getElementById("myBtn").addEventListener("click", function(){
               document.getElementById("myBtn").innerHTML = "Thank You!";
                 });
-		</script>
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap"
-			async defer></script>
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-		</script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-		</script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-		</script>
+						</script>
+						<script
+							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap"
+							async defer></script>
+						<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+							integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+							crossorigin="anonymous">
+						</script>
+						<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+							integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+							crossorigin="anonymous">
+						</script>
+						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+							integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+							crossorigin="anonymous">
+						</script>
 </body>
 
 </html>
