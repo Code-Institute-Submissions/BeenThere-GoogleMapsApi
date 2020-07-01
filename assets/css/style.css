@@ -9,6 +9,9 @@
     height:100px;
 
 }
+.background{
+    background-color: white;
+}
 #link {
     color:black;
 }
