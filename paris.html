@@ -24,7 +24,7 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BeenThere-Paris</title>
+	<title>BeenThere</title>
 </head>
 
 <body>
@@ -55,7 +55,7 @@
 				</blockquote>
 			</div>
 			<img class="img-fluid" src="assets/images/city_pages/paris_city.jpg" alt="Paris">
-			<h3 class="padding">This weeks top recommended bar, restaurant and hotel -</h3>
+			<h3 class="padding">This weeks top recommended bar, restaurant and hotel</h3>
 
 
 			<!--Map-->
@@ -116,7 +116,7 @@ function initMap() {
       label: "Restaurant: Girafe",
       title: "marker 1"
     });
-        var contentString1 = '<h1>Girafe</h1> A meal at Girafe embraces the timeless and contemporary. A blend of simplicity and luxury, the sensual and the sophisticated.<img class="window_image" src="assets/images/girafe.jpg" alt="Girafe Restaurant"> ';
+        var contentString1 = '<h1>Girafe</h1> A meal at Girafe embraces the timeless and contemporary. A blend of simplicity and luxury, the sensual and the sophisticated.</h1><img class="window_image" src="assets/images/girafe.jpg" alt="Girafe Restaurant"> ';
 
 var infowindow1 = new google.maps.InfoWindow({
           content: contentString1
@@ -149,7 +149,7 @@ var infowindow2 = new google.maps.InfoWindow({
       position: {lat: 48.8669, lng: 2.3795},
       map: map,
       label:"Hotel: Hôtel La Nouvelle République",
-      title: "marker 3"
+      title: "marker 3",
     });
     //info window for Bar
         var contentString3 = '<h1>Hôtel La Nouvelle République</h1>Located in the 11th arrondissement of Paris, Hôtel La Nouvelle République is a 15-minute walk from Place de la République and a 20-minute walk from the Marais district. The rooms at Hôtel La Nouvelle République are decorated in a modern style and have soundproofing and air conditioning. Each room features a flat-screen TV and a private bathroom with a hair dryer. <img class="window_image" src="assets/images/lanouvelle.jpg" alt="Hôtel La Nouvelle République"> ';
@@ -157,6 +157,7 @@ var infowindow2 = new google.maps.InfoWindow({
 var infowindow3 = new google.maps.InfoWindow({
           content: contentString3
         });
+       
 
         marker3.addListener('click', function() {
           infowindow3.open(map, marker3);
@@ -165,7 +166,6 @@ var infowindow3 = new google.maps.InfoWindow({
 }
 
 				</script>
-
 				<script
 					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
 					async defer></script>

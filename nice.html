@@ -24,7 +24,7 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BeenThere-Nice</title>
+	<title>BeenThere</title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
 	<div class="jumbotron jumbotron-fluid background">
 		<div class="container centre padding">
 			<a href="index.html" id="link">
-				<h1 class="display-4 background">Berlin<img class="bean" src="assets/images/bean.png"></h1>
+				<h1 class="display-4 background">Nice<img class="bean" src="assets/images/bean.png"></h1>
 					<p class="lead background"><i>We have been there - have you?</i></p>
 			</a>
 			<div class="btn-group padding" role="group" aria-label="Basic example">
@@ -55,56 +55,57 @@
 						with you.</p>
 				</blockquote>
 			</div>
-			<img class="img-fluid" src="assets/images/city_pages/nice_city.jpg" alt="Nice">
-			<h3 class="padding">This weeks top recommended bar, restaurant and hotel</h3>
+			<div class="pic_blurb">
+				<img class="img-fluid" src="assets/images/city_pages/nice_city.jpg" alt="Nice">
+				<h3 class="padding">This weeks top recommended bar, restaurant and hotel</h3>
 
 
-			<!--Map-->
-			<div id="map"></div>
-			<div class="padding">
-				<a href="book.html">
-					<button type="button" class="btn btn-secondary btn-lg book padding">Book your Trip</button>
-				</a>
-			</div>
-
-			<!--Social Media-->
-			<div>
-				<div class="col-12 centre padding">
-
-					<ul class="list-inline ">
-						<li class="list-inline-item">
-							<a target="_blank" href="https://facebook.com/">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-								<span class="sr-only">Facebook</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="https://www.twitter.com/">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-								<span class="sr-only">Twitter</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="https://www.instagram.com/">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-								<span class="sr-only">Instagram</span>
-							</a>
-						</li>
-
-					</ul>
-
+				<!--Map-->
+				<div id="map"></div>
+				<div class="padding">
+					<a href="book.html">
+						<button type="button" class="btn btn-secondary btn-lg book padding">Book your Trip</button>
+					</a>
 				</div>
 
+				<!--Social Media-->
+				<div>
+					<div class="col-12 centre padding">
 
-				<!--Scripts-->
+						<ul class="list-inline ">
+							<li class="list-inline-item">
+								<a target="_blank" href="https://facebook.com/">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+									<span class="sr-only">Facebook</span>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.twitter.com/">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+									<span class="sr-only">Twitter</span>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a target="_blank" href="https://www.instagram.com/">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+									<span class="sr-only">Instagram</span>
+								</a>
+							</li>
+
+						</ul>
+
+					</div>
+
+
+					<!--Scripts-->
 
 
 
-				<script>
-					// Initialize and add the map
+					<script>
+						// Initialize and add the map
 function initMap() {
   // The location of berlin
-  var nice = {lat: 43.7102, lng: 7.2620};
+  var nice = {lat: 43.696437, lng: 7.261927};
   // The map, centered at berlin
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 14, center: nice, mapId: 'da36f271281c5584'});
@@ -163,23 +164,23 @@ var infowindow3 = new google.maps.InfoWindow({
         
 }
 
-				</script>
-				<script
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
-					async defer></script>
+					</script>
+					<script
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
+						async defer></script>
 
-				<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-					integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-					crossorigin="anonymous">
-				</script>
-				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-					integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-					crossorigin="anonymous">
-				</script>
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-					integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-					crossorigin="anonymous">
-				</script>
+					<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+						integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+						crossorigin="anonymous">
+					</script>
+					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+						integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+						crossorigin="anonymous">
+					</script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+						integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+						crossorigin="anonymous">
+					</script>
 </body>
 
 </html>
