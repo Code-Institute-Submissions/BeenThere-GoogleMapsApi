@@ -14,6 +14,7 @@
 
 				document.getElementById("hotelsbtn").addEventListener("click", function(){
               document.getElementById("hotelsection").style.display = "block";
+              document.getElementById("booking-button").style.display = "block";
               document.getElementById("homepage-pic").style.display = "none";
               document.getElementById("beentheresection").style.display = "none";
                 });

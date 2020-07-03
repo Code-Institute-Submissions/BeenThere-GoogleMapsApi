@@ -17,6 +17,9 @@
 #beentheresection{
     display: none;
 }
+#booking-button{
+    display: none;
+}
 #hotelsection{
     display: none;
     width:100%;
@@ -27,7 +30,12 @@
     position: absolute;
     right:100%;
     Bottom:100%;
-
+}
+#booking-button{
+    align-content: centre;
+    position: relative;
+    margin:auto;
+    margin-top:2%;
 }
 
 
