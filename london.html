@@ -35,7 +35,7 @@
 	<div class="jumbotron jumbotron-fluid background">
 		<div class="container centre padding">
 			<a href="index.html" id="link">
-				<h1 class="display-4 background">London<img class="bean" src="assets/images/bean.png"></h1>
+				<h1 class="display-4 background">London<img class="bean" src="assets/images/bean.png" alt="BeenThere Logo"></h1>
 					<p class="lead background"><i>We have been there - have you?</i></p>
 			</a>
 			<div class="btn-group padding" role="group" aria-label="Basic example">
@@ -61,11 +61,12 @@
 			<!--Map-->
 			<div id="map"></div>
 			<div class="padding">
-				<a href="book.html">
-					<button type="button" class="btn btn-secondary btn-lg book padding">Book your Trip</button>
-				</a>
+			
+					<a type="button" href="book.html" class="btn btn-secondary btn-lg book padding">Book your Trip</a>
+				
 			</div>
-
+		</div>
+	</div>
 			<!--Social Media-->
 			<div>
 				<div class="col-12 centre padding">
@@ -114,7 +115,7 @@ function initMap() {
       label: "Restaurant: Dishoom",
       title: "marker 1"
     });
-        var contentString1 = '<h1>Dishoom</h1> Opened early last century by Zoroastrian immigrants from Iran, there were almost four hundred cafés at their peak in the 1960s. Now, fewer than thirty remain. These cafés broke down barriers by bringing people together over food and drink. They were the first places in Bombay where people of any culture, class or religion could take cool refuge from the street with a cup of chai, a simple snack or a hearty meal. People from all walks of life shared tables, rubbed shoulders and broke bread together.Shared spaces beget shared experiences, and Bombay was more open and welcoming for the existence of these cafés. Dishoom pays homage to the Irani cafés and the food of all Bombay..<img class="window_image" src="assets/images/dishoom.jpg" alt="Dishoom Restaurant"> ';
+        var contentString1 = '<h1>Dishoom</h1><p> Opened early last century by Zoroastrian immigrants from Iran, there were almost four hundred cafés at their peak in the 1960s. Now, fewer than thirty remain. These cafés broke down barriers by bringing people together over food and drink. They were the first places in Bombay where people of any culture, class or religion could take cool refuge from the street with a cup of chai, a simple snack or a hearty meal. People from all walks of life shared tables, rubbed shoulders and broke bread together.Shared spaces beget shared experiences, and Bombay was more open and welcoming for the existence of these cafés. Dishoom pays homage to the Irani cafés and the food of all Bombay</p><img class="window_image" src="assets/images/dishoom.jpg" alt="Dishoom Restaurant"> ';
 
 var infowindow1 = new google.maps.InfoWindow({
           content: contentString1
