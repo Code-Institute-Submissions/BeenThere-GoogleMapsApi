@@ -14,6 +14,21 @@
 #link {
     color:black;
 }
+#beentheresection{
+    display: none;
+}
+#hotelsection{
+    display: none;
+    width:100%;
+    height:100%;
+}
+#listing{
+    opacity:40%;
+    position: absolute;
+    right:100%;
+    Bottom:100%;
+
+}
 
 
 /*Choose call to action*/
@@ -22,9 +37,7 @@
 }
 
 /*City pages*/
-.person_blurb{
-    
-}
+
 .local_image{
     height: 50%;
     width:50%;

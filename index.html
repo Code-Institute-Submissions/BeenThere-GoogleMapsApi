@@ -45,14 +45,12 @@
 			display: -ms-flexbox;
 			display: flex;
 			position: relative;
-			margin-left: 5%;
-			margin-bottom: 5%;
 			width: 440px;
 			z-index: 1;
 		}
 
 		#map {
-			margin-top: 40px;
+			margin-top: 1%;
 			height: 100%;
 			width: 100%;
 		}
@@ -145,7 +143,7 @@
 					<p class="lead background"><i>We have been there - have you?</i></p>
 			</a>
 		</div>
-		<div class="alert alert-secondary" role="alert">
+		<div class="alert" role="alert">
 			<h3><b>BeenThere</b></h3>
 			<h5> gives you <b><i>curated holiday itineraries</i></b> that have been specially designed for you by
 				locals.
@@ -156,80 +154,38 @@
 			<h6><i><b>Your BeenThere Team</b></i></h6>
 		</div>
 	</div>
+    <div>
+    	<div class="centre padding">
+		<button id="beentherebtn" class="btn btn-dark btn-md" role="button">Curated Trip</button>
+		<button id="hotelsbtn" class="btn btn-dark btn-md" role="button">Search for Hotels</button>
+	</div>
+    <img id="homepage-pic" class = "img-fluid padding" src="assets/images/bookingjourney.jpg" alt="Book your holiday">
+    </div>
 
 
-	<!--Map-->
-	<div class="hotel-search">
-		<div id="findhotels">
-			Find hotels in:
+
+	<div id="beentheresection">
+		<h1 class="section-heading padding centre">Choose</h1>
+
+		<!--5 cities buttons-->
+		<div class="centre padding">
+			<a class="btn btn-dark" href="nice.html" role="button">Nice</a>
+			<a class="btn btn-dark" href="ibiza.html" role="button">Ibiza</a>
+			<a class="btn btn-dark" href="berlin.html" role="button">Berlin</a>
+			<a class="btn btn-dark" href="paris.html" role="button">Paris</a>
+			<a class="btn btn-dark" href="london.html" role="button">London</a>
 		</div>
-
-		<div id="locationField">
-			<input id="autocomplete" placeholder="Enter a city" type="text" />
-      </div>
-			<div id="listing">
-				<table id="resultsTable">
-					<tbody id="results"></tbody>
-				</table>
-			</div>
-
-
-			<div id="controls">
-				<select id="country">
-          <option value="fr" selected>France</option>
-          <option value="de">Germany</option>
-          <option value="es">Spain</option>
-          <option value="uk">United Kingdom</option>
-        </select>
-			</div>
-		</div>
-<div>
-<button type="button" id="closeBtn" class="btn btn-sm btn-info centre padding">Hide Search Table</button>
-</div>
-		<div id="map"></div>
-
-
-
-		<div style="display: none">
-			<div id="info-content">
-				<table>
-					<tr id="iw-url-row" class="iw_table_row">
-						<td id="iw-icon" class="iw_table_icon"></td>
-						<td id="iw-url"></td>
-					</tr>
-					<tr id="iw-address-row" class="iw_table_row">
-						<td class="iw_attribute_name">Address:</td>
-						<td id="iw-address"></td>
-					</tr>
-					<tr id="iw-phone-row" class="iw_table_row">
-						<td class="iw_attribute_name">Telephone:</td>
-						<td id="iw-phone"></td>
-					</tr>
-					<tr id="iw-rating-row" class="iw_table_row">
-						<td class="iw_attribute_name">Rating:</td>
-						<td id="iw-rating"></td>
-					</tr>
-					<tr id="iw-website-row" class="iw_table_row">
-						<td class="iw_attribute_name">Website:</td>
-						<td id="iw-website"></td>
-					</tr>
-				</table>
-			</div>
-		</div>
-
-
-
 
 		<!--Carousel as visual enticement and a second call to action on page-->
 
 
-		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+		<div id="carousel" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-				<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-				<li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+				<li data-target="#carousel" data-slide-to="2"></li>
+				<li data-target="#carousel" data-slide-to="3"></li>
+				<li data-target="#carousel" data-slide-to="4"></li>
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
@@ -268,56 +224,107 @@
 					</div>
 				</div>
 			</div>
-			<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+			<a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+			<a class="carousel-control-next" href="#carouselaptions" role="button" data-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
+	</div>
+<!--Hotel Section-->
 
-		<h1 class="choose centre">Choose</h1>
-
-		<!--5 cities buttons-->
-		<div class="centre padding">
-			<a class="btn btn-dark" href="nice.html" role="button">Nice</a>
-			<a class="btn btn-dark" href="ibiza.html" role="button">Ibiza</a>
-			<a class="btn btn-dark" href="berlin.html" role="button">Berlin</a>
-			<a class="btn btn-dark" href="paris.html" role="button">Paris</a>
-			<a class="btn btn-dark" href="london.html" role="button">London</a>
-		</div>
-		<!--Social Media-->
-
-		<div class="col-12 centre padding">
-
-			<ul class="list-inline ">
-				<li class="list-inline-item">
-					<a target="_blank" href="https://facebook.com/">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
-						<span class="sr-only">Facebook</span>
-					</a>
-				</li>
-				<li class="list-inline-item">
-					<a target="_blank" href="https://www.twitter.com/">
-						<i class="fa fa-twitter" aria-hidden="true"></i>
-						<span class="sr-only">Twitter</span>
-					</a>
-				</li>
-				<li class="list-inline-item">
-					<a target="_blank" href="https://www.instagram.com/">
-						<i class="fa fa-instagram" aria-hidden="true"></i>
-						<span class="sr-only">Instagram</span>
-					</a>
-				</li>
-
-			</ul>
-
-		</div>
+	<div id="hotelsection">
+    <h1 class="section-heading padding centre">Hotels</h1>
+		<div class="hotel-search">
 
 
-		<!--Scripts
+			<div id="locationField" class="padding centre">
+				<input id="autocomplete" placeholder="Enter a city" type="text" />
+      </div>
+				<div id="listing">
+					<table id="resultsTable">
+						<tbody id="results"></tbody>
+					</table>
+				</div>
+
+
+				<div id="controls">
+					<select id="country">
+          <option value="fr" selected>France</option>
+          <option value="de">Germany</option>
+          <option value="es">Spain</option>
+          <option value="uk">United Kingdom</option>
+        </select>
+				</div>
+			</div>
+<!--Map-->
+			<div id="map"></div>
+
+			<div>
+				<button type="button" id="closeBtn" class="btn btn-sm btn-info centre padding">Hide Search Table</button>
+			</div>
+			<div style="display: none">
+				<div id="info-content">
+					<table>
+						<tr id="iw-url-row" class="iw_table_row">
+							<td id="iw-icon" class="iw_table_icon"></td>
+							<td id="iw-url"></td>
+						</tr>
+						<tr id="iw-address-row" class="iw_table_row">
+							<td class="iw_attribute_name">Address:</td>
+							<td id="iw-address"></td>
+						</tr>
+						<tr id="iw-phone-row" class="iw_table_row">
+							<td class="iw_attribute_name">Telephone:</td>
+							<td id="iw-phone"></td>
+						</tr>
+						<tr id="iw-rating-row" class="iw_table_row">
+							<td class="iw_attribute_name">Rating:</td>
+							<td id="iw-rating"></td>
+						</tr>
+						<tr id="iw-website-row" class="iw_table_row">
+							<td class="iw_attribute_name">Website:</td>
+							<td id="iw-website"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+
+
+
+
+			<!--Social Media-->
+			<div class="col-12 centre padding">
+
+				<ul class="list-inline ">
+					<li class="list-inline-item">
+						<a target="_blank" href="https://facebook.com/">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<span class="sr-only">Facebook</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a target="_blank" href="https://www.twitter.com/">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<span class="sr-only">Twitter</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a target="_blank" href="https://www.instagram.com/">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+							<span class="sr-only">Instagram</span>
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<!--Scripts
 <script>
 var map;
 function initMap() {
@@ -330,15 +337,35 @@ function initMap() {
 </script>
 -->
 
-		<script>
-			document.getElementById("closeBtn").addEventListener("click", function(){
+			<script>
+				document.getElementById("closeBtn").addEventListener("click", function(){
               document.getElementById("listing").style.display = "none";
                 });
-		</script>
-     
+			</script>
+            <!--
+            <script>
+				document.getElementById("hotelsection").document.getElementsByTagName("a").addEventListener("click", function(){
+              document.navigate("book.html");
+                });
+			</script>
+            -->
 
-		<script>
-			var map, places, infoWindow;
+			<script>
+				document.getElementById("beentherebtn").addEventListener("click", function(){
+              document.getElementById("beentheresection").style.display = "block";
+              document.getElementById("homepage-pic").style.display = "none";
+              document.getElementById("hotelsection").style.display = "none";
+                });
+			</script>
+			<script>
+				document.getElementById("hotelsbtn").addEventListener("click", function(){
+              document.getElementById("hotelsection").style.display = "block";
+              document.getElementById("homepage-pic").style.display = "none";
+              document.getElementById("beentheresection").style.display = "none";
+                });
+			</script>
+			<script>
+				var map, places, infoWindow;
       var markers = [];
       var autocomplete;
       var countryRestrict = {'country': 'fr'};
@@ -571,21 +598,24 @@ function initMap() {
           document.getElementById('iw-website-row').style.display = 'none';
         }
       }
-		</script>
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&libraries=places&callback=initMap"
-			async defer></script>
+			</script>
+			<script
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&libraries=places&callback=initMap"
+				async defer></script>
 
 
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-		</script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-		</script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-		</script>
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+				integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+				crossorigin="anonymous">
+			</script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+				integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+				crossorigin="anonymous">
+			</script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+				integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+				crossorigin="anonymous">
+			</script>
 
 </body>
 
