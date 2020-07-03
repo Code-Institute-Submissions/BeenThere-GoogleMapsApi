@@ -31,10 +31,6 @@
 }
 
 
-/*Choose call to action*/
-.choose {
-
-}
 
 /*City pages*/
 
@@ -57,6 +53,10 @@
     width: 80%;
     
 
+}
+/*Booking*/
+.form-group {
+    text-align: left;
 }
 
 /*Positioning*/

@@ -1,4 +1,5 @@
 /*Index Page*/
+/*Event Listeners*/
 
 				document.getElementById("closeBtn").addEventListener("click", function(){
               document.getElementById("listing").style.display = "none";
@@ -17,6 +18,7 @@
               document.getElementById("beentheresection").style.display = "none";
                 });
 
+/*Google Maps*/
 				var map, places, infoWindow;
       var markers = [];
       var autocomplete;
