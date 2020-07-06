@@ -9,50 +9,43 @@ what places to visit.
 <br><br>
 <b>Proposed Solution</b><br>
 <i>BeenThere</i> is a website aimed at curating customisable holidays based on the invaluable knowledge of the locals. They know the best
-hotels,restaurants and bars to go to as they have been living there for at least four years. The locals are carefully selected by the BeenThere team and usually have a background in the
+hotels,restaurants and bars to go to, as they have been living there for at least four years. The locals are carefully selected by the BeenThere team and usually have a background in the
 hospitality industry or the food industry. 
 
 ## UX
-The user experience for the website is aimed at providing users the ability to make their first attempt at looking where they want to travel to and looking for possibly what hotels are available where they want to book.
-As they look at the google maps functionality provided they might then make the decision to actually have a local curate their trip for them, as they look at the five main destinations and read about the locals who are designing the curated trips this month. 
+The user experience for the website is aimed at providing users the ability to make their first attempt at looking where they want to travel to and looking for what hotels are available, in the city that they want to book in.
+As they look at the google maps functionality provided they might then make the decision to actually have a local curate their trip for them, as they look at the five main city destinations and read about the locals who are designing the curated trips this month. 
 
 <b>User Story 1: Be Inspired</b><br>
-- A user comes across the <b>BeenThere</b> website when starting to plan their holiday. They do not know where they want to go on holiday yet and would like to be inspired by the 5 monthly cities with the current 3 recommendations for hotels, bars, and restaurants.
+- A new user comes across the <b>BeenThere</b> website when starting to plan their holiday. They do not know where they want to go on holiday yet and would like to be inspired by the 5, monthly cities with the current 3 recommendations for hotels, bars, and restaurants.
 
 <br><br>
 
-<b>User Story 2: Looking for quick book recommendations</b><br>
-- As a new or experienced user, the user clicks the 'reading' button if they are on a wide screen device or on the 'start here' drop down button which reveals the 'reading' section on a narrower screen device such as a phone, this 
-allows the user to see the latest recommendations for investment books.<br><br>
+<b>User Story 2: Checking which Cities and just using the hotel finder</b><br>
+- As a new or experienced user, the user checks which 5 cities are in focus for the <b>BeenThere</b> team this month, and if they do not want to use the curated trip part of the website, they may choose to use the specialised google map and search functionality from the <b>BeenThere</b> website as
+the map has filtered out most items from it, that does not relate to holiday planning, to choose their hotel and plan their trip.<br><br>
 
-<b>User Story 3: Looking for quick podcast recommendations</b><br>
-- As a new or experienced user, the user clicks the 'podcasts' button if they are on a wide screen device or on the 'start here' drop down button which reveals the 'podcasts' section on a narrower screen device such as a phone, this 
-allows the user to see the latest recommendations for investment podcasts.<br><br>
-
-<b>User Story 4: Looking for quick and easy trading ideas</b><br>
-- As a new or experienced user, the user clicks the 'trade ideas' botton if they are on a wide screen device or on the 'start here' drop down button which reveals the 'trade ideas' section on a narrower screen device such as a phone, this 
-allows the user to see the latest trade ideas that are published on the website. The user is interested in these trade ideas the most, as it is the most frequently updated content on the website, and from where they are getting trading insights from, over-time. The user checks back more frequently over time as he develops a trust with the
-author.<br><br>
-
-<b>User Story 5: User has a more specific question and wants to contact the website owner</b><br>
-- As a new or experienced user, the user clicks the 'Contact Us' button if they are on a wide screen device or on the 'start here' drop down button which reveals the 'trade ideas' section on a narrower screen device such as a phone, this 
-allows the user to see the latest trade ideas that are published on the website. The user is interested in these trade ideas the most as it is the main portion of the website content that keeps getting updated and that they are getting trading insights from over time. The user checks back more frequently over time as he develops a trust with the
-author.<br><br>
+<b>User Story 3: Booking flight post trip planning</b><br>
+- After a user has booked their curated trip; They are brought to a 'thank you' page which sets expectations with them that they can expect their curated trip within 48 hours and that they can go ahead and book their flight. 
+The booking of the flight is quickly started through the skyscanner widget on the <b>BeenThere</b> website as it is convenient for the user to get the flight booking out of the way.<br><br>
 
 
 ## Features
-1) <b>Recommended Reading Section</b><br><br> 
-Users are able to look through a collection of books regarding investing and trading. There are so many poorly written books on investing that these recommendations cut through the noise and give them a place to start learning about the subject.
+1) <b>Custom google maps for highlighted cities</b><br><br> 
+Users are able to look for curated trips on a specific city page that include a specially filtered google map that only includes the items that you would need for planning a holiday. This map also includes 3 markers that include the suggestions from the local for the hotel, restaurant and bar that they have
+chosen to highlight this month. The markers have even-listeners built in so that when the user clicks on the marker they can read a blurb about the location and also see what it looks like in the picture provided.
 
-2) <b>Recommended Podcasts Section</b><br><br> 
-Users are able to look through a collection of podcasts regarding investing and trading. The podcasts chosen cover specific categories and themes in order to give the user a wider view and a more diverse range of opinions from the trading and investing world.
+2) <b>Request to book form</b><br><br> 
+After the user has succesfully chosen the city they want to travel to, they can press the 'book your trip' button which brings them to the 'request to book form'
+which allows them to highlight all of their choices and requirements for their trip to the <b>BeenThere</b> team so that they have all of the information to plan the trip for the user. The user then presses the 'Submit Request for Ideal Holiday' button which has an
+event-listener on it that then thanks them as it loads the next page.
 
-3) <b>Trade Ideas Section</b><br><br> 
-Users are able to look through trade ideas blog entries that allows them to get a feel for how the website owner thinks through his trading strategy and what attributes & signals may influence his trading decisions. There is also a useful <b> quick-links</b> section in the top left of the page, which allows the user to get quick access to the 'yahoo finance',
-'trading view', 'morningstar', and 'tastyworks' websites.
+3) <b>Hotel Search google map with search bar</b><br><br> 
+Users are able to filter the country to the current countries which are in focus this month for the <b>BeenThere</b> team, this will centre the google map on the country in question. The user can then type in the city that they want to book in, this does not have to be part of the cities in focus and it will centre the map on the city they searched for and bring up all of the hotels in the centre of the city.
+There is a semi-transparent list type table that they can see as well that lists all of the hotels so that they can quickly have a read through rather than looking at all of the hotels that are distributed on the map. The hotels are labelled with the letters of the alphabet so that the user
+can remember which hotel they have already reviewed and can match the letters to the hotel that they can see in the transparent list. If the user clicks on the individual markers for the hotels it will bring up information about the hotel so that the user can book the hotel and also visit the hotel's own website. If they choose not to look at the list and just click on the hotels on the actual map I have built in an event-listener that allows them to hide this semi-tranparent list by pressing the 'hide the search table' button below. 
 
-4) <b>Contact Us Section</b><br><br> 
-Users are able to learn a bit about the website owner and also are able to contact him through a form that a) categorises what their question is about, b) ask their question in the text field and then c) submit their question pressing the submit button. (this is just the static version of this and is not operational yet in terms of actually sending the information anywhere.)
+4) <b>SkyScanner flight booking widget</b><br><br> 
 
 
 ###Future Feature Ideas
