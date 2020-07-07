@@ -52,9 +52,8 @@ how many adults and children are going and then what class of flight ticket they
 
 
 ###Future Feature Ideas
-- I had an idea for using iframes to display the information from different websites on another page as a tool; For example you could have yahoo finance, trading view, and tastyworks open on the same website page. They don't support iframes though so I would probably try and scrape the information using beautifulsoup and python at a later stage.
-- The quick-links section was originally on every page but then I decided against this because it actually encourages people to leave the website. I left it in on the trading ideas page as it becomes useful as a lot of the information on the page would be directly from those websites. Once there are multiple posts on the 'trade ideas' blog it might be worth making the icon links specific to the stock ticker from the post and having multiple of these quick-links icon groups. 
-- Once there are more posts on the trade ideas page it might be worth implementing some of the bootstrap pagenation features to focus the users attention more, rather than them scrolling down for a long time to find the section they want and getting disctracted by the passing-other-posts.
+1) I was thinking of developing a google sheet that is populated by the form so that the BeenThere-Locals can take their booking-leads directly from the google sheet and it would help with tracking of a kind of start of a CRM system.
+
 
 
 ## Technologies Used
@@ -103,7 +102,7 @@ how many adults and children are going and then what class of flight ticket they
     15. All five city pictures are present and smoothly transitioning in carousel. - Success 
     16. The social media, font awesome items are present and the hyperlinks are working. - Success
     17. All five city pictures are present and smoothly transitioning in carousel. - Success 
-    18. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2F"></a>
+    18. Check the index.html page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2F)
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -126,7 +125,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    12. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fnice.html"></a>
+    12. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fnice.html)
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -149,7 +148,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    12. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fibiza.html"></a>
+    12. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fibiza.html)
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -172,7 +171,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fberlin.html"></a>
+    11. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fberlin.html)
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -181,8 +180,8 @@ how many adults and children are going and then what class of flight ticket they
         - iPhone 6-8 landscape · width: 667px - Success
         - iPhone 6-8 Plump portrait · width: 414px - Success
         - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
-        - iPad landscape · width: 1024px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+        - iPad portrait · width: 768px - Success 
+        - iPad landscape · width: 1024px - Success 
 
 1. e) <b>User Story 1:</b> London - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -195,7 +194,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Flondon.html"></a>
+    11. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Flondon.html)
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -218,7 +217,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fparis.html"></a>
+    11. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fparis.html)
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -239,7 +238,7 @@ how many adults and children are going and then what class of flight ticket they
     5. The event listener changes the 'submit request for ideal holiday' button content to 'thank you' on click. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    11. Check the page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fbook.html"></a>
+    11. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fbook.html)
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -270,7 +269,7 @@ how many adults and children are going and then what class of flight ticket they
     4. Check 'cabin class' drop down menu. - Success
     5. Test 'adults' and 'children' plus and minus buttons.- Success
     6. Try the 'search flights' button. - Success 
-    7. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fpost_booking.html"></a>
+    7. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fpost_booking.html)
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -283,7 +282,7 @@ how many adults and children are going and then what class of flight ticket they
         - iPad landscape · width: 1024px - Success 
 
 ## Deployment
-- I deployed the website on github pages: <a href="https://sammckenna1986.github.io/BeenThere-GoogleMapsApi/index.html">Link</a>
+- I deployed the website on github pages(https://sammckenna1986.github.io/BeenThere-GoogleMapsApi/index.html)
 
 
 
