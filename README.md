@@ -80,10 +80,6 @@ how many adults and children are going and then what class of flight ticket they
         - The markers of the hotels on the map lets you also click on them and display more information such as name of hotel, website url, and phone number.
 
 
-
-
-
-
 ## Testing
 <b>Testing Summary</b><br>
 
@@ -107,7 +103,7 @@ how many adults and children are going and then what class of flight ticket they
     15. All five city pictures are present and smoothly transitioning in carousel. - Success 
     16. The social media, font awesome items are present and the hyperlinks are working. - Success
     17. All five city pictures are present and smoothly transitioning in carousel. - Success 
-    18. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+    18. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2F"></a>
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -116,8 +112,8 @@ how many adults and children are going and then what class of flight ticket they
         - iPhone 6-8 landscape · width: 667px - Success
         - iPhone 6-8 Plump portrait · width: 414px - Success
         - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
-        - iPad landscape · width: 1024px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+        - iPad portrait · width: 768px - Success 
+        - iPad landscape · width: 1024px - Success 
 
 1. b) <b>User Story 1:</b> Nice - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -130,7 +126,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    12. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+    12. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fnice.html"></a>
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -139,8 +135,8 @@ how many adults and children are going and then what class of flight ticket they
         - iPhone 6-8 landscape · width: 667px - Success
         - iPhone 6-8 Plump portrait · width: 414px - Success
         - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
-        - iPad landscape · width: 1024px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+        - iPad portrait · width: 768px - Success 
+        - iPad landscape · width: 1024px - Success 
 
 1. c) <b>User Story 1:</b> Ibiza - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -153,7 +149,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    12. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+    12. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fibiza.html"></a>
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -176,7 +172,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fberlin.html"></a>
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -199,7 +195,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Flondon.html"></a>
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -222,7 +218,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fparis.html"></a>
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -243,7 +239,7 @@ how many adults and children are going and then what class of flight ticket they
     5. The event listener changes the 'submit request for ideal holiday' button content to 'thank you' on click. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+    11. Check the page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fbook.html"></a>
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -264,18 +260,7 @@ how many adults and children are going and then what class of flight ticket they
         - Found Social Media buttons floating in the map. I don't want the user going to social media when they are searching for hotels so I just added an event listener to make the social media buttons disappear when the hotels button is pressed. 
     6. 'Book Your Trip' button is present and works. - Success 
     7. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
-    8. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
-        - iPhone eXpensive portrait · width: 375px - Success
-        - iPhone eXpensive landscape · width: 734px - Success
-        - Android (Pixel 2) portrait · width: 412px - Success
-        - Android (Pixel 2) landscape · width: 684px - Success
-        - iPhone 6-8 portrait · width: 375px - Success
-        - iPhone 6-8 landscape · width: 667px - Success
-        - iPhone 6-8 Plump portrait · width: 414px - Success
-        - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
-        - iPad landscape · width: 1024px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
-    
+    8. Responsinator test carried out at the same time when I tested index.html in user story 1. - Success
 
 
 3. <b>User Story 3:</b> Booking flight post trip planning. (location: post_booking.html)
@@ -285,7 +270,7 @@ how many adults and children are going and then what class of flight ticket they
     4. Check 'cabin class' drop down menu. - Success
     5. Test 'adults' and 'children' plus and minus buttons.- Success
     6. Try the 'search flights' button. - Success 
-    7. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+    7. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fpost_booking.html"></a>
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -294,60 +279,46 @@ how many adults and children are going and then what class of flight ticket they
         - iPhone 6-8 landscape · width: 667px - Success
         - iPhone 6-8 Plump portrait · width: 414px - Success
         - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
-        - iPad landscape · width: 1024px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+        - iPad portrait · width: 768px - Success 
+        - iPad landscape · width: 1024px - Success 
 
 ## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- I deployed the website on github pages: <a href="https://sammckenna1986.github.io/milestone_project_1-static_frontend/index.html">Link</a>
+- I deployed the website on github pages: <a href="https://sammckenna1986.github.io/BeenThere-GoogleMapsApi/index.html">Link</a>
 
 
 
 ## Credits
-- Thank you to Antonio Rodriguez my mentor who's two meetings on this project were excellent and helped me understand a few concepts that I was missing.
-- Thank you to Neil Kavanagh for clarifying a few concepts on the phone and for providing some extra motivation.
+- Thank you to Antonio Rodriguez my mentor who's three meetings on this project were excellent and helped me understand a few concepts that I was missing.
+- Thank you to Claire Lally for clarifying a few concepts on the phone and for providing some extra motivation.
 - Thank you to all the teachers on the course; The videos and excercises were excellent.
 
 ### Content and Media
-- I wrote all of my own content.
-- 'Balance sheet', 'cashflow sheet', and 'income statement' on the 'trade ideas' page were screenshotted from <a href="https://finance.yahoo.com/quote/WTI/balance-sheet?p=WTI">Yahoo Finance</a>
-- The links and incon images for the books were taken from amazon.com
-- The podcast icon images came from google images and from the podcast websites themselves.
-- The pictures were copyright free and were downloaded from https://pixabay.com/.
+- The blurbs for the cutomised google maps markers I got from the places own websites.
+- The social media icons were from fontawesome.
+- All the pictures were copyright free and were downloaded from https://pixabay.com/.
 
 
 ### Acknowledgements
 
-- I received inspiration for this project from my friends who are always asking me for suggestions on how they can start investing and trading. 
-
-<b>I got a lot of information and inspiration for code from the following links:</b><br><br>
-<a href="https://designshack.net/articles/trends/best-website-color-schemes/">https://designshack.net/articles/trends/best-website-color-schemes/</a>
-
-<a href="https://www.pexels.com/photo/apple-devices-books-business-coffee-572056/">https://www.pexels.com/photo/apple-devices-books-business-coffee-572056/</a>
-
-<a href="https://www.designwizard.com/blog/design-trends/colour-combination">https://www.designwizard.com/blog/design-trends/colour-combination</a>
-
-<a href="https://tilda.cc/colors/">https://tilda.cc/colors/</a>
-
-<a href="https://github.com/chartjs/Chart.js">https://github.com/chartjs/Chart.js</a>
-
-<a href="https://stackoverflow.com/questions/45415678/is-this-possible-to-bookmark-a-page-with-html-button">https://stackoverflow.com/questions/45415678/is-this-possible-to-bookmark-a-page-with-html-button</a>
-
-<a href="http://www.javascriptkit.com/dhtmltutors/cssmediaqueries2.shtml">http://www.javascriptkit.com/dhtmltutors/cssmediaqueries2.shtml</a>
-
-<a href="http://stephen.io/mediaqueries/">http://stephen.io/mediaqueries/</a>
-
-<a href="https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/">https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/</a>
-
-<a href="https://stackoverflow.com/questions/40027058/bootstrap-remove-column-margin">https://stackoverflow.com/questions/40027058/bootstrap-remove-column-margin</a>
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe</a>
-
-<a href="https://codeburst.io/making-a-calculator-with-basic-html-css-and-javascript-part-1-1e4288f0bea1?gi=533a9abffa5f">https://codeburst.io/making-a-calculator-with-basic-html-css-and-javascript-part-1-1e4288f0bea1?gi=533a9abffa5f</a>
-<a href="https://stackoverflow.com/questions/35816007/bootstrap-button-href-does-not-work">https://stackoverflow.com/questions/35816007/bootstrap-button-href-does-not-work</a>
-<a href="https://www.w3schools.com/howto/howto_css_image_center.asp">https://www.w3schools.com/howto/howto_css_image_center.asp</a>
-
-
+I received a lot of inspiration and instruction from the following links:
+- https://developers.google.com/maps/documentation/javascript/cloud-based-map-styling
+- https://stackoverflow.com/questions/40064293/add-second-marker-on-google-maps-javascript-code
+- https://www.exberliner.com/whats-on/food-drink/nanum/
+- https://www.standard.co.uk/go/london/restaurants/jimi-famurewa-restaurant-review-la-chingada-surrey-quays-a4366261.html
+- https://www.france-voyage.com/restaurants-guide/restaurant-nice-120949.htm
+- https://bigseventravel.com/2019/10/best-bars-in-nice/
+- https://www.girafeparis.com/en
+- https://www.booking.com/hotel/fr/la-nouvelle-republique.html?aid=356980&label=gog235jc-1DCAMoTTjjAkgzWANoaYgBAZgBMbgBB8gBDNgBA-gBAfgBAogCAagCA7gC0aO-9wXAAgHSAiRlYWMzMTQ1Zi05MTkyLTQ3NWYtOGM1NS0yYmQ4YjVhMDJhZjjYAgTgAgE&sid=c0209fec1728bf25488978eb82c8b64b&lp_sr_snippet=1
+- https://www.tripadvisor.ie/Restaurant_Review-g652116-d10446195-Reviews-Es_Tragon-Sant_Antoni_de_Portmany_Ibiza_Balearic_Islands.html
+- https://www.tripadvisor.ie/Attraction_Review-g642208-d4355606-Reviews-Liquido_Cocktail_Bar-Santa_Eulalia_del_Rio_Ibiza_Balearic_Islands.html
+- https://www.inspirock.com/spain/santa-eulalia-del-rio/liquido-cocktail-bar-a3165514397
+- https://www.tripadvisor.ie/ShowUserReviews-g642208-d4355606-r487945949-Liquido_Cocktail_Bar-Santa_Eulalia_del_Rio_Ibiza_Balearic_Islands.html
+- https://www.hrhibiza.com/amenities.htm
+- https://www.w3schools.com/jsref/met_element_addeventlistener.asp
+- https://www.partners.skyscanner.net/affiliates/widgets-quick-start
+- https://blog.hubspot.com/marketing/html-form-email
+- https://www.youtube.com/watch?v=GMXFMVg5E4U
+- https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-javascript
+- https://www.geeksforgeeks.org/hide-or-show-elements-in-html-using-display-property/#:~:text=Style%20display%20property%20is%20used,getElementById(%22element%22).
+- https://developers.google.com/places/
+- https://getbootstrap.com/docs/4.5/getting-started/introduction/
