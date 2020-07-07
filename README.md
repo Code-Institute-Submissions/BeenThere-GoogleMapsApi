@@ -1,4 +1,4 @@
-<img src="assets/images/bean.png" style="margin: 0;height:20%;width:20%">
+<img src="assets/images/bean.png" style="margin: 0;height:10%;width:10%">
 
 # BeenThere
 <b>Problem Statement</b><br>
@@ -17,7 +17,8 @@ The user experience for the website is aimed at providing users the ability to m
 As they look at the google maps functionality provided they might then make the decision to actually have a local curate their trip for them, as they look at the five main city destinations and read about the locals who are designing the curated trips this month. 
 
 <b>User Story 1: Be Inspired</b><br>
-- A new user comes across the <b>BeenThere</b> website when starting to plan their holiday. They do not know where they want to go on holiday yet and would like to be inspired by the 5, monthly cities with the current 3 recommendations for hotels, bars, and restaurants.
+- A new user comes across the <b>BeenThere</b> website when starting to plan their holiday. They do not know where they want to go on holiday yet and would like to be inspired by the 5, monthly cities with the current 3 recommendations for hotels, bars, and restaurants. After they are inspired
+they book a curated trip.
 
 
 <b>User Story 2: Checking which cities are in focus this month and just using the hotel finder</b><br>
@@ -87,7 +88,7 @@ how many adults and children are going and then what class of flight ticket they
 <b>Testing Summary</b><br>
 
 
-1. <b>User Story 1:</b> Be Inspired: index.html page.
+1. a) <b>User Story 1:</b> Be Inspired and book a curated trip.
     1. Try to read all of the text on the index page and make sure that the text looks strong. - Success
     2. The image loads. - Success
     3. Try the 'Curated Trip' button and see if it displays 'choose' and 'city buttons' section. - Success
@@ -97,13 +98,173 @@ how many adults and children are going and then what class of flight ticket they
     7. Try the 'Hide Search Table' button and see if the hotel list becomes invisible.  - Success
     8. Try moving the map around with hand cursor. - Success
         - Found Social Media buttons floating in the map. I don't want the user going to social media when they are searching for hotels so I just added an event listener to make the social media buttons disappear when the hotels button is pressed.      
-    9. Try the 'Podcasts' button and hover-over response in the dropdown menu for narrower screens. - Success
-    10. Try the 'Trade Ideas' button and hover-over response in the dropdown menu for narrower screens. - Success
-    11. Try the 'Contact Us' button and hover-over response in the dropdown menu for narrower screens. - Success
-    12. Try the 'facebook' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    13. Try the 'twitter' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    14. Try the 'instagram' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    15. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+    9. 'Curated Trip' button is present and works. - Success
+    10. 'Nice' button is present and works. - Success
+    11. 'Ibiza' button is present and works. - Success
+    12. 'Berlin' button is present and works. - Success
+    13. 'Paris' button is present and works. - Success
+    14. 'London' button is present and works. - Success 
+    15. All five city pictures are present and smoothly transitioning in carousel. - Success 
+    16. The social media, font awesome items are present and the hyperlinks are working. - Success
+    17. All five city pictures are present and smoothly transitioning in carousel. - Success 
+    18. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+        - iPhone eXpensive portrait · width: 375px - Success
+        - iPhone eXpensive landscape · width: 734px - Success
+        - Android (Pixel 2) portrait · width: 412px - Success
+        - Android (Pixel 2) landscape · width: 684px - Success
+        - iPhone 6-8 portrait · width: 375px - Success
+        - iPhone 6-8 landscape · width: 667px - Success
+        - iPhone 6-8 Plump portrait · width: 414px - Success
+        - iPhone 6-8 Plump landscape · width: 736px - Success
+        - iPad portrait · width: 768px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+        - iPad landscape · width: 1024px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+
+1. b) <b>User Story 1:</b> Nice - city page.
+    1. Try to read all of the text on the page and make sure that the text looks strong. - Success
+    2. The image of Nice and of Adeline load. - Success
+    3. Customised map loads. - Success
+    4. All three markers load on the map and the map is centred on the markers. - Success
+    5. All three event listeners for clicking on the markers are working. - Success
+    6. All three markers have working pop-up windows that include the customised text and images. - Success
+    7. The 'Book Your Trip' button is present and it is working correctly. - Success
+    8. The city buttons underneath the logo are all present and are working correctly. - Success
+    9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
+    10. The social media, font awesome items are present and the hyperlinks are working. - Success
+    12. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+        - iPhone eXpensive portrait · width: 375px - Success
+        - iPhone eXpensive landscape · width: 734px - Success
+        - Android (Pixel 2) portrait · width: 412px - Success
+        - Android (Pixel 2) landscape · width: 684px - Success
+        - iPhone 6-8 portrait · width: 375px - Success
+        - iPhone 6-8 landscape · width: 667px - Success
+        - iPhone 6-8 Plump portrait · width: 414px - Success
+        - iPhone 6-8 Plump landscape · width: 736px - Success
+        - iPad portrait · width: 768px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+        - iPad landscape · width: 1024px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+
+1. c) <b>User Story 1:</b> Ibiza - city page.
+    1. Try to read all of the text on the page and make sure that the text looks strong. - Success
+    2. The image of Ibiza and of Irene load. - Success
+    3. Customised map loads. - Success
+    4. All three markers load on the map and the map is centred on the markers. - Success
+    5. All three event listeners for clicking on the markers are working. - Success
+    6. All three markers have working pop-up windows that include the customised text and images. - Success
+    7. The 'Book Your Trip' button is present and it is working correctly. - Success
+    8. The city buttons underneath the logo are all present and are working correctly. - Success
+    9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
+    10. The social media, font awesome items are present and the hyperlinks are working. - Success
+    12. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+        - iPhone eXpensive portrait · width: 375px - Success
+        - iPhone eXpensive landscape · width: 734px - Success
+        - Android (Pixel 2) portrait · width: 412px - Success
+        - Android (Pixel 2) landscape · width: 684px - Success
+        - iPhone 6-8 portrait · width: 375px - Success
+        - iPhone 6-8 landscape · width: 667px - Success
+        - iPhone 6-8 Plump portrait · width: 414px - Success
+        - iPhone 6-8 Plump landscape · width: 736px - Success
+        - iPad portrait · width: 768px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+        - iPad landscape · width: 1024px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+
+1. d) <b>User Story 1:</b> Berlin - city page.
+    1. Try to read all of the text on the page and make sure that the text looks strong. - Success
+    2. The image of Berlin and of Sandra load. - Success
+    3. Customised map loads. - Success
+    4. All three markers load on the map and the map is centred on the markers. - Success
+    5. All three event listeners for clicking on the markers are working. - Success
+    6. All three markers have working pop-up windows that include the customised text and images. - Success
+    7. The 'Book Your Trip' button is present and it is working correctly. - Success
+    8. The city buttons underneath the logo are all present and are working correctly. - Success
+    9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
+    10. The social media, font awesome items are present and the hyperlinks are working. - Success
+    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+        - iPhone eXpensive portrait · width: 375px - Success
+        - iPhone eXpensive landscape · width: 734px - Success
+        - Android (Pixel 2) portrait · width: 412px - Success
+        - Android (Pixel 2) landscape · width: 684px - Success
+        - iPhone 6-8 portrait · width: 375px - Success
+        - iPhone 6-8 landscape · width: 667px - Success
+        - iPhone 6-8 Plump portrait · width: 414px - Success
+        - iPhone 6-8 Plump landscape · width: 736px - Success
+        - iPad portrait · width: 768px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+        - iPad landscape · width: 1024px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+
+1. e) <b>User Story 1:</b> London - city page.
+    1. Try to read all of the text on the page and make sure that the text looks strong. - Success
+    2. The image of London and of Mildred load. - Success
+    3. Customised map loads. - Success
+    4. All three markers load on the map and the map is centred on the markers. - Success
+    5. All three event listeners for clicking on the markers are working. - Success
+    6. All three markers have working pop-up windows that include the customised text and images. - Success
+    7. The 'Book Your Trip' button is present and it is working correctly. - Success
+    8. The city buttons underneath the logo are all present and are working correctly. - Success
+    9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
+    10. The social media, font awesome items are present and the hyperlinks are working. - Success
+    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+        - iPhone eXpensive portrait · width: 375px - Success
+        - iPhone eXpensive landscape · width: 734px - Success
+        - Android (Pixel 2) portrait · width: 412px - Success
+        - Android (Pixel 2) landscape · width: 684px - Success
+        - iPhone 6-8 portrait · width: 375px - Success
+        - iPhone 6-8 landscape · width: 667px - Success
+        - iPhone 6-8 Plump portrait · width: 414px - Success
+        - iPhone 6-8 Plump landscape · width: 736px - Success
+        - iPad portrait · width: 768px - Success 
+        - iPad landscape · width: 1024px - Success 
+
+1. e) <b>User Story 1:</b> Paris - city page.
+    1. Try to read all of the text on the page and make sure that the text looks strong. - Success
+    2. The image of Paris and of Amelie load. - Success
+    3. Customised map loads. - Success
+    4. All three markers load on the map and the map is centred on the markers. - Success
+    5. All three event listeners for clicking on the markers are working. - Success
+    6. All three markers have working pop-up windows that include the customised text and images. - Success
+    7. The 'Book Your Trip' button is present and it is working correctly. - Success
+    8. The city buttons underneath the logo are all present and are working correctly. - Success
+    9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
+    10. The social media, font awesome items are present and the hyperlinks are working. - Success
+    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+        - iPhone eXpensive portrait · width: 375px - Success
+        - iPhone eXpensive landscape · width: 734px - Success
+        - Android (Pixel 2) portrait · width: 412px - Success
+        - Android (Pixel 2) landscape · width: 684px - Success
+        - iPhone 6-8 portrait · width: 375px - Success
+        - iPhone 6-8 landscape · width: 667px - Success
+        - iPhone 6-8 Plump portrait · width: 414px - Success
+        - iPhone 6-8 Plump landscape · width: 736px - Success
+        - iPad portrait · width: 768px - Success 
+        - iPad landscape · width: 1024px - Success 
+
+1. f) <b>User Story 1:</b> booking.html page.
+    1. Try to read all of the text on the page and make sure that the text looks strong. - Success
+    2. The large success image loads. - Success
+    3. All form elements loaded correctly including placeholders. - Success
+    4. The 'which city?' dropdown menu works. - Success
+    5. The 'submit request for ideal holiday' button is present and working. - Success
+    5. The event listener changes the 'submit request for ideal holiday' button content to 'thank you' on click. - Success
+    9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
+    10. The social media, font awesome items are present and the hyperlinks are working. - Success
+    11. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+        - iPhone eXpensive portrait · width: 375px - Success
+        - iPhone eXpensive landscape · width: 734px - Success
+        - Android (Pixel 2) portrait · width: 412px - Success
+        - Android (Pixel 2) landscape · width: 684px - Success
+        - iPhone 6-8 portrait · width: 375px - Success
+        - iPhone 6-8 landscape · width: 667px - Success
+        - iPhone 6-8 Plump portrait · width: 414px - Success
+        - iPhone 6-8 Plump landscape · width: 736px - Success
+        - iPad portrait · width: 768px - Success 
+        - iPad landscape · width: 1024px - Success 
+    
+2. <b>User Story 2:</b> User Story 2: Checking which cities are in focus this month and just using the hotel finder.
+    1. Try the 'Search for Hotels' button and see if it displays the map and the search bar. - Success
+    2. Try entering a city into the search bar and see if the map responds. - Success
+    3. Check if the semi-transparent hotel list is there. - Success
+    4. Try the 'Hide Search Table' button and see if the hotel list becomes invisible.  - Success
+    5. Try moving the map around with hand cursor. - Success
+        - Found Social Media buttons floating in the map. I don't want the user going to social media when they are searching for hotels so I just added an event listener to make the social media buttons disappear when the hotels button is pressed. 
+    6. 'Book Your Trip' button is present and works. - Success 
+    7. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
+    8. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
         - iPhone eXpensive portrait · width: 375px - Success
         - iPhone eXpensive landscape · width: 734px - Success
         - Android (Pixel 2) portrait · width: 412px - Success
@@ -115,134 +276,26 @@ how many adults and children are going and then what class of flight ticket they
         - iPad portrait · width: 768px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
         - iPad landscape · width: 1024px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
     
-2. <b>User Story 2:</b> Looking for quick book recommendations: reading.html page.
-    1. Try to read all of the text on the 'reading' page, make sure that the information is correct, and make sure that the text looks strong. - Success
-    2. The background image now loads faster as I replaced the jpg files with the converted png files. - Success
-    3. Try the 'Your Own Money Investments' link in the logo  - Success
-    4. Try the 'Reading' button and hover-over response in the navbar. - Success
-    5. Try the 'Podcasts' button and hover-over response in the navbar. - Success
-    6. Try the 'Trade Ideas' button and hover-over response in the navbar. - Success
-    7. Try the 'Contact Us' button and hover-over response in the navbar. - Success
-    8. Try the 'Reading' button and hover-over response in the dropdown menu for narrower screens. - Success
-    9. Try the 'Podcasts' button and hover-over response in the dropdown menu for narrower screens. - Success
-    10. Try the 'Trade Ideas' button and hover-over response in the dropdown menu for narrower screens. - Success
-    11. Try the 'Contact Us' button and hover-over response in the dropdown menu for narrower screens. - Success
-    12. Try the 'facebook' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    13. Try the 'twitter' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    14. Try the 'instagram' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    15. Try the 'One Good Trade' link in the book title, and hover-over response in the books section. - Success
-    16. Try the 'Market Wizards' link in the book title, and hover-over response in the books section. - Success
-    17. Try the 'How I Made $2,000,000 in the Stock Market' link in the book title, and hover-over response in the books section. - Success
-    18. Try the 'Top 10 Trading Setups' link in the book title, and hover-over response in the books section. - Success
-    19. Check the index.html page in responsinator: <a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Freading.html"></a>
-    - iPhone eXpensive portrait · width: 375px - Success
-    - iPhone eXpensive landscape · width: 734px - Success
-    - Android (Pixel 2) portrait · width: 412px - Success
-    - Android (Pixel 2) landscape · width: 684px - Success
-    - iPhone 6-8 portrait · width: 375px - Success
-    - iPhone 6-8 landscape · width: 667px - Success
-    - iPhone 6-8 Plump portrait · width: 414px - Success
-    - iPhone 6-8 Plump landscape · width: 736px - Success
-    - iPad portrait · width: 768px - Success (ipad looks great)
-    - iPad landscape · width: 1024px - Success (ipad looks great)
 
 
-3. <b>User Story 3:</b> Looking for quick podcast recommendations: podcasts.html page.
-    1. Try to read all of the text on the 'podcasts' page, make sure that the information is correct, and make sure that the text looks strong. - Success
-    2. The background image now loads faster as I replaced the jpg files with the converted png files. - Success
-    3. Try the 'Your Own Money Investments' link in the logo  - Success
-    4. Try the 'Reading' button and hover-over response in the navbar. - Success
-    5. Try the 'Podcasts' button and hover-over response in the navbar. - Success
-    6. Try the 'Trade Ideas' button and hover-over response in the navbar. - Success
-    7. Try the 'Contact Us' button and hover-over response in the navbar. - Success
-    8. Try the 'Reading' button and hover-over response in the dropdown menu for narrower screens. - Success
-    9. Try the 'Podcasts' button and hover-over response in the dropdown menu for narrower screens. - Success
-    10. Try the 'Trade Ideas' button and hover-over response in the dropdown menu for narrower screens. - Success
-    11. Try the 'Contact Us' button and hover-over response in the dropdown menu for narrower screens. - Success
-    12. Try the 'facebook' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    13. Try the 'twitter' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    14. Try the 'instagram' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    15. Try the 'Chat with Traders' link in the podcast title, and hover-over response in the podcasts section. - Success
-    16. Try the 'The Investors Podcast' link in the podcast title, and hover-over response in the podcasts section. - Success
-    17. Try the 'Macro Voices' link in the podcast title, and hover-over response in the podcasts section. - Success
-    18. Try the 'Top Traders Unplugged' link in the podcast title, and hover-over response in the podcasts section. - Success
-    19. Check the podcasts.html page in responsinator: <a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Fpodcasts.html"></a>
-    - iPhone eXpensive portrait · width: 375px - Success
-    - iPhone eXpensive landscape · width: 734px - Success
-    - Android (Pixel 2) portrait · width: 412px - Success
-    - Android (Pixel 2) landscape · width: 684px - Success
-    - iPhone 6-8 portrait · width: 375px - Success
-    - iPhone 6-8 landscape · width: 667px - Success
-    - iPhone 6-8 Plump portrait · width: 414px - Success
-    - iPhone 6-8 Plump landscape · width: 736px - Success
-    - iPad portrait · width: 768px - Success (ipad looks great)
-    - iPad landscape · width: 1024px - Success (ipad looks great)
-    
-4. <b>User Story 4:</b> Looking for quick and easy trading ideas: tradeideas.html page.
-    1. Try to read all of the text on the 'trade ideas' page, make sure that the information is correct, and make sure that the text looks strong. - Success
-    2. The background image now loads faster as I replaced the jpg files with the converted png files. - Success
-    3. Try the 'Your Own Money Investments' link in the logo  - Success
-    4. Try the 'Reading' button and hover-over response in the navbar. - Success
-    5. Try the 'Podcasts' button and hover-over response in the navbar. - Success
-    6. Try the 'Trade Ideas' button and hover-over response in the navbar. - Success
-    7. Try the 'Contact Us' button and hover-over response in the navbar. - Success
-    8. Try the 'Reading' button and hover-over response in the dropdown menu for narrower screens. - Success
-    9. Try the 'Podcasts' button and hover-over response in the dropdown menu for narrower screens. - Success
-    10. Try the 'Trade Ideas' button and hover-over response in the dropdown menu for narrower screens. - Success
-    11. Try the 'Contact Us' button and hover-over response in the dropdown menu for narrower screens. - Success
-    12. Try the 'facebook' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    13. Try the 'twitter' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    14. Try the 'instagram' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    15. Try the 'yahoo finance' icon & link, and hover-over response in the social links at the top of the page. - Success
-    16. Try the 'trading view' icon & link, and hover-over response in the social links at the top of the page. - Success
-    17. Try the 'morningstar' icon & link, and hover-over response in the social links at the top of the page. - Success
-    18. Try the 'tastytrade' icon & link in the social links at the top of the page. - Success
-    19. Make sure all of the information in the 'trading view' chart is readable on wide screen and on narrow screens. - Success
-    20. Make sure all of the information in the 'income statement' is readable on wide screen and on narrow screens. - Success
-    21. Make sure all of the information in the 'liabilities section of the balance sheet' is readable on wide screen and on narrow screens. - Success
-    22. Make sure all of the information in the 'cashflow sheet' is readable on wide screen and on narrow screens. - Success
-    23. Check the tradeideas.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Ftradeideas.html"></a> 
-    - iPhone eXpensive portrait · width: 375px - Success
-    - iPhone eXpensive landscape · width: 734px - Success
-    - Android (Pixel 2) portrait · width: 412px - Success
-    - Android (Pixel 2) landscape · width: 684px - Success
-    - iPhone 6-8 portrait · width: 375px - Success
-    - iPhone 6-8 landscape · width: 667px - Success
-    - iPhone 6-8 Plump portrait · width: 414px - Success
-    - iPhone 6-8 Plump landscape · width: 736px - Success
-    - iPad portrait · width: 768px - Success 
-
-5. <b>User Story 5:</b> User has a more specific question and wants to contact the website owner: contact_us.html page.
-    1. Try to read all of the text on the 'contact us' page, make sure that the information is correct, and make sure that the text looks strong. - Success
-    2. The background image now loads faster as I replaced the jpg files with the converted png files. - Success
-    3. Try the 'Your Own Money Investments' link in the logo  - Success
-    4. Try the 'Reading' button and hover-over response in the navbar. - Success
-    5. Try the 'Podcasts' button and hover-over response in the navbar. - Success
-    6. Try the 'Trade Ideas' button and hover-over response in the navbar. - Success
-    7. Try the 'Contact Us' button and hover-over response in the navbar. - Success
-    8. Try the 'Reading' button and hover-over response in the dropdown menu for narrower screens. - Success
-    9. Try the 'Podcasts' button and hover-over response in the dropdown menu for narrower screens. - Success
-    10. Try the 'Trade Ideas' button and hover-over response in the dropdown menu for narrower screens. - Success
-    11. Try the 'Contact Us' button and hover-over response in the dropdown menu for narrower screens. - Success
-    12. Try the 'facebook' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    13. Try the 'twitter' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    14. Try the 'instagram' icon & link, and hover-over response in the social links at the bottom of the page. - Success
-    15. Try typing into the 'Email Address' field - Success
-    16. Try picking all options: 'Particular Stock', 'Strategy', 'Position Sizing', 'Entering a Trade', 'Exiting a Trade' from the 'Question Subject' dropdown menu. - Success
-    17. Try typing into the 'Question' field. - Success
-    18. Try hovering over the 'Submit' button - Success (the full functinality of this form is out of scope for this static website project)
-    19. Check the contact_us.html page in responsinator: <a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Fcontact_us.html">Link</a>
-    - iPhone eXpensive portrait · width: 375px - Success
-    - iPhone eXpensive landscape · width: 734px - Success
-    - Android (Pixel 2) portrait · width: 412px - Success
-    - Android (Pixel 2) landscape · width: 684px - Success
-    - iPhone 6-8 portrait · width: 375px - Success
-    - iPhone 6-8 landscape · width: 667px - Success
-    - iPhone 6-8 Plump portrait · width: 414px - Success
-    - iPhone 6-8 Plump landscape · width: 736px - Success
-    - iPad portrait · width: 768px - Success 
-    - iPad landscape · width: 1024px - Success 
-
+3. <b>User Story 3:</b> Booking flight post trip planning. (location: post_booking.html)
+    1. Check all the written content for accuracy. - Success
+    2. Try 'return', 'one way' and 'multi-city' radio buttons. - Success
+    3. Try 'from', 'to' and 'depart' and 'return' fields.  - Success
+    4. Check 'cabin class' drop down menu. - Success
+    5. Test 'adults' and 'children' plus and minus buttons.- Success
+    6. Try the 'search flights' button. - Success 
+    7. Check the index.html page in responsinator:<a href="https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2Fmilestone_project_1-static_frontend%2Findex.html"></a>
+        - iPhone eXpensive portrait · width: 375px - Success
+        - iPhone eXpensive landscape · width: 734px - Success
+        - Android (Pixel 2) portrait · width: 412px - Success
+        - Android (Pixel 2) landscape · width: 684px - Success
+        - iPhone 6-8 portrait · width: 375px - Success
+        - iPhone 6-8 landscape · width: 667px - Success
+        - iPhone 6-8 Plump portrait · width: 414px - Success
+        - iPhone 6-8 Plump landscape · width: 736px - Success
+        - iPad portrait · width: 768px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+        - iPad landscape · width: 1024px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
 
 ## Deployment
 
