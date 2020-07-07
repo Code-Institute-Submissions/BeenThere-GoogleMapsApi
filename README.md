@@ -103,16 +103,16 @@ how many adults and children are going and then what class of flight ticket they
     16. The social media, font awesome items are present and the hyperlinks are working. - Success
     17. All five city pictures are present and smoothly transitioning in carousel. - Success 
     18. Check the index.html page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2F)
-        - iPhone eXpensive portrait · width: 375px - Success
-        - iPhone eXpensive landscape · width: 734px - Success
-        - Android (Pixel 2) portrait · width: 412px - Success
-        - Android (Pixel 2) landscape · width: 684px - Success
-        - iPhone 6-8 portrait · width: 375px - Success
-        - iPhone 6-8 landscape · width: 667px - Success
-        - iPhone 6-8 Plump portrait · width: 414px - Success
-        - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success 
-        - iPad landscape · width: 1024px - Success 
+        - iPhone eXpensive portrait: width: 375px - Success
+        - iPhone eXpensive landscape: width: 734px - Success
+        - Android (Pixel 2) portrait: width: 412px - Success
+        - Android (Pixel 2) landscape: width: 684px - Success
+        - iPhone 6-8 portrait: width: 375px - Success
+        - iPhone 6-8 landscape: width: 667px - Success
+        - iPhone 6-8 Plump portrait: width: 414px - Success
+        - iPhone 6-8 Plump landscape: width: 736px - Success
+        - iPad portrait: width: 768px - Success 
+        - iPad landscape: width: 1024px - Success 
 
 1. b) <b>User Story 1:</b> Nice - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -126,16 +126,16 @@ how many adults and children are going and then what class of flight ticket they
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
     12. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fnice.html)
-        - iPhone eXpensive portrait · width: 375px - Success
-        - iPhone eXpensive landscape · width: 734px - Success
-        - Android (Pixel 2) portrait · width: 412px - Success
-        - Android (Pixel 2) landscape · width: 684px - Success
-        - iPhone 6-8 portrait · width: 375px - Success
-        - iPhone 6-8 landscape · width: 667px - Success
-        - iPhone 6-8 Plump portrait · width: 414px - Success
-        - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success 
-        - iPad landscape · width: 1024px - Success 
+        - iPhone eXpensive portrait: width: 375px - Success
+        - iPhone eXpensive landscape: width: 734px - Success
+        - Android (Pixel 2) portrait: width: 412px - Success
+        - Android (Pixel 2) landscape: width: 684px - Success
+        - iPhone 6-8 portrait: width: 375px - Success
+        - iPhone 6-8 landscape: width: 667px - Success
+        - iPhone 6-8 Plump portrait: width: 414px - Success
+        - iPhone 6-8 Plump landscape: width: 736px - Success
+        - iPad portrait: width: 768px - Success 
+        - iPad landscape: width: 1024px - Success 
 
 1. c) <b>User Story 1:</b> Ibiza - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -149,16 +149,16 @@ how many adults and children are going and then what class of flight ticket they
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
     12. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fibiza.html)
-        - iPhone eXpensive portrait · width: 375px - Success
-        - iPhone eXpensive landscape · width: 734px - Success
-        - Android (Pixel 2) portrait · width: 412px - Success
-        - Android (Pixel 2) landscape · width: 684px - Success
-        - iPhone 6-8 portrait · width: 375px - Success
-        - iPhone 6-8 landscape · width: 667px - Success
-        - iPhone 6-8 Plump portrait · width: 414px - Success
-        - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
-        - iPad landscape · width: 1024px - Success (1. There is a lot of white space at the bottom but I am actually fine with it as it draws the eye more towards the social links and it is unusual so it does not have the 'wall paper' effect on people. 2. I tried another picture underneat but it looked too busy.)
+        - iPhone eXpensive portrait: width: 375px - Success
+        - iPhone eXpensive landscape: width: 734px - Success
+        - Android (Pixel 2) portrait: width: 412px - Success
+        - Android (Pixel 2) landscape: width: 684px - Success
+        - iPhone 6-8 portrait: width: 375px - Success
+        - iPhone 6-8 landscape: width: 667px - Success
+        - iPhone 6-8 Plump portrait: width: 414px - Success
+        - iPhone 6-8 Plump landscape: width: 736px - Success
+        - iPad portrait: width: 768px - Success 
+        - iPad landscape: width: 1024px - Success 
 
 1. d) <b>User Story 1:</b> Berlin - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -172,16 +172,16 @@ how many adults and children are going and then what class of flight ticket they
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
     11. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fberlin.html)
-        - iPhone eXpensive portrait · width: 375px - Success
-        - iPhone eXpensive landscape · width: 734px - Success
-        - Android (Pixel 2) portrait · width: 412px - Success
-        - Android (Pixel 2) landscape · width: 684px - Success
-        - iPhone 6-8 portrait · width: 375px - Success
-        - iPhone 6-8 landscape · width: 667px - Success
-        - iPhone 6-8 Plump portrait · width: 414px - Success
-        - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success 
-        - iPad landscape · width: 1024px - Success 
+        - iPhone eXpensive portrait: width: 375px - Success
+        - iPhone eXpensive landscape: width: 734px - Success
+        - Android (Pixel 2) portrait: width: 412px - Success
+        - Android (Pixel 2) landscape: width: 684px - Success
+        - iPhone 6-8 portrait: width: 375px - Success
+        - iPhone 6-8 landscape: width: 667px - Success
+        - iPhone 6-8 Plump portrait: width: 414px - Success
+        - iPhone 6-8 Plump landscape: width: 736px - Success
+        - iPad portrait: width: 768px - Success 
+        - iPad landscape: width: 1024px - Success 
 
 1. e) <b>User Story 1:</b> London - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -195,16 +195,16 @@ how many adults and children are going and then what class of flight ticket they
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
     11. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Flondon.html)
-        - iPhone eXpensive portrait · width: 375px - Success
-        - iPhone eXpensive landscape · width: 734px - Success
-        - Android (Pixel 2) portrait · width: 412px - Success
-        - Android (Pixel 2) landscape · width: 684px - Success
-        - iPhone 6-8 portrait · width: 375px - Success
-        - iPhone 6-8 landscape · width: 667px - Success
-        - iPhone 6-8 Plump portrait · width: 414px - Success
-        - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success 
-        - iPad landscape · width: 1024px - Success 
+        - iPhone eXpensive portrait: width: 375px - Success
+        - iPhone eXpensive landscape: width: 734px - Success
+        - Android (Pixel 2) portrait: width: 412px - Success
+        - Android (Pixel 2) landscape: width: 684px - Success
+        - iPhone 6-8 portrait: width: 375px - Success
+        - iPhone 6-8 landscape: width: 667px - Success
+        - iPhone 6-8 Plump portrait: width: 414px - Success
+        - iPhone 6-8 Plump landscape: width: 736px - Success
+        - iPad portrait: width: 768px - Success 
+        - iPad landscape: width: 1024px - Success 
 
 1. e) <b>User Story 1:</b> Paris - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -218,16 +218,16 @@ how many adults and children are going and then what class of flight ticket they
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
     11. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fparis.html)
-        - iPhone eXpensive portrait · width: 375px - Success
-        - iPhone eXpensive landscape · width: 734px - Success
-        - Android (Pixel 2) portrait · width: 412px - Success
-        - Android (Pixel 2) landscape · width: 684px - Success
-        - iPhone 6-8 portrait · width: 375px - Success
-        - iPhone 6-8 landscape · width: 667px - Success
-        - iPhone 6-8 Plump portrait · width: 414px - Success
-        - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success 
-        - iPad landscape · width: 1024px - Success 
+        - iPhone eXpensive portrait: width: 375px - Success
+        - iPhone eXpensive landscape: width: 734px - Success
+        - Android (Pixel 2) portrait: width: 412px - Success
+        - Android (Pixel 2) landscape: width: 684px - Success
+        - iPhone 6-8 portrait: width: 375px - Success
+        - iPhone 6-8 landscape: width: 667px - Success
+        - iPhone 6-8 Plump portrait: width: 414px - Success
+        - iPhone 6-8 Plump landscape: width: 736px - Success
+        - iPad portrait: width: 768px - Success 
+        - iPad landscape: width: 1024px - Success  
 
 1. f) <b>User Story 1:</b> booking.html page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -239,16 +239,16 @@ how many adults and children are going and then what class of flight ticket they
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
     11. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fbook.html)
-        - iPhone eXpensive portrait · width: 375px - Success
-        - iPhone eXpensive landscape · width: 734px - Success
-        - Android (Pixel 2) portrait · width: 412px - Success
-        - Android (Pixel 2) landscape · width: 684px - Success
-        - iPhone 6-8 portrait · width: 375px - Success
-        - iPhone 6-8 landscape · width: 667px - Success
-        - iPhone 6-8 Plump portrait · width: 414px - Success
-        - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success 
-        - iPad landscape · width: 1024px - Success 
+        - iPhone eXpensive portrait: width: 375px - Success
+        - iPhone eXpensive landscape: width: 734px - Success
+        - Android (Pixel 2) portrait: width: 412px - Success
+        - Android (Pixel 2) landscape: width: 684px - Success
+        - iPhone 6-8 portrait: width: 375px - Success
+        - iPhone 6-8 landscape: width: 667px - Success
+        - iPhone 6-8 Plump portrait: width: 414px - Success
+        - iPhone 6-8 Plump landscape: width: 736px - Success
+        - iPad portrait: width: 768px - Success 
+        - iPad landscape: width: 1024px - Success 
     
 2. <b>User Story 2:</b> User Story 2: Checking which cities are in focus this month and just using the hotel finder.
     1. Try the 'Search for Hotels' button and see if it displays the map and the search bar. - Success
@@ -270,16 +270,16 @@ how many adults and children are going and then what class of flight ticket they
     5. Test 'adults' and 'children' plus and minus buttons.- Success
     6. Try the 'search flights' button. - Success 
     7. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fpost_booking.html)
-        - iPhone eXpensive portrait · width: 375px - Success
-        - iPhone eXpensive landscape · width: 734px - Success
-        - Android (Pixel 2) portrait · width: 412px - Success
-        - Android (Pixel 2) landscape · width: 684px - Success
-        - iPhone 6-8 portrait · width: 375px - Success
-        - iPhone 6-8 landscape · width: 667px - Success
-        - iPhone 6-8 Plump portrait · width: 414px - Success
-        - iPhone 6-8 Plump landscape · width: 736px - Success
-        - iPad portrait · width: 768px - Success 
-        - iPad landscape · width: 1024px - Success 
+        - iPhone eXpensive portrait: width: 375px - Success
+        - iPhone eXpensive landscape: width: 734px - Success
+        - Android (Pixel 2) portrait: width: 412px - Success
+        - Android (Pixel 2) landscape: width: 684px - Success
+        - iPhone 6-8 portrait: width: 375px - Success
+        - iPhone 6-8 landscape: width: 667px - Success
+        - iPhone 6-8 Plump portrait: width: 414px - Success
+        - iPhone 6-8 Plump landscape: width: 736px - Success
+        - iPad portrait: width: 768px - Success 
+        - iPad landscape: width: 1024px - Success 
 
 ## Deployment
 - I deployed the website on github pages(https://sammckenna1986.github.io/BeenThere-GoogleMapsApi/index.html)
@@ -292,7 +292,7 @@ how many adults and children are going and then what class of flight ticket they
 - Thank you to all the teachers on the course; The videos and excercises were excellent.
 
 ### Content and Media
-- The blurbs for the cutomised google maps markers I got from the places own websites.
+- The blurbs for the cutomised google maps markers I got from the places' own websites.
 - The social media icons were from fontawesome.
 - All the pictures were copyright free and were downloaded from https://pixabay.com/.
 
