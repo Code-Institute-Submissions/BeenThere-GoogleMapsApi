@@ -19,9 +19,8 @@ As they look at the google maps functionality provided they might then make the 
 <b>User Story 1: Be Inspired</b><br>
 - A new user comes across the <b>BeenThere</b> website when starting to plan their holiday. They do not know where they want to go on holiday yet and would like to be inspired by the 5, monthly cities with the current 3 recommendations for hotels, bars, and restaurants.
 
-<br><br>
 
-<b>User Story 2: Checking which Cities and just using the hotel finder</b><br>
+<b>User Story 2: Checking which cities are in focus this month and just using the hotel finder</b><br>
 - As a new or experienced user, the user checks which 5 cities are in focus for the <b>BeenThere</b> team this month, and if they do not want to use the curated trip part of the website, they may choose to use the specialised google map and search functionality from the <b>BeenThere</b> website as
 the map has filtered out most items from it, that does not relate to holiday planning, to choose their hotel and plan their trip.<br><br>
 
@@ -46,6 +45,9 @@ There is a semi-transparent list type table that they can see as well that lists
 can remember which hotel they have already reviewed and can match the letters to the hotel that they can see in the transparent list. If the user clicks on the individual markers for the hotels it will bring up information about the hotel so that the user can book the hotel and also visit the hotel's own website. If they choose not to look at the list and just click on the hotels on the actual map I have built in an event-listener that allows them to hide this semi-tranparent list by pressing the 'hide the search table' button below. 
 
 4) <b>SkyScanner flight booking widget</b><br><br> 
+After the user requests to book their trip they are brought to a 'post booking' that educates the user that it will take around 48 hours for them to receive their curated trip, underneath that education the user is 'called to action' to book their flight using the
+skyscanner widget that is built into that page. It allows the user to choose if they want to book a return, one-way or multi-city ticket, where the flight is going to and coming from, it allows the user to choose the day they want to depart and the day they want to return,
+how many adults and children are going and then what class of flight ticket they want to book. They then press the 'search flights' button which brings them to the skyscanner page with the live flight information. The link has a unique referal code built into it though that we will get referral comission on.
 
 
 ###Future Feature Ideas
@@ -58,41 +60,24 @@ can remember which hotel they have already reviewed and can match the letters to
 
 - [Bootstrap](https://getbootstrap.com/)
     - The project uses **Bootstrap** to speed up the HTML and CSS work.
-        - <b>Buttons:</b> https://getbootstrap.com/docs/4.4/components/buttons/
-        - <b>Dropdowns:</b> https://getbootstrap.com/docs/4.4/components/dropdowns/
-        - <b>Navbar:</b> https://getbootstrap.com/docs/4.4/components/navbar/
-        - <b>Typography:</b> https://getbootstrap.com/docs/4.4/content/typography/
-        - <b>Grid:</b> https://getbootstrap.com/docs/4.4/layout/grid/
-
-- [Font Awesome](https://fontawesome.com/)
-        - 'fa fa-graduation-cap'
-        - 'fa fa-facebook'
-        - 'fa fa-twitter'
-        - 'fa fa-instagram'
 
 - [Google Fonts](https://fonts.google.com/)
         - I used archivo as this website is a little bit like an archive of recommended content and ideas. It looks very strong and clean as well as a font.
 
+- [CSS](https://cssreference.io/)
 
-    - [CSS](https://cssreference.io/)
-        - <b>font-family:</b> for choosing the font.
-        - <b>text-transform:</b> to use uppercase function.
-        - <b>text-align:</b> to align the text especially justify for the centered text.
-        - <b>background:</b> for adding in the background picture urls.
-        - <b>background-position:</b> for background picture positioning.
-        - <b>background-size:</b> Used cover to make sure that the background does not run out of picture and shows white space too much.
-        - <b>background-repeat:</b> Put in no-repeat for having the background picture not repeating.
-        - <b>height:</b> For sizing the images and playing around with the background image sizes as well.
-        - <b>width:</b> For sizing the images and playing around with the background image sizes as well.
-        - <b>padding:</b> For making sure all of the text and html components have enough space in terms of design so it does not look cramped.
-        - <b>background-blend-mode:</b> I came across this one by chance on w3schools but I used it to make the background image 'lighten' so the text would show up better.
-        - <b>color:</b> for text colouring and the colouring of the fa icon.
-        - <b>background-color:</b> for creating little boxes (including opacity) to make the text show up better on the background image.
-        - <b>font-weight:</b> To make the text easier to read.
-        - <b>position:</b> for positioning
-        - <b>border-radius:</b> for making oval backgrounds for the buttons and for some of the boxes that I put text into.
-        - <b>display:</b> controlling and centering items as blocks.
-        - <b>margin:</b> (left,right, top, bottom) for creating space between components and text.
+- [Font Awesome](https://fontawesome.com/) 
+        - 'fa fa-graduation-cap' - 'fa fa-facebook' - 'fa fa-twitter' - 'fa fa-instagram'
+
+- [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorial)
+        - I used the google maps api to make the custom google maps to filter out all of the noise of the google maps and to leave just the points of interest for holiday planning.
+        - The custom markers and pop-up window for the recommended hotel, restaurant and bar were made using google maps api.
+
+- [Google Places API](https://developers.google.com/places/web-service/intro)
+        - I used the google places api to create a map and search bar that specifically lets you filter a country, type in a city, and the map then displays all of the hotels in that city.
+        - The map also shows a transparent list with the hotel labels so that a user can see quickly where a hotel is located. I built a button that can make this list invisible if the user wishes to concentrate just on the map.
+        - The markers of the hotels on the map lets you also click on them and display more information such as name of hotel, website url, and phone number.
+
 
 
 
@@ -100,20 +85,18 @@ can remember which hotel they have already reviewed and can match the letters to
 
 ## Testing
 <b>Testing Summary</b><br>
-Since this is a static website it only requires very basic testing. I tested all of the links and made sure that they all work and ended up replacing the backround pictures that were in jpg format and converting them to png so they would load faster. There is a lot of white space
-on the bottom of the ipad view for index.html; I tried putting another picture underneath the main content on that page but then it looked too busy and took the focus away from the statements and the social links so I removed the other picture again. The website works very clean on mobiles and the space to the right on wider views is very comforting and I made sure to choose appropriate
-background pictures that had the focus of the picture on the right of the picture which then worked well with the website.
 
 
 1. <b>User Story 1:</b> Be Inspired: index.html page.
     1. Try to read all of the text on the index page and make sure that the text looks strong. - Success
-    2. The background image now loads faster as I replaced the jpg files with the converted png files. - Success
-    3. Try the 'Your Own Money Investments' link in the logo  - Success
-    4. Try the 'Reading' button and hover-over response in the navbar. - Success
-    5. Try the 'Podcasts' button and hover-over response in the navbar. - Success
-    6. Try the 'Trade Ideas' button and hover-over response in the navbar. - Success
-    7. Try the 'Contact Us' button and hover-over response in the navbar. - Success
-    8. Try the 'Reading' button and hover-over response in the dropdown menu for narrower screens. - Success
+    2. The image loads. - Success
+    3. Try the 'Curated Trip' button and see if it displays 'choose' and 'city buttons' section. - Success
+    4. Try the 'Search for Hotels' button and see if it displays the map and the search bar. - Success
+    5. Try entering a city into the search bar and see if the map responds. - Success
+    6. Check if the semi-transparent hotel list is there. - Success
+    7. Try the 'Hide Search Table' button and see if the hotel list becomes invisible.  - Success
+    8. Try moving the map around with hand cursor. - Success
+        - Found Social Media buttons floating in the map. I don't want the user going to social media when they are searching for hotels so I just added an event listener to make the social media buttons disappear when the hotels button is pressed.      
     9. Try the 'Podcasts' button and hover-over response in the dropdown menu for narrower screens. - Success
     10. Try the 'Trade Ideas' button and hover-over response in the dropdown menu for narrower screens. - Success
     11. Try the 'Contact Us' button and hover-over response in the dropdown menu for narrower screens. - Success

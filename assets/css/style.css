@@ -38,8 +38,6 @@
     margin-top:2%;
 }
 
-
-
 /*City pages*/
 
 .local_image{
@@ -85,6 +83,12 @@
     text-align: center;
     position: relative;
 }
+
+#hotel-separation{
+    height: 100%;
+    width:100%;
+}
+
 
 /*From google maps documentation for Hotel search*/
 
