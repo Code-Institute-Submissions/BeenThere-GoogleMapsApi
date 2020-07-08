@@ -20,27 +20,25 @@ As they look at the google maps functionality provided they might then make the 
 - A new user comes across the <b>BeenThere</b> website when starting to plan their holiday. They do not know where they want to go on holiday yet and would like to be inspired by the 5, monthly cities with the current 3 recommendations for hotels, bars, and restaurants. After they are inspired
 they book a curated trip.
 
-<p>
-<img src="https://bc4400eb-fafb-42ca-82df-6d3f9a92a352.ws-eu01.gitpod.io/files/download/?id=bbbb37c6-0792-4f2f-9ec9-6cde1405d5a1" style="height:20%;width:20%;margin-left:33%;"/>
-<img src="https://bc4400eb-fafb-42ca-82df-6d3f9a92a352.ws-eu01.gitpod.io/files/download/?id=13de6b6a-50d2-4504-8845-35338277ffda" style="height:20%;width:20%;margin-left:33%;"/>
-<img src="https://bc4400eb-fafb-42ca-82df-6d3f9a92a352.ws-eu01.gitpod.io/files/download/?id=27f1acba-3cc1-448b-8bba-bf7465bc435d" style="height:20%;width:20%;margin-left:33%;"/>
-</p>
+
+<img src="assets/images/md/index_phone.png" style="height:20%;width:20%;margin-left:33%;">
+<img src="assets/images/md/berlin_phone.png" style="height:20%;width:20%;margin-left:33%;">
+<img src="assets/images/md/city_page_phone.png" style="height:20%;width:20%;margin-left:33%;">
+
 
 
 <b>User Story 2: Checking which cities are in focus this month and just using the hotel finder</b><br>
 - As a new or experienced user, the user checks which 5 cities are in focus for the <b>BeenThere</b> team this month, and if they do not want to use the curated trip part of the website, they may choose to use the specialised google map and search functionality from the <b>BeenThere</b> website as
 the map has filtered out most other items from it, that does not relate to holiday planning, to choose their hotel and book their trip.<br><br>
 
-<p>
-<img src="https://bc4400eb-fafb-42ca-82df-6d3f9a92a352.ws-eu01.gitpod.io/files/download/?id=17c91c5a-7de8-4da2-a9a4-4e5dc082eec7" style="height:20%;width:20%;margin-left:33%;"/>
-<img src="https://bc4400eb-fafb-42ca-82df-6d3f9a92a352.ws-eu01.gitpod.io/files/download/?id=cd2f0bba-955e-4de0-8550-2bf251d2e05e" style="height:20%;width:20%;margin-left:33%;"/>
-</p>
+<img src="assets/images/md/searchbar_phone.png" style="height:20%;width:20%;margin-left:33%;">
+<img src="assets/images/md/hotels_phone.png" style="height:20%;width:20%;margin-left:33%;">
 
 <b>User Story 3: Booking flight post trip planning</b><br>
 - After a user has booked their curated trip; They are brought to a 'thank you' page which sets expectations with them that they can expect their curated trip within 48 hours and that they can go ahead and book their flight. 
 The booking of the flight is quickly started through the skyscanner widget on the <b>BeenThere</b> website as it is convenient for the user to get the flight booking out of the way.<br><br>
-<img src="https://bc4400eb-fafb-42ca-82df-6d3f9a92a352.ws-eu01.gitpod.io/files/download/?id=ac4ebbd2-262a-47b2-b2b7-4339b554065a" style="height:20%;width:20%;margin-left:33%;"/>
 
+<img src="assets/images/md/skyscanner_phone.png" alt="skyscanner" style="height:20%;width:20%;margin-left:33%;">
 
 ## Features
 1) <b>Custom google maps for highlighted cities</b><br><br> 
