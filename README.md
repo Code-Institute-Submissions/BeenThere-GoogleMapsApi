@@ -6,7 +6,7 @@ We live in the age of customisation where people want to curate different offeri
 so it does not feel like a stale package holiday from the 70s. They do not have the local knowledge when they visit a new place to know all the best places to go to and 
 what places to visit. 
 
-<br><br>
+<br>
 <b>Proposed Solution</b><br>
 <i>BeenThere</i> is a website aimed at curating customisable holidays based on the invaluable knowledge of the locals. They know the best
 hotels,restaurants and bars to go to, as they have been living there for at least four years. The locals are carefully selected by the BeenThere team and usually have a background in the
@@ -20,14 +20,26 @@ As they look at the google maps functionality provided they might then make the 
 - A new user comes across the <b>BeenThere</b> website when starting to plan their holiday. They do not know where they want to go on holiday yet and would like to be inspired by the 5, monthly cities with the current 3 recommendations for hotels, bars, and restaurants. After they are inspired
 they book a curated trip.
 
+<p>
+<img src="https://bc4400eb-fafb-42ca-82df-6d3f9a92a352.ws-eu01.gitpod.io/files/download/?id=bbbb37c6-0792-4f2f-9ec9-6cde1405d5a1" style="height:20%;width:20%;margin-left:33%;"/>
+<img src="https://bc4400eb-fafb-42ca-82df-6d3f9a92a352.ws-eu01.gitpod.io/files/download/?id=13de6b6a-50d2-4504-8845-35338277ffda" style="height:20%;width:20%;margin-left:33%;"/>
+<img src="https://bc4400eb-fafb-42ca-82df-6d3f9a92a352.ws-eu01.gitpod.io/files/download/?id=27f1acba-3cc1-448b-8bba-bf7465bc435d" style="height:20%;width:20%;margin-left:33%;"/>
+</p>
+
 
 <b>User Story 2: Checking which cities are in focus this month and just using the hotel finder</b><br>
 - As a new or experienced user, the user checks which 5 cities are in focus for the <b>BeenThere</b> team this month, and if they do not want to use the curated trip part of the website, they may choose to use the specialised google map and search functionality from the <b>BeenThere</b> website as
-the map has filtered out most items from it, that does not relate to holiday planning, to choose their hotel and plan their trip.<br><br>
+the map has filtered out most other items from it, that does not relate to holiday planning, to choose their hotel and book their trip.<br><br>
+
+<p>
+<img src="https://bc4400eb-fafb-42ca-82df-6d3f9a92a352.ws-eu01.gitpod.io/files/download/?id=17c91c5a-7de8-4da2-a9a4-4e5dc082eec7" style="height:20%;width:20%;margin-left:33%;"/>
+<img src="https://bc4400eb-fafb-42ca-82df-6d3f9a92a352.ws-eu01.gitpod.io/files/download/?id=cd2f0bba-955e-4de0-8550-2bf251d2e05e" style="height:20%;width:20%;margin-left:33%;"/>
+</p>
 
 <b>User Story 3: Booking flight post trip planning</b><br>
 - After a user has booked their curated trip; They are brought to a 'thank you' page which sets expectations with them that they can expect their curated trip within 48 hours and that they can go ahead and book their flight. 
 The booking of the flight is quickly started through the skyscanner widget on the <b>BeenThere</b> website as it is convenient for the user to get the flight booking out of the way.<br><br>
+<img src="https://bc4400eb-fafb-42ca-82df-6d3f9a92a352.ws-eu01.gitpod.io/files/download/?id=ac4ebbd2-262a-47b2-b2b7-4339b554065a" style="height:20%;width:20%;margin-left:33%;"/>
 
 
 ## Features
@@ -51,9 +63,13 @@ skyscanner widget that is built into that page. It allows the user to choose if 
 how many adults and children are going and then what class of flight ticket they want to book. They then press the 'search flights' button which brings them to the skyscanner page with the live flight information. The link has a unique referal code built into it though that we will get referral comission on.
 
 
-###Future Feature Ideas
-1) I was thinking of developing a google sheet that is populated by the form so that the BeenThere-Locals can take their booking-leads directly from the google sheet and it would help with tracking of a kind of start of a CRM system.
-
+## Future Feature Ideas
+1) Developing a google sheet that is populated by the form so that the BeenThere-Locals can take their booking-leads directly from the google sheet and it would help with tracking of a kind of start of a CRM system.
+2) To add more markers every month to the city maps that give the potential bookers even more of a choice when it comes to getting insights into the city that is in focus that month.
+3) Adding more cities and more locals every month.
+4) Add a chat functionality so that users can ask questions to the BeenThere team more easily.
+5) Add possible restaurant and bar search to the already present hotel search.
+6) Figure out, instead of having the skyscanner app, that people could see a live feed of the flight prices at the time to that destination.
 
 
 ## Technologies Used
@@ -103,16 +119,7 @@ how many adults and children are going and then what class of flight ticket they
     16. The social media, font awesome items are present and the hyperlinks are working. - Success
     17. All five city pictures are present and smoothly transitioning in carousel. - Success 
     18. Check the index.html page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2F)
-        - iPhone eXpensive portrait: width: 375px - Success
-        - iPhone eXpensive landscape: width: 734px - Success
-        - Android (Pixel 2) portrait: width: 412px - Success
-        - Android (Pixel 2) landscape: width: 684px - Success
-        - iPhone 6-8 portrait: width: 375px - Success
-        - iPhone 6-8 landscape: width: 667px - Success
-        - iPhone 6-8 Plump portrait: width: 414px - Success
-        - iPhone 6-8 Plump landscape: width: 736px - Success
-        - iPad portrait: width: 768px - Success 
-        - iPad landscape: width: 1024px - Success 
+        - Success
 
 1. b) <b>User Story 1:</b> Nice - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -125,17 +132,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    12. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fnice.html)
-        - iPhone eXpensive portrait: width: 375px - Success
-        - iPhone eXpensive landscape: width: 734px - Success
-        - Android (Pixel 2) portrait: width: 412px - Success
-        - Android (Pixel 2) landscape: width: 684px - Success
-        - iPhone 6-8 portrait: width: 375px - Success
-        - iPhone 6-8 landscape: width: 667px - Success
-        - iPhone 6-8 Plump portrait: width: 414px - Success
-        - iPhone 6-8 Plump landscape: width: 736px - Success
-        - iPad portrait: width: 768px - Success 
-        - iPad landscape: width: 1024px - Success 
+    12. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fnice.html) - Success
 
 1. c) <b>User Story 1:</b> Ibiza - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -148,17 +145,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    12. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fibiza.html)
-        - iPhone eXpensive portrait: width: 375px - Success
-        - iPhone eXpensive landscape: width: 734px - Success
-        - Android (Pixel 2) portrait: width: 412px - Success
-        - Android (Pixel 2) landscape: width: 684px - Success
-        - iPhone 6-8 portrait: width: 375px - Success
-        - iPhone 6-8 landscape: width: 667px - Success
-        - iPhone 6-8 Plump portrait: width: 414px - Success
-        - iPhone 6-8 Plump landscape: width: 736px - Success
-        - iPad portrait: width: 768px - Success 
-        - iPad landscape: width: 1024px - Success 
+    12. Check the page in [responsinator](https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fibiza.html) - Success
 
 1. d) <b>User Story 1:</b> Berlin - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -171,17 +158,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    11. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fberlin.html)
-        - iPhone eXpensive portrait: width: 375px - Success
-        - iPhone eXpensive landscape: width: 734px - Success
-        - Android (Pixel 2) portrait: width: 412px - Success
-        - Android (Pixel 2) landscape: width: 684px - Success
-        - iPhone 6-8 portrait: width: 375px - Success
-        - iPhone 6-8 landscape: width: 667px - Success
-        - iPhone 6-8 Plump portrait: width: 414px - Success
-        - iPhone 6-8 Plump landscape: width: 736px - Success
-        - iPad portrait: width: 768px - Success 
-        - iPad landscape: width: 1024px - Success 
+    11. Check the page in [responsinator](https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fberlin.html) - Success
 
 1. e) <b>User Story 1:</b> London - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -194,17 +171,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    11. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Flondon.html)
-        - iPhone eXpensive portrait: width: 375px - Success
-        - iPhone eXpensive landscape: width: 734px - Success
-        - Android (Pixel 2) portrait: width: 412px - Success
-        - Android (Pixel 2) landscape: width: 684px - Success
-        - iPhone 6-8 portrait: width: 375px - Success
-        - iPhone 6-8 landscape: width: 667px - Success
-        - iPhone 6-8 Plump portrait: width: 414px - Success
-        - iPhone 6-8 Plump landscape: width: 736px - Success
-        - iPad portrait: width: 768px - Success 
-        - iPad landscape: width: 1024px - Success 
+    11. Check the page in [responsinator](https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Flondon.html) - Success
 
 1. e) <b>User Story 1:</b> Paris - city page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -217,17 +184,7 @@ how many adults and children are going and then what class of flight ticket they
     8. The city buttons underneath the logo are all present and are working correctly. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    11. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fparis.html)
-        - iPhone eXpensive portrait: width: 375px - Success
-        - iPhone eXpensive landscape: width: 734px - Success
-        - Android (Pixel 2) portrait: width: 412px - Success
-        - Android (Pixel 2) landscape: width: 684px - Success
-        - iPhone 6-8 portrait: width: 375px - Success
-        - iPhone 6-8 landscape: width: 667px - Success
-        - iPhone 6-8 Plump portrait: width: 414px - Success
-        - iPhone 6-8 Plump landscape: width: 736px - Success
-        - iPad portrait: width: 768px - Success 
-        - iPad landscape: width: 1024px - Success  
+    11. Check the page in [responsinator](https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fparis.html) - Success
 
 1. f) <b>User Story 1:</b> booking.html page.
     1. Try to read all of the text on the page and make sure that the text looks strong. - Success
@@ -238,17 +195,8 @@ how many adults and children are going and then what class of flight ticket they
     5. The event listener changes the 'submit request for ideal holiday' button content to 'thank you' on click. - Success
     9. The hyperlink within the logo is correctly working and brings people back to the index.html page. - Success
     10. The social media, font awesome items are present and the hyperlinks are working. - Success
-    11. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fbook.html)
-        - iPhone eXpensive portrait: width: 375px - Success
-        - iPhone eXpensive landscape: width: 734px - Success
-        - Android (Pixel 2) portrait: width: 412px - Success
-        - Android (Pixel 2) landscape: width: 684px - Success
-        - iPhone 6-8 portrait: width: 375px - Success
-        - iPhone 6-8 landscape: width: 667px - Success
-        - iPhone 6-8 Plump portrait: width: 414px - Success
-        - iPhone 6-8 Plump landscape: width: 736px - Success
-        - iPad portrait: width: 768px - Success 
-        - iPad landscape: width: 1024px - Success 
+    11. Check the page in [responsinator](https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fbook.html)
+ - Success
     
 2. <b>User Story 2:</b> User Story 2: Checking which cities are in focus this month and just using the hotel finder.
     1. Try the 'Search for Hotels' button and see if it displays the map and the search bar. - Success
@@ -269,25 +217,16 @@ how many adults and children are going and then what class of flight ticket they
     4. Check 'cabin class' drop down menu. - Success
     5. Test 'adults' and 'children' plus and minus buttons.- Success
     6. Try the 'search flights' button. - Success 
-    7. Check the page in responsinator(https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fpost_booking.html)
-        - iPhone eXpensive portrait: width: 375px - Success
-        - iPhone eXpensive landscape: width: 734px - Success
-        - Android (Pixel 2) portrait: width: 412px - Success
-        - Android (Pixel 2) landscape: width: 684px - Success
-        - iPhone 6-8 portrait: width: 375px - Success
-        - iPhone 6-8 landscape: width: 667px - Success
-        - iPhone 6-8 Plump portrait: width: 414px - Success
-        - iPhone 6-8 Plump landscape: width: 736px - Success
-        - iPad portrait: width: 768px - Success 
-        - iPad landscape: width: 1024px - Success 
+    7. Check the page in [responsinator](https://www.responsinator.com/?url=https%3A%2F%2Fsammckenna1986.github.io%2FBeenThere-GoogleMapsApi%2Fpost_booking.html)
+ - Success
 
 ## Deployment
-- I deployed the website on github pages(https://sammckenna1986.github.io/BeenThere-GoogleMapsApi/index.html)
+- I deployed the website on [github pages](https://sammckenna1986.github.io/BeenThere-GoogleMapsApi/index.html)
 
 
 
 ## Credits
-- Thank you to Antonio Rodriguez my mentor who's three meetings on this project were excellent and helped me understand a few concepts that I was missing.
+- Thank you to Antonio Rodriguez, my mentor, who's three meetings on this project were excellent and helped me understand a few concepts that I was missing.
 - Thank you to Claire Lally for clarifying a few concepts on the phone and for providing some extra motivation.
 - Thank you to all the teachers on the course; The videos and excercises were excellent.
 
