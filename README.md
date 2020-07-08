@@ -220,9 +220,12 @@ how many adults and children are going and then what class of flight ticket they
 
 ## Deployment
 - I deployed the website on [github pages](https://sammckenna1986.github.io/BeenThere-GoogleMapsApi/index.html)
-
-
-
+    1. Made sure that my github repository was up to date by 'git push' command in terminal.
+    2. Went to settings of that particular gihub repository.
+    3. Navigated to the github pages part of the settings and published the master branch.
+    4. Refreshed the page and then tried the blue hyperlink where the website was published at to make sure that it works.
+    5. Then I tested the deployment in responsinator to make sure that it looks good on all devices and that it is truly, phone-first, responsive.
+    
 ## Credits
 - Thank you to Antonio Rodriguez, my mentor, who's three meetings on this project were excellent and helped me understand a few concepts that I was missing.
 - Thank you to Claire Lally for clarifying a few concepts on the phone and for providing some extra motivation.
