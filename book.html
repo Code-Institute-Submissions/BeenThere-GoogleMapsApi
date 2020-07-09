@@ -1,76 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- My CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BeenThere</title>
-  </head>
+<head>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
 
-  <body>
-    <!--Navbar-->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>BeenThere</title>
+</head>
 
-    <!--BeenThere Explanation-->
-    <div class="jumbotron jumbotron-fluid background">
-      <div class="container centre padding">
-        <a href="index.html" id="link">
-          <h1 class="display-4 background">
-            BeenThere<img
+<body>
+	<!--Navbar-->
+
+	<!--BeenThere Explanation-->
+	<div class="jumbotron jumbotron-fluid background">
+		<div class="container centre padding">
+			<a href="index.html" id="link">
+				<h1 class="display-4 background">
+					BeenThere<img
               class="bean"
               src="assets/images/bean.png"
               alt="BeenThere Logo"
             />
           </h1>
-          <p class="lead background"><i>We have been there - have you?</i></p>
-        </a>
-      </div>
-    </div>
-    <div>
-      <img
+					<p class="lead background"><i>We have been there - have you?</i></p>
+			</a>
+		</div>
+	</div>
+
+
+
+		<div class="btn-group padding" role="group" aria-label="buttons">
+			<a type="button" href="index.html" class="btn btn-secondary">Home</a>
+			<a type="button" href="berlin.html" class="btn btn-secondary">Berlin</a>
+			<a type="button" href="ibiza.html" class="btn btn-secondary">Ibiza</a>
+			<a type="button" href="london.html" class="btn btn-secondary">London</a>
+			<a type="button" href="nice.html" class="btn btn-secondary">Nice</a>
+			<a type="button" href="paris.html" class="btn btn-secondary">Paris</a>
+
+		</div>
+	<div>
+		<img
         class="img-fluid"
         src="assets/images/book/holiday.jpg"
         alt="Holiday"
       />
     </div>
 
-    <!--Choose call to action-->
-    <div class="centre padding">
-      <h1 class="choose">Request to Book</h1>
-    </div>
-    <form>
-      <div class="form-group padding margin">
-        <label for="name"><b>Name</b></label>
-        <input
+		<!--Choose call to action-->
+		<div class="centre padding">
+			<h1 class="choose">Request to Book</h1>
+		</div>
+		<form>
+			<div class="form-group padding margin">
+				<label for="name"><b>Name</b></label>
+				<input
           type="text"
           class="form-control padding"
           id="name"
           placeholder="Name"
         />
       </div>
-      <div class="form-group padding margin">
-        <label for="email"><b>Email Address</b></label>
-        <input
+				<div class="form-group padding margin">
+					<label for="email"><b>Email Address</b></label>
+					<input
           type="email"
           class="form-control padding"
           id="email"
@@ -78,130 +79,116 @@
         />
       </div>
 
-      <div class="form-group padding margin">
-        <label for="city" class=""><b>Which city?</b></label>
-        <select class="form-control centre" id="city">
+					<div class="form-group padding margin">
+						<label for="city" class=""><b>Which city?</b></label>
+						<select class="form-control centre" id="city">
           <option>Berlin</option>
           <option>Ibiza</option>
           <option>London</option>
           <option>Nice</option>
           <option>Paris</option>
         </select>
-      </div>
-      <div class="centre padding margin">
-        <label for="guest"><b>How many guests?</b></label>
-        <input
+					</div>
+					<div class="centre padding margin">
+						<label for="guest"><b>How many guests?</b></label>
+						<input
           type="text"
           class="form-control padding"
           id="guest"
           placeholder="Guests?"
         />
       </div>
-      <div class="form-group padding margin">
-        <label for="night"><b>How many nights?</b></label>
-        <input
+						<div class="form-group padding margin">
+							<label for="night"><b>How many nights?</b></label>
+							<input
           type="text"
           class="form-control padding"
           id="night"
           placeholder="Nights?"
         />
 
-        <div class="form-group padding">
-          <label for="choose_ideal_holiday"
+							<div class="form-group padding">
+								<label for="choose_ideal_holiday"
             ><b
               >Please outline your ideal holiday(restaurants, bars, clubs,
               beaches?)</b
-            ></label
-          >
-          <textarea
+            ></label>
+								<textarea
             class="form-control"
             id="choose_ideal_holiday"
             rows="3"
           ></textarea>
-        </div>
-        <div class="form-group padding">
-          <label for="choose_special"
+							</div>
+							<div class="form-group padding">
+								<label for="choose_special"
             ><b
               >Any special dietary or access requirements? (Vegan? Wheelchair
               access required?)</b
-            ></label
-          >
-          <textarea
+            ></label>
+								<textarea
             class="form-control"
             id="choose_special"
             rows="3"
           ></textarea>
-        </div>
-      </div>
-      <div class="centre padding">
-        <a
-          type="button"
-          href="post_booking.html"
-          id="myBtn"
-          class="btn btn-lg btn-primary"
-          >Submit Request for Ideal Holiday
-        </a>
-      </div>
-      <h6 class="centre padding margin">
-        <i
+							</div>
+						</div>
+						<div class="centre padding">
+							<a type="button" href="post_booking.html" id="myBtn" class="btn btn-lg btn-primary">Submit
+								Request for Ideal Holiday
+							</a>
+						</div>
+						<h6 class="centre padding margin">
+							<i
           >Please allow 48 hours after submission to receive your
           <b>Ideal Holiday Suggestion</b> from your local.<br /><br />Thank
-          you,<br /><br /><b>Your BeenThere Team</b></i
-        >
-      </h6>
-    </form>
+          you,<br /><br /><b>Your BeenThere Team</b></i>
+						</h6>
+		</form>
 
-    <!--Social Media-->
-    <div>
-      <div class="col-12 padding centre">
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a target="_blank" href="https://facebook.com/">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-              <span class="sr-only">Facebook</span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a target="_blank" href="https://www.twitter.com/">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <span class="sr-only">Twitter</span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a target="_blank" href="https://www.instagram.com/">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-              <span class="sr-only">Instagram</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+		<!--Social Media-->
+		<div>
+			<div class="col-12 padding centre">
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a target="_blank" href="https://facebook.com/">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<span class="sr-only">Facebook</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a target="_blank" href="https://www.twitter.com/">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<span class="sr-only">Twitter</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a target="_blank" href="https://www.instagram.com/">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+							<span class="sr-only">Instagram</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-    <!--Scripts-->
-    <script>
-      document.getElementById("myBtn").addEventListener("click", function () {
+		<!--Scripts-->
+		<script>
+			document.getElementById("myBtn").addEventListener("click", function () {
         document.getElementById("myBtn").innerHTML = "Thank You!";
       });
-    </script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap"
-      async
-      defer
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+		</script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap"
+			async defer></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+		</script>
+</body>
+
 </html>

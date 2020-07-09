@@ -11,7 +11,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
 		type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css">
-
+    	<style>
+		/* This is a fail safe to make sure that the map definitely loads :) */
+		#map {
+			height: 400px;
+			width: 100%;
+		}
+	</style>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,13 +30,15 @@
 
 		<div>
 			<div class="container centre padding">
+
 				<a href="index.html" id="link">
 					<h1 class="display-4 background">
 						BeenThere<img class="bean" src="assets/images/bean.png" alt="BeenThere Logo"></h1>
 						<p class="lead background"><i>We have been there - have you?</i></p>
 				</a>
+
 				<!--Changing between different city pages buttons-->
-				<div class="btn-group padding" role="group" aria-label="Basic example">
+				<div class="btn-group padding" role="group" aria-label="buttons">
 					<a type="button" href="index.html" class="btn btn-secondary">Home</a>
 					<a type="button" href="berlin.html" class="btn btn-secondary">Berlin</a>
 					<a type="button" href="ibiza.html" class="btn btn-secondary">Ibiza</a>
@@ -49,19 +57,21 @@
 						flavours of
 						our monthly 5 destination cities.</h5>
 					<br>
-					<h6>Enjoy your holidays,</h6><br>
+					<h6>Enjoy your holidays,</h6>
 					<h6><i><b>Your BeenThere Team</b></i></h6>
 				</div>
 			</div>
 			<div>
 
 				<div class="centre padding">
-					<button id="beentherebtn" class="btn btn-dark btn-md">Curated Trip</button>
-					<button id="hotelsbtn" class="btn btn-dark btn-md">Search for Hotels</button>
+					<button id="beentherebtn" class="btn btn-secondary btn-md">Curated Trip</button>
+					<button id="hotelsbtn" class="btn btn-secondary btn-md">Search for Hotels</button>
 				</div>
+
 				<div class="homepage-pic">
 					<img class = "img-fluid" src="assets/images/bookingjourney.jpg" alt="Book your holiday">
         </div>
+
 				</div>
 
 
@@ -127,14 +137,7 @@
 								</div>
 							</div>
 						</div>
-						<a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#carouselaptions" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
+
 					</div>
 				</div>
 				<!--Hotel Section-->
@@ -166,7 +169,9 @@
 						<div id="map"></div>
 
 						<div class="centre padding">
-							<button type="button" id="closeBtn" class="btn btn- btn-info centre padding">Hide Search Table</button>
+							<button type="button" id="openBtn" class="btn btn- btn-info centre padding">Show Hotel Names</button>
+                            <button type="button" id="closeBtn" class="btn btn- btn-info centre padding">Hide Hotel Names</button>
+                            
 							<a href="book.html" id="booking-button" class="btn btn-secondary btn-lg padding centre">Book
 								Your Trip</a>
 
@@ -229,34 +234,26 @@
 						</ul>
 
 					</div>
-					<div class="video-container">
-						<div class="color-overlay">
-							<video autoplay loop muted class="background-video">
-								<source src="assets/images/video" type="video/mp4">
-						</div>
-						</video>
-					</div>
 
-				</div>
-				<script src="assets/js/main.js"></script>
+					<script src="assets/js/main.js"></script>
 
-				<script
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&libraries=places&callback=initMap"
-					async defer></script>
+					<script
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&libraries=places&callback=initMap"
+						async defer></script>
 
 
-				<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-					integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-					crossorigin="anonymous">
-				</script>
-				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-					integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-					crossorigin="anonymous">
-				</script>
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-					integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-					crossorigin="anonymous">
-				</script>
+					<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+						integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+						crossorigin="anonymous">
+					</script>
+					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+						integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+						crossorigin="anonymous">
+					</script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+						integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+						crossorigin="anonymous">
+					</script>
 </body>
 
 </html>

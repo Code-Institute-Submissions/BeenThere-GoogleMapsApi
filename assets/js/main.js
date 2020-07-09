@@ -2,10 +2,12 @@
 /*Event Listeners*/
 
 
-				document.getElementById("closeBtn").addEventListener("click", function(){
+				document.getElementById("openBtn").addEventListener("click", function(){
+              document.getElementById("listing").style.display = "block";
+                });
+                document.getElementById("closeBtn").addEventListener("click", function(){
               document.getElementById("listing").style.display = "none";
                 });
-
 
 				document.getElementById("beentherebtn").addEventListener("click", function(){
               document.getElementById("beentheresection").style.display = "block";
