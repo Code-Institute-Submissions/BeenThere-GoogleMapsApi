@@ -37,6 +37,7 @@ body{
 .btn-secondary{
     background-color: #1C98DF;
     border-color: #1C98DF;
+    font-size: 10;
 }
 .btn-primary{
     background-color: #1C98DF;
