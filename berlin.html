@@ -13,12 +13,10 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<style>
-		/* Set the size of the div element that contains the map */
+		/* This is a fail safe to make sure that the map definitely loads :) */
 		#map {
 			height: 400px;
-			/* The height is 400 pixels */
 			width: 100%;
-			/* The width is the width of the web page */
 		}
 	</style>
 
@@ -101,8 +99,16 @@
 		</div>
 
 
-				<!--Scripts-->
+     
 
+	
+      		<!--Scripts for Berlin page in particular because it allows you to edit the contents and and the markers on the same page as this would be changing monthly as the new
+              recommendations come in from the locals. I kept the general google map scripts in the main.js file so if a lot of people are working together they won't get confused. -->
+       
+				<script>	<src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
+					async defer></script>    			
+		
+ 
 
 
 				<script>
@@ -170,6 +176,7 @@ var infowindow3 = new google.maps.InfoWindow({
 }
 				</script>
 
+       
 				<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
 				<script
 					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
@@ -187,6 +194,7 @@ var infowindow3 = new google.maps.InfoWindow({
 					integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 					crossorigin="anonymous">
 				</script>
+         
 </body>
 
 </html>

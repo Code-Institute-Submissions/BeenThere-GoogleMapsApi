@@ -1,6 +1,7 @@
 /*Index Page*/
 /*Event Listeners*/
 
+
 				document.getElementById("closeBtn").addEventListener("click", function(){
               document.getElementById("listing").style.display = "none";
                 });
@@ -21,6 +22,7 @@
                 });
 
 /*Google Maps*/
+
 				var map, places, infoWindow;
       var markers = [];
       var autocomplete;
@@ -67,8 +69,10 @@
         // Create the autocomplete object and associate it with the UI input control.
         // Restrict the search to the default country, and to place type "cities".
         autocomplete = new google.maps.places.Autocomplete(
-            /** @type {!HTMLInputElement} */ (
-                document.getElementById('autocomplete')), {
+            /** @type {!HTMLInputElement} */ 
+            
+           
+            (document.getElementById('autocomplete')), {
               types: ['(cities)'],
               componentRestrictions: countryRestrict
             });
@@ -254,4 +258,5 @@
           document.getElementById('iw-website-row').style.display = 'none';
         }
       }
+
 
