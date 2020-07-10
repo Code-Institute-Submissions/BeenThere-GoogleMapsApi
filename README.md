@@ -13,7 +13,14 @@ hotels,restaurants and bars to go to, as they have been living there for at leas
 hospitality industry or the food industry. 
 
 ## UX
-The user experience for the website is aimed at providing users the ability to make their first attempt at looking where they want to travel to and looking for what hotels are available, in the city that they want to book in.
+<b>The BeenThere design concept</b> is that it looks like a boutique, cutomisable, unique travel-shop-front; It looks nearly the opposite of a normal package holiday website.<br>
+It is aimed at users who are looking for the unique user experience much like a hidden gem of a café, a hidden restaurant, or a lesser known hotel. The massive use of white space is representing space, and freedom
+for the user to have the unique experience rather than the mainstream travel experience.<br>
+
+The blue buttons represent the ocean and the customised google map is the color of the sand. The image of the bean after the wordplay of been reminded me of the shape of a seed as well like that of a potted plant where if you plant the seed,
+you are not really sure what it will flower into but you want to see it. <br>
+
+<b>The user experience for the website</b> is aimed at providing users the ability to make their first attempt at looking where they want to travel to and looking for what hotels are available, in the city that they want to book in.
 As they look at the google maps functionality provided they might then make the decision to actually have a local curate their trip for them, as they look at the five main city destinations and read about the locals who are designing the curated trips this month. 
 
 <b>User Story 1: Be Inspired</b><br>
@@ -236,6 +243,7 @@ how many adults and children are going and then what class of flight ticket they
 - The blurbs for the cutomised google maps markers I got from the places' own websites.
 - The social media icons were from fontawesome.
 - All the pictures were copyright free and were downloaded from https://pixabay.com/.
+- The bean logo image I got from google images.
 
 
 ### Acknowledgements
