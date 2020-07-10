@@ -1,31 +1,28 @@
-/*Index Page*/
 /*Event Listeners*/
+    document.getElementById("openBtn").addEventListener("click", function(){
+        document.getElementById("listing").style.display = "block";
+        });
+    document.getElementById("closeBtn").addEventListener("click", function(){
+        document.getElementById("listing").style.display = "none";
+        });
 
+    document.getElementById("beentherebtn").addEventListener("click", function(){
+        document.getElementById("beentheresection").style.display = "block";
+        document.getElementById("homepage-pic").style.display = "none";
+        document.getElementById("hotelsection").style.display = "none";
+        });
 
-				document.getElementById("openBtn").addEventListener("click", function(){
-              document.getElementById("listing").style.display = "block";
-                });
-                document.getElementById("closeBtn").addEventListener("click", function(){
-              document.getElementById("listing").style.display = "none";
-                });
+    document.getElementById("hotelsbtn").addEventListener("click", function(){
+        document.getElementById("hotelsection").style.display = "block";
+        document.getElementById("social").style.display = "none";
+        document.getElementById("booking-button").style.display = "block";
+        document.getElementById("homepage-pic").style.display = "none";
+        document.getElementById("beentheresection").style.display = "none";
+        });
 
-				document.getElementById("beentherebtn").addEventListener("click", function(){
-              document.getElementById("beentheresection").style.display = "block";
-              document.getElementById("homepage-pic").style.display = "none";
-              document.getElementById("hotelsection").style.display = "none";
-                });
+/*Google Maps Documentation Scripts*/
 
-				document.getElementById("hotelsbtn").addEventListener("click", function(){
-              document.getElementById("hotelsection").style.display = "block";
-              document.getElementById("social").style.display = "none";
-              document.getElementById("booking-button").style.display = "block";
-              document.getElementById("homepage-pic").style.display = "none";
-              document.getElementById("beentheresection").style.display = "none";
-                });
-
-/*Google Maps*/
-
-				var map, places, infoWindow;
+	var map, places, infoWindow;
       var markers = [];
       var autocomplete;
       var countryRestrict = {'country': 'fr'};
