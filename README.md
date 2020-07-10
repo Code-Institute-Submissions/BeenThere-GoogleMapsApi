@@ -38,6 +38,7 @@ the map has filtered out most other items from it, that does not relate to holid
 - After a user has booked their curated trip; They are brought to a 'thank you' page which sets expectations with them that they can expect their curated trip within 48 hours and that they can go ahead and book their flight. 
 The booking of the flight is quickly started through the skyscanner widget on the <b>BeenThere</b> website as it is convenient for the user to get the flight booking out of the way.<br><br>
 
+<img src="assets/images/md/request_phone.png" alt="skyscanner" style="height:20%;width:20%;margin-left:33%;">
 <img src="assets/images/md/skyscanner_phone.png" alt="skyscanner" style="height:20%;width:20%;margin-left:33%;">
 
 ## Features
@@ -199,7 +200,7 @@ how many adults and children are going and then what class of flight ticket they
 2. <b>User Story 2:</b> User Story 2: Checking which cities are in focus this month and just using the hotel finder.
     1. Try the 'Search for Hotels' button and see if it displays the map and the search bar. - Success
     2. Try entering a city into the search bar and see if the map responds. - Success
-    3. Check if the semi-transparent hotel list is there. - Success
+    3. Check if the buttons for showing and hiding the hotel list are present and are working. - Success
     4. Try the 'Hide Search Table' button and see if the hotel list becomes invisible.  - Success
     5. Try moving the map around with hand cursor. - Success
         - Found Social Media buttons floating in the map. I don't want the user going to social media when they are searching for hotels so I just added an event listener to make the social media buttons disappear when the hotels button is pressed. 
