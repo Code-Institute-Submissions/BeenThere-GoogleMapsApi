@@ -18,27 +18,25 @@
 </head>
 
 <body>
-	<!--Navbar-->
 
-	<!--BeenThere Explanation-->
+	<!--BeenThere logo and explanation-->
 	<div class="jumbotron jumbotron-fluid background">
 		<div class="container centre padding">
 			<h1 class="display-4 background ">BeenThere<img class="bean" src="assets/images/bean.png" alt="BeenThere Logo"></h1>
 				<p class="lead background"><i>We have been there - have you?</i>
 				</p>
-                			<div class="btn-group padding" role="group" aria-label="buttons">
-                <a type="button" href="index.html" class="btn btn-secondary btn-sm">Home</a>
-				<a type="button" href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
-				<a type="button" href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
-				<a type="button" href="london.html" class="btn btn-secondary btn-sm">London</a>
-				<a type="button" href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
-				<a type="button" href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
-
-			</div>
+                <!--Changing between different city pages buttons-->
+                <div class="btn-group padding" role="group" aria-label="buttons">
+                    <a href="index.html" class="btn btn-secondary btn-sm">Home</a>
+                    <a href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
+                    <a href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
+                    <a href="london.html" class="btn btn-secondary btn-sm">London</a>
+                    <a href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
+                    <a href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
+			    </div>
 				<img class="img-fluid" src="assets/images/thank_you.jpg" alt="Thank you and enjoy your holiday">
-
-		</div>
-		</div>
+        </div>
+    </div>
 
 		<!--Thank you for booking and enjoy your holiday-->
 		<h1 class="choose padding centre">Thank you for booking!</h1>
@@ -47,14 +45,13 @@
 		</h6>
 
 		<h3 class="padding centre margin">Book your flight below and await your curated trip and accomodation</h3>
-		<div class="centre padding margin">
+		<!--Skyscanner Widget-->
+        <div class="centre padding margin">
 			<div data-skyscanner-widget="FlightSearchWidget" data-associate-id="BeanThere" data-locale="en-GB"
 				data-market="ie" data-currency="EUR" data-destination-name="''"></div>
 		</div>
 
-
 		<!--Social Media-->
-		<div>
 			<div class="col-12 centre padding">
 
 				<ul class="list-inline ">
@@ -82,13 +79,10 @@
 			</div>
 
 
-			<!--Scripts-->
+			<!--Skyscanner Script-->
 			<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
-			<script>
-				document.getElementById("myBtn").addEventListener("click", function(){
-              document.getElementById("myBtn").innerHTML = "Thank You!";
-                });
-			</script>
+
+            <!--General Scripts below-->
 			<script
 				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap"
 				async defer></script>

@@ -26,23 +26,21 @@
 </head>
 
 <body>
-	<!--Navbar-->
-
-
-	<!--BeenThere Explanation-->
+	<!--BeenThere logo and explanation-->
 	<div class="jumbotron jumbotron-fluid background">
 		<div class="container centre padding">
 			<a href="index.html" id="link">
 				<h1 class="display-4 background">London<img class="bean" src="assets/images/bean.png" alt="BeenThere Logo"></h1>
 					<p class="lead background"><i>We have been there - have you?</i></p>
 			</a>
+            <!--Changing between different city pages buttons-->
 			<div class="btn-group padding" role="group" aria-label="buttons">
-                <a type="button" href="index.html" class="btn btn-secondary btn-sm">Home</a>
-				<a type="button" href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
-				<a type="button" href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
-				<a type="button" href="london.html" class="btn btn-secondary btn-sm">London</a>
-				<a type="button" href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
-				<a type="button" href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
+                <a href="index.html" class="btn btn-secondary btn-sm">Home</a>
+				<a href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
+				<a href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
+				<a href="london.html" class="btn btn-secondary btn-sm">London</a>
+				<a href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
+				<a href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
 
 			</div>
 			<div class="pic_blurb">
@@ -57,73 +55,73 @@
 			<h3 class="padding">This weeks top recommended bar, restaurant and hotel</h3>
 
 
-			<!--Map-->
+<!--Map-->
 			<div id="map"></div>
 			<div class="padding">
 			
-					<a type="button" href="book.html" class="btn btn-secondary btn-lg book padding">Book your Trip</a>
+					<a href="book.html" class="btn btn-secondary btn-lg book padding">Book your Trip</a>
 				
 			</div>
 		</div>
 	</div>
-			<!--Social Media-->
-			<div>
-				<div class="col-12 centre padding">
+<!--Social Media-->
 
-					<ul class="list-inline ">
-						<li class="list-inline-item">
-							<a target="_blank" href="https://facebook.com/">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-								<span class="sr-only">Facebook</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="https://www.twitter.com/">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-								<span class="sr-only">Twitter</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="https://www.instagram.com/">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-								<span class="sr-only">Instagram</span>
-							</a>
-						</li>
+    <div class="col-12 centre padding">
 
-					</ul>
-
-				</div>
+        <ul class="list-inline ">
+            <li class="list-inline-item">
+                <a target="_blank" href="https://facebook.com/">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a target="_blank" href="https://www.twitter.com/">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a target="_blank" href="https://www.instagram.com/">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 
 
-				<!--Scripts-->
+<!--Scripts for changing the content of the recommendation markers for this particular city. The general google maps scripts are still in the js file.
+It means the engineer does not have to open two pages when editing the content every month.-->
 
 
 
-				<script>
-					// Initialize and add the map
+<script>
+// Initialize and add the map
 function initMap() {
-  // The location of London
+// The location of London
   var london = {lat: 51.5074, lng: 0.1278};
-  // The map, centered at London
+// The map, centered on London.
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 12, center: london, mapId: 'da36f271281c5584'});
-
-      var marker1 = new google.maps.Marker({
+// First marker is a restaurant.
+    var marker1 = new google.maps.Marker({
       position: {lat: 51.5362, lng: 0.1255},
       map: map,
       label: "Restaurant: Dishoom",
       title: "marker 1"
     });
-        var contentString1 = '<h1>Dishoom</h1><p> Opened early last century by Zoroastrian immigrants from Iran, there were almost four hundred cafés at their peak in the 1960s. Now, fewer than thirty remain. These cafés broke down barriers by bringing people together over food and drink. They were the first places in Bombay where people of any culture, class or religion could take cool refuge from the street with a cup of chai, a simple snack or a hearty meal. People from all walks of life shared tables, rubbed shoulders and broke bread together.Shared spaces beget shared experiences, and Bombay was more open and welcoming for the existence of these cafés. Dishoom pays homage to the Irani cafés and the food of all Bombay</p><img class="window_image" src="assets/images/dishoom.jpg" alt="Dishoom Restaurant"> ';
+// Content for restaurant.   
+    var contentString1 = '<h1>Dishoom</h1><p> Opened early last century by Zoroastrian immigrants from Iran, there were almost four hundred cafés at their peak in the 1960s. Now, fewer than thirty remain. These cafés broke down barriers by bringing people together over food and drink. They were the first places in Bombay where people of any culture, class or religion could take cool refuge from the street with a cup of chai, a simple snack or a hearty meal. People from all walks of life shared tables, rubbed shoulders and broke bread together.Shared spaces beget shared experiences, and Bombay was more open and welcoming for the existence of these cafés. Dishoom pays homage to the Irani cafés and the food of all Bombay</p><img class="window_image" src="assets/images/dishoom.jpg" alt="Dishoom Restaurant"> ';
 
-var infowindow1 = new google.maps.InfoWindow({
+    var infowindow1 = new google.maps.InfoWindow({
           content: contentString1
         });
-
+// Event listener so that when the user clicks on the marker it opens the extra, custom content about that location. 
         marker1.addListener('click', function() {
           infowindow1.open(map, marker1);
         });
-
+// Second marker is a Bar.
     var marker2 = new google.maps.Marker({
       position: {lat: 51.5189, lng: 0.1028},
       map: map,
@@ -131,55 +129,55 @@ var infowindow1 = new google.maps.InfoWindow({
       title: "marker 2"
     });
  
-//info window for Bar
-        var contentString2 = '<h1>Oriole</h1>Subterranean cocktail bar with explorer-style decor and live music, for cocktails and rare spirits.<img class="window_image" src="assets/images/oriole.jpg" alt="Oriole Bar"> ';
+//Content for Bar
+    var contentString2 = '<h1>Oriole</h1>Subterranean cocktail bar with explorer-style decor and live music, for cocktails and rare spirits.<img class="window_image" src="assets/images/oriole.jpg" alt="Oriole Bar"> ';
 
-var infowindow2 = new google.maps.InfoWindow({
+    var infowindow2 = new google.maps.InfoWindow({
           content: contentString2
         });
-
+// Event listener so that when the user clicks on the marker it opens the extra, custom content about that location. 
         marker2.addListener('click', function() {
           infowindow2.open(map, marker2);
         });
       
-
-        var marker3 = new google.maps.Marker({
+// Third marker is a Hotel.
+    var marker3 = new google.maps.Marker({
       position: {lat: 51.5067, lng: 0.1244},
       map: map,
       label:"Hotel: Corinthia Hotel",
       title: "marker 3"
     });
-    //info window for Bar
-        var contentString3 = '<h1>Corinthia Hotel</h1>Step away from the bustle of the city and indulge in some sightseeing from the sky. Here you can admire Nelson’s Column and Trafalgar Square from the comfort of your own suite. While the city buzzes below, sink into blissful repose in an ESPA bubble bath – with the added option of watching TV while you soak. <img class="window_image" src="assets/images/corinthia.jpg" alt="Corinthia Hotel"> ';
+//Content for Hotel
+    var contentString3 = '<h1>Corinthia Hotel</h1>Step away from the bustle of the city and indulge in some sightseeing from the sky. Here you can admire Nelson’s Column and Trafalgar Square from the comfort of your own suite. While the city buzzes below, sink into blissful repose in an ESPA bubble bath – with the added option of watching TV while you soak. <img class="window_image" src="assets/images/corinthia.jpg" alt="Corinthia Hotel"> ';
 
-var infowindow3 = new google.maps.InfoWindow({
-          content: contentString3
+    var infowindow3 = new google.maps.InfoWindow({
+        content: contentString3
         });
-
+// Event listener so that when the user clicks on the marker it opens the extra, custom content about that location. 
         marker3.addListener('click', function() {
-          infowindow3.open(map, marker3);
+        infowindow3.open(map, marker3);
         });
         
 }
+    </script>
 
-				</script>
+    <!--General Scripts below-->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
+        async defer></script>
 
-				<script
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
-					async defer></script>
-
-				<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-					integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-					crossorigin="anonymous">
-				</script>
-				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-					integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-					crossorigin="anonymous">
-				</script>
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-					integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-					crossorigin="anonymous">
-				</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -26,23 +26,23 @@
 </head>
 
 <body>
-	<!--Navbar-->
 
 
-	<!--BeenThere Explanation-->
+	<!--BeenThere logo and explanation-->
 	<div class="jumbotron jumbotron-fluid background">
 		<div class="container centre padding">
 			<a href="index.html" id="link">
 				<h1 class="display-4 background">Ibiza<img class="bean" src="assets/images/bean.png" alt="BeenThere Logo"></h1>
 					<p class="lead background"><i>We have been there - have you?</i></p>
 			</a>
+            <!--Changing between different city pages buttons-->
 			<div class="btn-group padding" role="group" aria-label="buttons">
-                <a type="button" href="index.html" class="btn btn-secondary btn-sm">Home</a>
-				<a type="button" href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
-				<a type="button" href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
-				<a type="button" href="london.html" class="btn btn-secondary btn-sm">London</a>
-				<a type="button" href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
-				<a type="button" href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
+                <a href="index.html" class="btn btn-secondary btn-sm">Home</a>
+				<a href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
+				<a href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
+				<a href="london.html" class="btn btn-secondary btn-sm">London</a>
+				<a href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
+				<a href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
 
 			</div>
 			<div class="pic_blurb">
@@ -61,70 +61,71 @@
 			<div id="map"></div>
 			<div class="padding">
 			
-					<a type="button" href="book.html" class="btn btn-secondary btn-lg book padding">Book your Trip</a>
+					<a href="book.html" class="btn btn-secondary btn-lg book padding">Book your Trip</a>
 			
 			</div>
 		</div>
 	</div>
 			<!--Social Media-->
-			<div>
-				<div class="col-12 centre padding">
+    <div class="col-12 centre padding">
 
-					<ul class="list-inline ">
-						<li class="list-inline-item">
-							<a target="_blank" href="https://facebook.com/">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-								<span class="sr-only">Facebook</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="https://www.twitter.com/">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-								<span class="sr-only">Twitter</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="https://www.instagram.com/">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-								<span class="sr-only">Instagram</span>
-							</a>
-						</li>
+        <ul class="list-inline ">
+            <li class="list-inline-item">
+                <a target="_blank" href="https://facebook.com/">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a target="_blank" href="https://www.twitter.com/">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a target="_blank" href="https://www.instagram.com/">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </li>
 
-					</ul>
+        </ul>
 
-				</div>
-
-
-				<!--Scripts-->
+    </div>
 
 
+	<!--Scripts for changing the content of the recommendation markers for this particular city. The general google maps scripts are still in the js file.
+    It means the engineer does not have to open two pages when editing the content every month.-->
 
-				<script>
-					// Initialize and add the map
+
+
+
+<script>
+// Initialize and add the map
 function initMap() {
-  // The location of berlin
+// The location of Ibiza
   var ibiza = {lat: 39.0200, lng: 1.4821};
-  // The map, centered at berlin
+// The map, centered at Ibiza
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 11, center: ibiza, mapId: 'da36f271281c5584'});
- 
-
-      var marker1 = new google.maps.Marker({
+// First marker is a restaurant.
+    var marker1 = new google.maps.Marker({
       position: {lat: 38.995806, lng: 1.291626},
       map: map,
       label: "Restaurant: Es Tragón",
       title: "marker 1"
     });
-        var contentString1 = '<h1>Es Tragón</h1>Rooted in tradition, we create explosive dishes by carefully applying innovative techniques with respect for the product. We play with different elements, fusing them together in a mind-blowing and rogue way to offer an original, genuine and human experience; conveying the essence of Es Tragón and expanding the imagination’s repertoire of flavours.<img class="window_image" src="assets/images/estragon.jpg" alt="Es Tragón Restaurant"> ';
+// Content for restaurant.  
+    var contentString1 = '<h1>Es Tragón</h1>Rooted in tradition, we create explosive dishes by carefully applying innovative techniques with respect for the product. We play with different elements, fusing them together in a mind-blowing and rogue way to offer an original, genuine and human experience; conveying the essence of Es Tragón and expanding the imagination’s repertoire of flavours.<img class="window_image" src="assets/images/estragon.jpg" alt="Es Tragón Restaurant"> ';
 
-var infowindow1 = new google.maps.InfoWindow({
+    var infowindow1 = new google.maps.InfoWindow({
           content: contentString1
         });
-
+// Event listener so that when the user clicks on the marker it opens the extra, custom content about that location. 
         marker1.addListener('click', function() {
           infowindow1.open(map, marker1);
         });
-
+// Second marker is a Bar.
     var marker2 = new google.maps.Marker({
       position: {lat: 38.985670, lng: 1.538639},
       map: map,
@@ -132,55 +133,53 @@ var infowindow1 = new google.maps.InfoWindow({
       title: "marker 2"
     });
  
-//info window for Bar
-        var contentString2 = '<h1>Liquido Cocktail Bar</h1>On returning to Ibiza i could not wait to visit this great bar. Having sampled several cocktails at the Airport, at my Hotel and in a few bars along the Promenade, there is simply no comparison to the measures and presentation of the vast arrange of cocktails on offer at Liquido. Add to that the stunning setting, comfortable seating, classic Motown tunes and hospitable and attentive staff, there simply is no other reason to go anywhere else!<img class="window_image" src="assets/images/liquido.jpg" alt="Liquido Cocktail Bar"> ';
+//Content for Bar
+    var contentString2 = '<h1>Liquido Cocktail Bar</h1>On returning to Ibiza i could not wait to visit this great bar. Having sampled several cocktails at the Airport, at my Hotel and in a few bars along the Promenade, there is simply no comparison to the measures and presentation of the vast arrange of cocktails on offer at Liquido. Add to that the stunning setting, comfortable seating, classic Motown tunes and hospitable and attentive staff, there simply is no other reason to go anywhere else!<img class="window_image" src="assets/images/liquido.jpg" alt="Liquido Cocktail Bar"> ';
 
-var infowindow2 = new google.maps.InfoWindow({
+    var infowindow2 = new google.maps.InfoWindow({
           content: contentString2
         });
-
+// Event listener so that when the user clicks on the marker it opens the extra, custom content about that location. 
         marker2.addListener('click', function() {
           infowindow2.open(map, marker2);
         });
-      
-
-        var marker3 = new google.maps.Marker({
+// Third marker is a Hotel.      
+    var marker3 = new google.maps.Marker({
       position: {lat: 38.883612, lng: 1.404418},
       map: map,
       label:"Hotel: Hard Rock Hotel Ibiza",
       title: "marker 3"
     });
-    //info window for Bar
-        var contentString3 = '<h1>Hard Rock Hotel Ibiza</h1>Rebellious, nonconformist and temperamental. Real rock stars know you must never settle for anything but the best, especially when you’re on holiday. That’s why Hard Rock Hotel Ibiza offers rock star travellers a fabulous hotel and spa in Ibiza with a wide range of amenities and services designed for a platinum stay: Vinyasa yoga sessions livened up by a yogi DJ, games and entertainment for kids and teenagers, innovative personal training sessions, 24-hour concierge service and room service, spectacular swimming pools with exclusive chill-out areas, pet service... Plus the best rock star experience on the White Island, Sound of Your Stay, where you can book a Fender guitar and play your very own soundtrack to your luxury holiday in Ibiza. Or you can enjoy the best vinyl sound with the WAX® service, through which we deliver a Crosley record player to your room along with a selection of 10 iconic records. <img class="window_image" src="assets/images/hrh.jpg" alt="Hard Rock Hotel Ibiza"> ';
+//Content for Hotel
+    var contentString3 = '<h1>Hard Rock Hotel Ibiza</h1>Rebellious, nonconformist and temperamental. Real rock stars know you must never settle for anything but the best, especially when you’re on holiday. That’s why Hard Rock Hotel Ibiza offers rock star travellers a fabulous hotel and spa in Ibiza with a wide range of amenities and services designed for a platinum stay: Vinyasa yoga sessions livened up by a yogi DJ, games and entertainment for kids and teenagers, innovative personal training sessions, 24-hour concierge service and room service, spectacular swimming pools with exclusive chill-out areas, pet service... Plus the best rock star experience on the White Island, Sound of Your Stay, where you can book a Fender guitar and play your very own soundtrack to your luxury holiday in Ibiza. Or you can enjoy the best vinyl sound with the WAX® service, through which we deliver a Crosley record player to your room along with a selection of 10 iconic records. <img class="window_image" src="assets/images/hrh.jpg" alt="Hard Rock Hotel Ibiza"> ';
 
-var infowindow3 = new google.maps.InfoWindow({
+    var infowindow3 = new google.maps.InfoWindow({
           content: contentString3
         });
-
+// Event listener so that when the user clicks on the marker it opens the extra, custom content about that location. 
         marker3.addListener('click', function() {
           infowindow3.open(map, marker3);
         });
         
 }
+    </script>
+    <!--General Scripts below-->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
+        async defer></script>
 
-				</script>
-
-				<script
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
-					async defer></script>
-
-				<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-					integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-					crossorigin="anonymous">
-				</script>
-				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-					integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-					crossorigin="anonymous">
-				</script>
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-					integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-					crossorigin="anonymous">
-				</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

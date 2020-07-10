@@ -12,22 +12,20 @@
 		type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css">
 
-	<style>
-		/* This is a fail safe to make sure that the map definitely loads :) */
+    <style>/*
+		This is a fail safe to make sure that the map definitely loads :)*/
 		#map {
 			height: 400px;
 			width: 100%;
 		}
 	</style>
-
+     
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BeenThere</title>
 </head>
 
 <body>
-	<!--Navbar-->
-
 
 	<!--BeenThere Explanation-->
 	<div class="jumbotron jumbotron-fluid background">
@@ -39,12 +37,12 @@
 			</a>
 			<!--Changing between different city pages buttons-->
 			<div class="btn-group padding" role="group" aria-label="buttons">
-                <a type="button" href="index.html" class="btn btn-secondary btn-sm">Home</a>
-				<a type="button" href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
-				<a type="button" href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
-				<a type="button" href="london.html" class="btn btn-secondary btn-sm">London</a>
-				<a type="button" href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
-				<a type="button" href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
+                <a href="index.html" class="btn btn-secondary btn-sm">Home</a>
+				<a href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
+				<a href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
+				<a href="london.html" class="btn btn-secondary btn-sm">London</a>
+				<a href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
+				<a href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
 
 			</div>
 			<div class="pic_blurb">
@@ -63,7 +61,7 @@
 			<div id="map"></div>
 			<div class="padding">
 				<a href="book.html">
-					<button type="button"  class="btn btn-secondary btn-lg book padding">Book your Trip</button>
+					<button class="btn btn-secondary btn-lg book padding">Book your Trip</button>
 				</a>
 			</div>
 
@@ -98,46 +96,43 @@
 				</div>
 			</div>
 		</div>
-
+	</div>
 
      
 
 	
-      		<!--Scripts for Berlin page in particular because it allows you to edit the contents and and the markers on the same page as this would be changing monthly as the new
-              recommendations come in from the locals. I kept the general google map scripts in the main.js file so if a lot of people are working together they won't get confused. -->
-       
-				<script>	<src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
-					async defer></script>    			
-		
- 
+<!--Scripts for changing the content of the recommendation markers for this particular city. The general google maps scripts are still in the js file.
+    It means the engineer does not have to open two pages when editing the content every month. -->
 
-
-				<script>
-					// Initialize and add the map
-function initMap() {
-  // The location of berlin
-  var berlin = {lat: 52.5200, lng: 13.4050};
-  // The map, centered at berlin
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13, center: berlin, mapId: 'da36f271281c5584'});
-  // The marker, positioned at Uluru
-
-      var marker1 = new google.maps.Marker({
-      position: {lat: 52.5026, lng: 13.3941},
-      map: map,
-      label: "Restaurant: NaNum Berlin",
-      title: "marker 1"
+    <script><src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
+    async defer></script>    			
+    <script>
+// Initialize and add the map
+        function initMap() {
+// The location of berlin
+    var berlin = {lat: 52.5200, lng: 13.4050};
+// The map, centered on Berlin
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 13, center: berlin, mapId: 'da36f271281c5584'});
+// First marker is a restaurant.
+    var marker1 = new google.maps.Marker({
+        position: {lat: 52.5026, lng: 13.3941},
+        map: map,
+        label: "Restaurant: NaNum Berlin",
+        title: "marker 1"
     });
-        var contentString1 = '<h1>NaNum</h1> feels like an art installation where the atmosphere, along with everything else, is crafted by Jinok Kim. Like a surprising number of Korean restaura­teurs in Berlin, Jinok is a former classical singer; she moved here on a DAAD scholarship in 1978 and spent three decades performing and teach­ing before abruptly deciding to teach herself pottery via trial-and-error. When, last year, she and her husband (a fellow artist) landed a four-floor space in the former flower market across from the Jewish Museum, she didn’t turn it into a restaurant out of any love for cooking, but because she wanted to be “among people” after years onstage or sequestered in the studio. She calls NaNum a “meeting point for artists”, though her main clientele remains white-collar workers from nearby Friedrichstraße.<img class="window_image" src="assets/images/nanum.jpg" alt="Nanum Restaurant"> ';
+// Content for restaurant. 
+    var contentString1 = '<h1>NaNum</h1> feels like an art installation where the atmosphere, along with everything else, is crafted by Jinok Kim. Like a surprising number of Korean restaura­teurs in Berlin, Jinok is a former classical singer; she moved here on a DAAD scholarship in 1978 and spent three decades performing and teach­ing before abruptly deciding to teach herself pottery via trial-and-error. When, last year, she and her husband (a fellow artist) landed a four-floor space in the former flower market across from the Jewish Museum, she didn’t turn it into a restaurant out of any love for cooking, but because she wanted to be “among people” after years onstage or sequestered in the studio. She calls NaNum a “meeting point for artists”, though her main clientele remains white-collar workers from nearby Friedrichstraße.<img class="window_image" src="assets/images/nanum.jpg" alt="Nanum Restaurant"> ';
 
-var infowindow1 = new google.maps.InfoWindow({
+    var infowindow1 = new google.maps.InfoWindow({
           content: contentString1
         });
+// Event listener so that when the user clicks on the marker it opens the extra, custom content about that location. 
 
         marker1.addListener('click', function() {
           infowindow1.open(map, marker1);
         });
-
+// Second marker is a Bar.
     var marker2 = new google.maps.Marker({
       position: {lat: 52.5014, lng: 13.4159},
       map: map,
@@ -145,56 +140,56 @@ var infowindow1 = new google.maps.InfoWindow({
       title: "marker 2"
     });
  
-//info window for Bar
+//Content for Bar
         var contentString2 = '<h1>Ora</h1>Amongst the shelves, drawers and cabinets of the former Oranien-Apotheke, you will find our restaurant and bar.Here we pride ourselves on serving produce that are locally sourced, with sensitivity to the seasons and the land surrounding us. Your dinner will be accompanied by drinks following the same ethos, and wines of uncompromising quality.<img class="window_image" src="assets/images/ora.jpg" alt="Ora Bar"> ';
 
-var infowindow2 = new google.maps.InfoWindow({
+    var infowindow2 = new google.maps.InfoWindow({
           content: contentString2
         });
-
+// Event listener so that when the user clicks on the marker it opens the extra, custom content about that location. 
         marker2.addListener('click', function() {
           infowindow2.open(map, marker2);
         });
       
-
-        var marker3 = new google.maps.Marker({
-      position: {lat: 52.5124, lng: 13.4099},
-      map: map,
-      label:"Hotel: Art'otel Berlin Mitte",
-      title: "marker 3"
-    });
-    //info window for Bar
-        var contentString3 = '<h1>Art otel</h1>The historic Ermelerhaus was named after Ferdinand-Wilhelm Ermeler, the co-founder of the tobacco industry in Berlin, who purchased the house in 1824. Since then, the importance of the house gradually grew, as a lot of cultural event were held there through the years; the Ermelerhaus became an important intellectual meeting place in Berlin.The building was originally built in the 17th century at Breite Straße and was extended to a Rococo palace, but it was torn down in the 1960s and rebuilt at Märkisches Ufer. The Emelerhaus reopened in 1969 as one of the few luxury restaurants in East Berlin and was well visited until the reunion of East and West Berlin, when it went out of business and had to close. <img class="window_image" src="assets/images/arthotel.jpg" alt="Art otel"> ';
-
-var infowindow3 = new google.maps.InfoWindow({
-          content: contentString3
+// Third marker is a Hotel.
+    var marker3 = new google.maps.Marker({
+        position: {lat: 52.5124, lng: 13.4099},
+        map: map,
+        label:"Hotel: Art'otel Berlin Mitte",
+        title: "marker 3"
         });
+//Content for Hotel
+    var contentString3 = '<h1>Art otel</h1>The historic Ermelerhaus was named after Ferdinand-Wilhelm Ermeler, the co-founder of the tobacco industry in Berlin, who purchased the house in 1824. Since then, the importance of the house gradually grew, as a lot of cultural event were held there through the years; the Ermelerhaus became an important intellectual meeting place in Berlin.The building was originally built in the 17th century at Breite Straße and was extended to a Rococo palace, but it was torn down in the 1960s and rebuilt at Märkisches Ufer. The Emelerhaus reopened in 1969 as one of the few luxury restaurants in East Berlin and was well visited until the reunion of East and West Berlin, when it went out of business and had to close. <img class="window_image" src="assets/images/arthotel.jpg" alt="Art otel"> ';
 
-        marker3.addListener('click', function() {
-          infowindow3.open(map, marker3);
+    var infowindow3 = new google.maps.InfoWindow({
+        content: contentString3
+        });
+// Event listener so that when the user clicks on the marker it opens the extra, custom content about that location. 
+    marker3.addListener('click', function() {
+        infowindow3.open(map, marker3);
         });
         
 }
-				</script>
+    </script>
 
-       
-				<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
-				<script
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
-					async defer></script>
+    <!--General Scripts below-->
+    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
+        async defer></script>
 
-				<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-					integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-					crossorigin="anonymous">
-				</script>
-				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-					integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-					crossorigin="anonymous">
-				</script>
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-					integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-					crossorigin="anonymous">
-				</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous">
+    </script>
          
 </body>
 

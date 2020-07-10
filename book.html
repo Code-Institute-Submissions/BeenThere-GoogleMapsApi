@@ -18,36 +18,38 @@
 </head>
 
 <body>
-	<!--Navbar-->
 
-	<!--BeenThere Explanation-->
+	<!--BeenThere logo and explanation-->
 	<div class="jumbotron jumbotron-fluid background">
 		<div class="container centre padding">
 			<a href="index.html" id="link">
-				<h1 class="display-4 background">
-					BeenThere<img
-              class="bean"
-              src="assets/images/bean.png"
-              alt="BeenThere Logo"
-            />
-          </h1>
-					<p class="lead background"><i>We have been there - have you?</i></p>
+			    <h1 class="display-4 background">
+					BeenThere
+                    <img
+                    class="bean"
+                    src="assets/images/bean.png"
+                    alt="BeenThere Logo"
+                    />
+                </h1>
+			    <p class="lead background"><i>We have been there - have you?</i>
+                 </p>
 			</a>
 		</div>
 	</div>
 
 
-
+    <!--Changing between different city pages buttons-->
 		<div class="btn-group padding" role="group" aria-label="buttons">
-			<a type="button" href="index.html" class="btn btn-secondary btn-sm">Home</a>
-			<a type="button" href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
-			<a type="button" href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
-			<a type="button" href="london.html" class="btn btn-secondary btn-sm">London</a>
-			<a type="button" href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
-			<a type="button" href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
+			<a href="index.html" class="btn btn-secondary btn-sm">Home</a>
+			<a href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
+			<a href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
+			<a href="london.html" class="btn btn-secondary btn-sm">London</a>
+			<a href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
+			<a href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
 
 		</div>
 	<div>
+    <!--Big motivational image that is supposed to help motivate people to book.-->
 		<img
         class="img-fluid"
         src="assets/images/book/holiday.jpg"
@@ -56,97 +58,95 @@
     </div>
 
 		<!--Choose call to action-->
-		<div class="centre padding">
-			<h1 class="choose">Request to Book</h1>
-		</div>
-		<form>
+    <div class="centre padding">
+		<h1 class="choose">Request to Book</h1>
+    </div>
+    <form>
 			<div class="form-group padding margin">
 				<label for="name"><b>Name</b></label>
 				<input
-          type="text"
-          class="form-control padding"
-          id="name"
-          placeholder="Name"
-        />
-      </div>
+                type="text"
+                class="form-control padding"
+                id="name"
+                placeholder="Name"
+                />
+            </div>
 				<div class="form-group padding margin">
 					<label for="email"><b>Email Address</b></label>
 					<input
-          type="email"
-          class="form-control padding"
-          id="email"
-          placeholder="name@example.com"
-        />
-      </div>
+                    type="email"
+                    class="form-control padding"
+                    id="email"
+                    placeholder="name@example.com"
+                    />
+            </div>
 
 					<div class="form-group padding margin">
 						<label for="city" class=""><b>Which city?</b></label>
 						<select class="form-control centre" id="city">
-          <option>Berlin</option>
-          <option>Ibiza</option>
-          <option>London</option>
-          <option>Nice</option>
-          <option>Paris</option>
-        </select>
+                            <option>Berlin</option>
+                            <option>Ibiza</option>
+                            <option>London</option>
+                            <option>Nice</option>
+                            <option>Paris</option>
+                        </select>
 					</div>
 					<div class="centre padding margin">
 						<label for="guest"><b>How many guests?</b></label>
 						<input
-          type="text"
-          class="form-control padding"
-          id="guest"
-          placeholder="Guests?"
-        />
-      </div>
-						<div class="form-group padding margin">
-							<label for="night"><b>How many nights?</b></label>
-							<input
-          type="text"
-          class="form-control padding"
-          id="night"
-          placeholder="Nights?"
-        />
+                            type="text"
+                            class="form-control padding"
+                            id="guest"
+                            placeholder="Guests?"
+                        />
+                    </div>
+					<div class="form-group padding margin">
+                            <label for="night"><b>How many nights?</b></label>
+                            <input
+                                type="text"
+                                class="form-control padding"
+                                id="night"
+                                placeholder="Nights?"
+                            />
 
-							<div class="form-group padding">
-								<label for="choose_ideal_holiday"
-            ><b
-              >Please outline your ideal holiday(restaurants, bars, clubs,
-              beaches?)</b
-            ></label>
-								<textarea
-            class="form-control"
-            id="choose_ideal_holiday"
-            rows="3"
-          ></textarea>
-							</div>
-							<div class="form-group padding">
-								<label for="choose_special"
-            ><b
-              >Any special dietary or access requirements? (Vegan? Wheelchair
-              access required?)</b
-            ></label>
-								<textarea
-            class="form-control"
-            id="choose_special"
-            rows="3"
-          ></textarea>
-							</div>
-						</div>
+                        <div class="form-group padding">
+                            <label for="choose_ideal_holiday">
+                                <b>Please outline your ideal holiday(restaurants, bars, clubs,
+                                beaches?)</b>
+                            </label>
+                            <textarea
+                                class="form-control"
+                                id="choose_ideal_holiday"
+                                rows="3">
+                            </textarea>
+                        </div>
+                        <div class="form-group padding">
+                            <label for="choose_special">
+                                <b>Any special dietary or access requirements? (Vegan? Wheelchair
+                                access required?)</b>
+                            </label>
+                            <textarea
+                                class="form-control"
+                                id="choose_special"
+                                rows="3">
+                            </textarea>
+                        </div>
+					</div>
 						<div class="centre padding">
-							<a type="button" href="post_booking.html" id="myBtn" class="btn btn-lg btn-primary">Submit
+							<a href="post_booking.html" id="myBtn" class="btn btn-lg btn-primary">Submit
 								Request for Ideal Holiday
 							</a>
 						</div>
-						<h6 class="centre padding margin">
-							<i
-          >Please allow 48 hours after submission to receive your
-          <b>Ideal Holiday Suggestion</b> from your local.<br /><br />Thank
-          you,<br /><br /><b>Your BeenThere Team</b></i>
-						</h6>
+                        <h6 class="centre padding margin">
+                                <i>Please allow 48 hours after submission to receive your
+                                    <b>Ideal Holiday Suggestion</b> from your local.<br><br>
+                                    Thank you,<br>
+                                    <b>Your BeenThere Team</b>
+                                </i>
+                        </h6>
 		</form>
 
-		<!--Social Media-->
-		<div>
+        <!--Social Media-->
 			<div class="col-12 padding centre">
 				<ul class="list-inline">
 					<li class="list-inline-item">
@@ -169,14 +169,14 @@
 					</li>
 				</ul>
 			</div>
-		</div>
 
-		<!--Scripts-->
+		<!--This is an event listener that changes the text on the button to-->
 		<script>
 			document.getElementById("myBtn").addEventListener("click", function () {
-        document.getElementById("myBtn").innerHTML = "Thank You!";
-      });
+            document.getElementById("myBtn").innerHTML = "Thank You!";
+            });
 		</script>
+        <!--General Scripts below-->
 		<script
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap"
 			async defer></script>

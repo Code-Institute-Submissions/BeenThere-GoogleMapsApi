@@ -11,12 +11,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
 		type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css">
-    	<style>
-		/* This is a fail safe to make sure that the map definitely loads :) */
+    <style>
+        		/* This is a fail safe to make sure that the map definitely loads :) */
+
 		#map {
 			height: 400px;
 			width: 100%;
-		}
+		} 
 	</style>
 
 	<meta charset="UTF-8">
@@ -25,12 +26,9 @@
 </head>
 
 <body>
-	<!--BeenThere Explanation-->
+	<!--BeenThere logo and explanation-->
 	<div class="jumbotron jumbotron-fluid background">
-
-		<div>
-			<div class="container centre padding">
-
+		<div class="container centre padding">
 				<a href="index.html" id="link">
 					<h1 class="display-4 background">
 						BeenThere<img class="bean" src="assets/images/bean.png" alt="BeenThere Logo"></h1>
@@ -39,15 +37,15 @@
 
 				<!--Changing between different city pages buttons-->
 				<div class="btn-group padding" role="group" aria-label="buttons">
-					<a type="button" href="index.html" class="btn btn-secondary btn-sm">Home</a>
-					<a type="button" href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
-					<a type="button" href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
-					<a type="button" href="london.html" class="btn btn-secondary btn-sm">London</a>
-					<a type="button" href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
-					<a type="button" href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
+					<a href="index.html" class="btn btn-secondary btn-sm">Home</a>
+					<a href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
+					<a href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
+					<a href="london.html" class="btn btn-secondary btn-sm">London</a>
+					<a href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
+					<a href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
 
 				</div>
-
+                <!--The explanation of what BeenThere's mission-->
 				<div class="alert" role="alert">
 					<h3><b>BeenThere</b></h3>
 					<h5> gives you <b><i>curated holiday itineraries</i></b> that have been specially designed for you
@@ -62,20 +60,16 @@
 				</div>
 			</div>
 			<div>
-
-				<div class="centre padding">
-					<button id="beentherebtn" class="btn btn-secondary btn-md">Curated Trip</button>
-					<button id="hotelsbtn" class="btn btn-secondary btn-md">Search for Hotels</button>
-				</div>
-
-				<div class="homepage-pic">
-					<img class = "img-fluid" src="assets/images/bookingjourney.jpg" alt="Book your holiday">
-        </div>
-
-				</div>
-
-
-
+            <!--The two buttons where a user can make a choice between the two main user stories-->
+            <div class="centre padding">
+                <button id="beentherebtn" class="btn btn-secondary btn-md">Curated Trip</button>
+                <button id="hotelsbtn" class="btn btn-secondary btn-md">Search for Hotels</button>
+            </div>
+			<div class="homepage-pic">
+				<img class = "img-fluid" src="assets/images/bookingjourney.jpg" alt="Book your holiday">
+            </div>
+			</div>
+            <!--The 5 buttons where they can choose the different cities-->
 				<div id="beentheresection">
 					<h1 class="section-heading padding centre">Choose</h1>
 
@@ -87,10 +81,7 @@
 						<a class="btn btn-dark" href="paris.html" role="button">Paris</a>
 						<a class="btn btn-dark" href="london.html" role="button">London</a>
 					</div>
-
 					<!--Carousel as visual enticement and a second call to action on page-->
-
-
 					<div id="carousel" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -137,7 +128,6 @@
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 				<!--Hotel Section-->
@@ -148,35 +138,33 @@
 
 						<div id="locationField" class="padding centre">
 							<input id="autocomplete" placeholder="Enter a city" type="text" />
-      </div>
-							<div id="listing">
+                        </div>
+                        <div id="listing">
 								<table id="resultsTable">
 									<tbody id="results"></tbody>
 								</table>
 							</div>
 
 
-							<div id="controls">
+                        <div id="controls">
 								<select id="country">
-          <option value="fr" selected>France</option>
-          <option value="de">Germany</option>
-          <option value="es">Spain</option>
-          <option value="uk">United Kingdom</option>
-        </select>
+                            <option value="fr" selected>France</option>
+                            <option value="de">Germany</option>
+                            <option value="es">Spain</option>
+                            <option value="uk">United Kingdom</option>
+                            </select>
 							</div>
 						</div>
 						<!--Map-->
 						<div id="map"></div>
 
 						<div class="centre padding">
-							<button type="button" id="openBtn" class="btn btn- btn-info centre padding">Show Hotel Names</button>
-                            <button type="button" id="closeBtn" class="btn btn- btn-info centre padding">Hide Hotel Names</button>
+							<button id="openBtn" class="btn btn- btn-info centre padding">Show Hotel Names</button>
+                            <button id="closeBtn" class="btn btn- btn-info centre padding">Hide Hotel Names</button>
                             
 							<a href="book.html" id="booking-button" class="btn btn-secondary btn-lg padding centre">Book
 								Your Trip</a>
-
 						</div>
-
 						<div style="display: none">
 							<div id="info-content">
 								<table>
@@ -205,9 +193,6 @@
 
 						</div>
 					</div>
-
-
-
 					<!--Social Media-->
 					<div id="social" class="col-12 centre padding">
 
@@ -234,6 +219,7 @@
 						</ul>
 
 					</div>
+	</div>
 
 					<script src="assets/js/main.js"></script>
 
@@ -252,8 +238,7 @@
 					</script>
 					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 						integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-						crossorigin="anonymous">
-					</script>
+						crossorigin="anonymous"></script>
 </body>
 
 </html>

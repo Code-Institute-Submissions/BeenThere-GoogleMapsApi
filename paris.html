@@ -26,23 +26,22 @@
 </head>
 
 <body>
-	<!--Navbar-->
 
-
-	<!--BeenThere Explanation-->
+	<!--BeenThere logo and explanation-->
 	<div class="jumbotron jumbotron-fluid background">
 		<div class="container centre padding">
 			<a href="index.html" id="link">
 				<h1 class="display-4 background">Paris<img class="bean" src="assets/images/bean.png" alt="BeenThere Logo"></h1>
 					<p class="lead background"><i>We have been there - have you?</i></p>
 			</a>
+            <!--Changing between different city pages buttons-->
 			<div class="btn-group padding" role="group" aria-label="buttons">
-                <a type="button" href="index.html" class="btn btn-secondary btn-sm">Home</a>
-				<a type="button" href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
-				<a type="button" href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
-				<a type="button" href="london.html" class="btn btn-secondary btn-sm">London</a>
-				<a type="button" href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
-				<a type="button" href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
+                <a href="index.html" class="btn btn-secondary btn-sm">Home</a>
+				<a href="berlin.html" class="btn btn-secondary btn-sm">Berlin</a>
+				<a href="ibiza.html" class="btn btn-secondary btn-sm">Ibiza</a>
+				<a href="london.html" class="btn btn-secondary btn-sm">London</a>
+				<a href="nice.html" class="btn btn-secondary btn-sm">Nice</a>
+				<a href="paris.html" class="btn btn-secondary btn-sm">Paris</a>
 
 			</div>
 			<div class="pic_blurb">
@@ -61,73 +60,69 @@
 			<div id="map"></div>
 			<div class="padding">
 		
-					<a type="button" href="book.html" class="btn btn-secondary btn-lg book">Book your Trip</a>
+					<a href="book.html" class="btn btn-secondary btn-lg book">Book your Trip</a>
 		
 			</div>
 		</div>
 	</div>
+<!--Social Media-->
 
-			<!--Social Media-->
-			<div>
-				<div class="col-12 centre padding">
+    <div class="col-12 centre padding">
 
-					<ul class="list-inline ">
-						<li class="list-inline-item">
-							<a target="_blank" href="https://facebook.com/">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-								<span class="sr-only">Facebook</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="https://www.twitter.com/">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-								<span class="sr-only">Twitter</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="https://www.instagram.com/">
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-								<span class="sr-only">Instagram</span>
-							</a>
-						</li>
-
-					</ul>
-
-				</div>
+        <ul class="list-inline ">
+            <li class="list-inline-item">
+                <a target="_blank" href="https://facebook.com/">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a target="_blank" href="https://www.twitter.com/">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a target="_blank" href="https://www.instagram.com/">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 		
 
 
 
-				<!--Scripts-->
+<!--Scripts for changing the content of the recommendation markers for this particular city. The general google maps scripts are still in the js file.
+It means the engineer does not have to open two pages when editing the content every month.-->
 
-
-
-				<script>
-					// Initialize and add the map
+<script>
+// Initialize and add the map
 function initMap() {
-  // The location of berlin
+// The location of Paris
   var paris = {lat: 48.8566, lng: 2.3522};
-  // The map, centered at berlin
+// The map, centered on Paris
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 13, center: paris, mapId: 'da36f271281c5584'});
-  // The marker, positioned at Uluru
-
+// First marker is a restaurant.
       var marker1 = new google.maps.Marker({
       position: {lat: 48.8626, lng: 2.2886},
       map: map,
       label: "Restaurant: Girafe",
       title: "marker 1"
     });
-        var contentString1 = '<h1>Girafe</h1> A meal at Girafe embraces the timeless and contemporary. A blend of simplicity and luxury, the sensual and the sophisticated.</h1><img class="window_image" src="assets/images/girafe.jpg" alt="Girafe Restaurant"> ';
+// Content for restaurant.  
+    var contentString1 = '<h1>Girafe</h1> A meal at Girafe embraces the timeless and contemporary. A blend of simplicity and luxury, the sensual and the sophisticated.</h1><img class="window_image" src="assets/images/girafe.jpg" alt="Girafe Restaurant"> ';
 
-var infowindow1 = new google.maps.InfoWindow({
+    var infowindow1 = new google.maps.InfoWindow({
           content: contentString1
         });
-
+// Event listener so that when the user clicks on the marker it opens the extra, custom content about that location. 
         marker1.addListener('click', function() {
-          infowindow1.open(map, marker1);
+            infowindow1.open(map, marker1);
         });
-
+// Second marker is a Bar.
     var marker2 = new google.maps.Marker({
       position: {lat: 48.8688, lng: 2.3275},
       map: map,
@@ -135,55 +130,53 @@ var infowindow1 = new google.maps.InfoWindow({
       title: "marker 2"
     });
  
-//info window for Bar
-        var contentString2 = '<h1>Bar Hemingway</h1>The incredible concoctions of head bartender Colin Field have set the bar high for cocktail lovers everywhere. The night begins and ends at the Ritz Paris.<img class="window_image" src="assets/images/barhemingway.jpg" alt="Bar Hemingway"> ';
+//Content for Bar
+    var contentString2 = '<h1>Bar Hemingway</h1>The incredible concoctions of head bartender Colin Field have set the bar high for cocktail lovers everywhere. The night begins and ends at the Ritz Paris.<img class="window_image" src="assets/images/barhemingway.jpg" alt="Bar Hemingway"> ';
 
-var infowindow2 = new google.maps.InfoWindow({
+    var infowindow2 = new google.maps.InfoWindow({
           content: contentString2
         });
-
+// Event listener so that when the user clicks on the marker it opens the extra, custom content about that location. 
         marker2.addListener('click', function() {
           infowindow2.open(map, marker2);
         });
-      
-
-        var marker3 = new google.maps.Marker({
+// Third marker is a Hotel.      
+    var marker3 = new google.maps.Marker({
       position: {lat: 48.8669, lng: 2.3795},
       map: map,
       label:"Hotel: Hôtel La Nouvelle République",
       title: "marker 3",
     });
-    //info window for Bar
+//Content for Hotel
         var contentString3 = '<h1>Hôtel La Nouvelle République</h1>Located in the 11th arrondissement of Paris, Hôtel La Nouvelle République is a 15-minute walk from Place de la République and a 20-minute walk from the Marais district. The rooms at Hôtel La Nouvelle République are decorated in a modern style and have soundproofing and air conditioning. Each room features a flat-screen TV and a private bathroom with a hair dryer. <img class="window_image" src="assets/images/lanouvelle.jpg" alt="Hôtel La Nouvelle République"> ';
 
-var infowindow3 = new google.maps.InfoWindow({
+    var infowindow3 = new google.maps.InfoWindow({
           content: contentString3
         });
        
-
+// Event listener so that when the user clicks on the marker it opens the extra, custom content about that location. 
         marker3.addListener('click', function() {
           infowindow3.open(map, marker3);
         });
         
 }
-
-				</script>
-				<script
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
-					async defer></script>
-
-				<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-					integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-					crossorigin="anonymous">
-				</script>
-				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-					integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-					crossorigin="anonymous">
-				</script>
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-					integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-					crossorigin="anonymous">
-				</script>
+    </script>
+    <!--General Scripts below-->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzo-_U1f436QKoOQAjTYwFpVRKu6XSR24&callback=initMap&map_ids=da36f271281c5584"
+        async defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
